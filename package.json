@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack --mode development",
-    "serve-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --mode development"
+    "build-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack --config build/webpack.config.js --mode development",
+    "serve-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config build/webpack.config.js --mode development"
   },
   "author": "",
   "license": "ISC",
