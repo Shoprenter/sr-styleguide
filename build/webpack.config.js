@@ -64,8 +64,9 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            additionalData: `@import "@/plugins/preset/variables.scss";`,
+                            additionalData: `@import "@/plugins/vuetify/preset/variables.scss";`,
                             sassOptions: {
+                                includePaths: ["../node_modules"],
                                 indentedSyntax: true, // Enables SASS (not SCSS)
                             }
                         },
@@ -92,7 +93,10 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            additionalData: `@import "@/plugins/preset/variables.scss";`,
+                            sassOptions: {
+                                includePaths: ["../node_modules"],
+                            },
+                            additionalData: `@import "@/plugins/vuetify/preset/variables.scss";`,
                         },
                     },
                 ],

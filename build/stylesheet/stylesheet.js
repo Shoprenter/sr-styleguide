@@ -1,7 +1,7 @@
-import '../../src/plugins/preset/style/css/root_variables.css'
-import './native-vuetify-component-styles'
+import '../../src/plugins/vuetify/preset/style/css/root_variables.css'
+import '../../src/plugins/vuetify/vuetify.sass'
 import 'vuetify/src/styles/main.sass'
-import '../../src/plugins/preset/override.scss'
+import '../../src/plugins/vuetify/preset/override.scss'
 
 
 import './component-styles'

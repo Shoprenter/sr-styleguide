@@ -1,6 +1,6 @@
-/*!*********************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-1.use[2]!./src/plugins/preset/style/css/root_variables.css ***!
-  \*********************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-1.use[2]!./src/plugins/vuetify/preset/style/css/root_variables.css ***!
+  \*****************************************************************************************************************************************************************************/
 :root {
     --sr-black: #282D33;
     --sr-dark-grey: #5D6978;
@@ -27,9 +27,9 @@
     margin: 0;
 }
 
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VApp/VApp.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./src/plugins/vuetify/vuetify.sass ***!
+  \*********************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-application {
   background: var(--sr-bg-grey);
   color: var(--sr-black);
@@ -88,9 +88,6 @@
     }
   }
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VAppBar/VAppBar.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-app-bar.v-toolbar.v-sheet {
   background-color: #f5f5f5;
 }
@@ -152,9 +149,7 @@
 #sr-styleguide .v-app-bar-title__content {
   position: absolute;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VToolbar/VToolbar.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-toolbar.v-sheet {
   background-color: #FFFFFF;
 }
@@ -320,9 +315,7 @@
   padding-bottom: 6px;
   padding-top: 0;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSheet/VSheet.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-sheet {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
@@ -350,9 +343,7 @@
 #sr-styleguide .v-sheet.v-sheet--shaped {
   border-radius: 18px 0;
 }
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VImg/VImg.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-image {
   color: var(--sr-black);
 }
@@ -386,9 +377,7 @@
 #sr-styleguide .v-image__image--cover {
   background-size: cover;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VResponsive/VResponsive.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-responsive {
   position: relative;
   overflow: hidden;
@@ -410,9 +399,7 @@
   transition: padding-bottom 0.2s cubic-bezier(0.25, 0.8, 0.5, 1);
   flex: 1 0 0px;
 }
-/*!********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/directives/ripple/VRipple.sass ***!
-  \********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-ripple__container {
   color: inherit;
   border-radius: inherit;
@@ -450,9 +437,7 @@
   transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VIcon/VIcon.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-icon {
   color: rgba(0, 0, 0, 0.54);
 }
@@ -531,9 +516,7 @@
   width: 18px;
   fill: currentColor;
 }
-/*!***************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VBtn/VBtn.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-btn:not(.v-btn--outlined).primary, #sr-styleguide .v-btn:not(.v-btn--outlined).secondary, #sr-styleguide .v-btn:not(.v-btn--outlined).accent, #sr-styleguide .v-btn:not(.v-btn--outlined).success, #sr-styleguide .v-btn:not(.v-btn--outlined).error, #sr-styleguide .v-btn:not(.v-btn--outlined).warning, #sr-styleguide .v-btn:not(.v-btn--outlined).info {
   color: #FFFFFF;
 }
@@ -915,9 +898,7 @@
 #sr-styleguide .v-btn--tile {
   border-radius: 0;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VProgressCircular/VProgressCircular.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-progress-circular {
   position: relative;
   display: inline-flex;
@@ -984,9 +965,6 @@
     transform: rotate(360deg);
   }
 }
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VAlert/VAlert.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-alert .v-alert--prominent .v-alert__icon:after {
   background: rgba(0, 0, 0, 0.12);
 }
@@ -1178,9 +1156,7 @@
   right: 0;
   top: 0;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VAutocomplete/VAutocomplete.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-autocomplete.v-input > .v-input__control > .v-input__slot {
   cursor: text;
 }
@@ -1209,9 +1185,7 @@
 #sr-styleguide .v-autocomplete__content.v-menu__content .v-card {
   border-radius: 0;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTextField/VTextField.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-text-field > .v-input__control > .v-input__slot:before {
   border-color: rgba(0, 0, 0, 0.42);
 }
@@ -1702,9 +1676,7 @@
 #sr-styleguide .v-text-field.v-input--is-focused .v-input__icon--clear, #sr-styleguide .v-text-field.v-input--is-dirty:hover .v-input__icon--clear {
   opacity: 1;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSelect/VSelect.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-select .v-select__selections {
   color: var(--sr-black);
 }
@@ -1848,9 +1820,7 @@
 #sr-styleguide .v-select:not(.v-text-field--single-line):not(.v-text-field--outlined) .v-select__slot > input {
   align-self: flex-end;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VChip/VChip.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-chip:not(.v-chip--outlined).primary, #sr-styleguide .v-chip:not(.v-chip--outlined).secondary, #sr-styleguide .v-chip:not(.v-chip--outlined).accent, #sr-styleguide .v-chip:not(.v-chip--outlined).success, #sr-styleguide .v-chip:not(.v-chip--outlined).error, #sr-styleguide .v-chip:not(.v-chip--outlined).warning, #sr-styleguide .v-chip:not(.v-chip--outlined).info {
   color: #FFFFFF;
 }
@@ -2079,9 +2049,7 @@
   font-size: 18px;
   height: 66px;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VMenu/VMenu.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-menu {
   display: none;
 }
@@ -2145,9 +2113,7 @@
   transform: none !important;
   pointer-events: auto;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCheckbox/VSimpleCheckbox.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-simple-checkbox {
   align-self: center;
   line-height: normal;
@@ -2161,9 +2127,7 @@
 #sr-styleguide .v-simple-checkbox--disabled {
   cursor: default;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDivider/VDivider.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-divider {
   border-color: rgba(0, 0, 0, 0.12);
 }
@@ -2209,9 +2173,7 @@
   min-height: 0;
   max-height: calc(100% - 16px);
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSubheader/VSubheader.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-subheader {
   color: var(--sr-secondary-text);
 }
@@ -2231,9 +2193,7 @@
 #sr-styleguide .v-subheader--inset {
   margin-left: 56px;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VList/VList.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-list.primary > .v-list-item, #sr-styleguide .v-list.secondary > .v-list-item, #sr-styleguide .v-list.accent > .v-list-item, #sr-styleguide .v-list.success > .v-list-item, #sr-styleguide .v-list.error > .v-list-item, #sr-styleguide .v-list.warning > .v-list-item, #sr-styleguide .v-list.info > .v-list-item {
   color: #FFFFFF;
 }
@@ -2356,9 +2316,7 @@
 #sr-styleguide .v-list--subheader {
   padding-top: 0;
 }
-/*!**********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VList/VListGroup.sass ***!
-  \**********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-list-group .v-list-group__header .v-list-item__icon.v-list-group__header__append-icon {
   align-self: center;
   margin: 0;
@@ -2446,9 +2404,7 @@
 #sr-styleguide .v-application--is-rtl .v-list--dense.v-list--nav .v-list-group--no-action.v-list-group--sub-group > .v-list-group__items > .v-list-item {
   padding-right: 80px;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VList/VListItem.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-list-item--disabled {
   color: rgba(0, 0, 0, 0.38);
 }
@@ -2726,24 +2682,18 @@
   -webkit-box-orient: vertical;
   display: -webkit-box;
 }
-/*!**************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VList/VListItemGroup.sass ***!
-  \**************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-list-item-group .v-list-item--active {
   color: inherit;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VItemGroup/VItemGroup.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-item-group {
   flex: 0 1 auto;
   position: relative;
   max-width: 100%;
   transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VAvatar/VAvatar.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-avatar {
   align-items: center;
   border-radius: 3px;
@@ -2761,9 +2711,7 @@
   height: inherit;
   width: inherit;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VInput/VInput.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
+
 /* Theme */
 #sr-styleguide .theme--light.v-input {
   color: var(--sr-black);
@@ -2898,9 +2846,7 @@
 #sr-styleguide .v-input--hide-spin-buttons input[type=number] {
   -moz-appearance: textfield;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VLabel/VLabel.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-label {
   color: var(--sr-secondary-text);
 }
@@ -2921,9 +2867,7 @@
   min-height: 8px;
   transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VMessages/VMessages.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 /* Theme */
 #sr-styleguide .theme--light.v-messages {
   color: var(--sr-secondary-text);
@@ -2953,9 +2897,7 @@
   word-wrap: break-word;
   hyphens: auto;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCounter/VCounter.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************/
+
 /* Theme */
 #sr-styleguide .theme--light.v-counter {
   color: var(--sr-secondary-text);
@@ -2971,9 +2913,7 @@
   min-height: 12px;
   line-height: 12px;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VProgressLinear/VProgressLinear.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-progress-linear {
   color: var(--sr-black);
 }
@@ -3279,9 +3219,6 @@
     transform: translateX(8px);
   }
 }
-/*!*******************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VBadge/VBadge.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-badge .v-badge__badge::after {
   border-color: #FFFFFF;
 }
@@ -3386,9 +3323,7 @@
 #sr-styleguide .v-badge--tile .v-badge__badge {
   border-radius: 0;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VBanner/VBanner.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-banner.v-sheet {
   background-color: transparent;
 }
@@ -3545,9 +3480,7 @@
   flex-wrap: nowrap;
   padding-top: 10px;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VBottomNavigation/VBottomNavigation.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-bottom-navigation {
   background-color: #FFFFFF;
   color: var(--sr-black);
@@ -3644,9 +3577,7 @@
   top: calc(100% - 22px);
   transform: scale(1);
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VBottomSheet/VBottomSheet.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .bottom-sheet-transition-enter {
   transform: translateY(100%);
 }
@@ -3669,9 +3600,7 @@
     max-width: none;
   }
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDialog/VDialog.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-dialog {
   border-radius: 3px;
   margin: 24px;
@@ -3778,9 +3707,6 @@
     transform: scale(1);
   }
 }
-/*!***********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VOverlay/VOverlay.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-overlay {
   color: var(--sr-black);
 }
@@ -3827,9 +3753,7 @@
 #sr-styleguide .v-overlay--active {
   pointer-events: auto;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VBreadcrumbs/VBreadcrumbs.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-breadcrumbs .v-breadcrumbs__divider, #sr-styleguide .theme--light.v-breadcrumbs .v-breadcrumbs__item--disabled {
   color: rgba(0, 0, 0, 0.38);
 }
@@ -3875,9 +3799,7 @@
 #sr-styleguide .v-breadcrumbs--large li .v-icon {
   font-size: 16px;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VBtnToggle/VBtnToggle.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-btn-toggle:not(.v-btn-toggle--group) {
   background: #FFFFFF;
   color: var(--sr-black);
@@ -3986,9 +3908,7 @@
 #sr-styleguide .v-btn-toggle--tile {
   border-radius: 0;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCalendar/mixins/calendar-with-events.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-calendar-events .v-event-timed {
   border: 1px solid !important;
 }
@@ -4063,9 +3983,7 @@
   overflow: visible;
   margin-right: -1px;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCalendar/VCalendarWeekly.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-calendar-weekly {
   background-color: #FFFFFF;
   border-top: #e0e0e0 1px solid;
@@ -4219,9 +4137,7 @@
   height: 32px;
   line-height: 32px;
 }
-/*!******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCalendar/VCalendarDaily.sass ***!
-  \******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-calendar-daily {
   background-color: #FFFFFF;
   border-left: #e0e0e0 1px solid;
@@ -4412,9 +4328,7 @@
   width: 0;
   position: relative;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCalendar/VCalendarCategory.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-calendar-category .v-calendar-category__column, #sr-styleguide .theme--light.v-calendar-category .v-calendar-category__column-header {
   border-right: #e0e0e0 1px solid;
 }
@@ -4525,9 +4439,7 @@
 #sr-styleguide .v-calendar-category .v-calendar-category__columns .v-calendar-category__column-header {
   min-width: 200px;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCard/VCard.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-card {
   background-color: #FFFFFF;
   color: var(--sr-black);
@@ -4694,9 +4606,7 @@
 #sr-styleguide .v-card--raised {
   box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCarousel/VCarousel.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-carousel {
   overflow: hidden;
   position: relative;
@@ -4756,9 +4666,7 @@
   height: 100% !important;
   width: 50px;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VWindow/VWindow.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-window {
   overflow: hidden;
 }
@@ -4848,18 +4756,14 @@
 #sr-styleguide .v-window-y-reverse-transition-leave-to {
   transform: translateY(100%);
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VCheckbox/VCheckbox.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-input--checkbox.v-input--indeterminate.v-input--is-disabled {
   opacity: 0.6;
 }
 #sr-styleguide .v-input--checkbox.v-input--dense {
   margin-top: 4px;
 }
-/*!********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/styles/components/_selection-controls.sass ***!
-  \********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-input--selection-controls {
   margin-top: 16px;
   padding-top: 4px;
@@ -4966,9 +4870,7 @@
   transform: scale(1.2);
   transition: none;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VChipGroup/VChipGroup.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-chip-group .v-chip {
   margin: 4px 8px 4px 0;
 }
@@ -4991,9 +4893,7 @@
   flex-wrap: wrap;
   max-width: 100%;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSlideGroup/VSlideGroup.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-slide-group {
   display: flex;
 }
@@ -5035,9 +4935,7 @@
 #sr-styleguide .v-slide-group__next--disabled, #sr-styleguide .v-slide-group__prev--disabled {
   pointer-events: none;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VColorPicker/VColorPicker.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-color-picker .v-color-picker__input input {
   border: thin solid rgba(0, 0, 0, 0.12);
   color: var(--sr-black);
@@ -5079,9 +4977,7 @@
 #sr-styleguide .v-color-picker--flat .v-color-picker__track:not(.v-input--is-disabled) .v-slider__thumb {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
 }
-/*!**************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VColorPicker/VColorPickerPreview.sass ***!
-  \**************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-color-picker .v-input__slider {
   border-radius: 5px;
 }
@@ -5147,9 +5043,7 @@
 #sr-styleguide .v-color-picker__preview:not(.v-color-picker__preview--hide-alpha) .v-color-picker__hue {
   margin-bottom: 24px;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSlider/VSlider.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-slider .v-slider__track-background, #sr-styleguide .theme--light.v-slider .v-slider__track-fill, #sr-styleguide .theme--light.v-slider .v-slider__thumb {
   background: rgba(0, 0, 0, 0.26);
 }
@@ -5438,9 +5332,7 @@
 #sr-styleguide .v-input--has-state .v-slider__track-background {
   opacity: 0.4;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VColorPicker/VColorPickerCanvas.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-color-picker__canvas {
   position: relative;
   overflow: hidden;
@@ -5462,9 +5354,7 @@
 #sr-styleguide .v-color-picker__canvas:hover .v-color-picker__canvas-dot {
   will-change: transform;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VColorPicker/VColorPickerEdit.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-color-picker__edit {
   margin-top: 24px;
   display: flex;
@@ -5495,9 +5385,7 @@
 #sr-styleguide .v-color-picker__input span {
   font-size: 0.75rem;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VColorPicker/VColorPickerSwatches.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-color-picker__swatches {
   overflow-y: auto;
 }
@@ -5533,9 +5421,7 @@
   width: 100%;
   height: 100%;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VMain/VMain.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-main {
   display: flex;
   flex: 1 0 auto;
@@ -5557,9 +5443,7 @@
     }
   }
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDataIterator/VDataFooter.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-data-footer {
   display: flex;
   flex-wrap: wrap;
@@ -5628,9 +5512,7 @@
 #sr-styleguide .v-data-footer__select .v-select__selections .v-select__selection--comma {
   font-size: 0.75rem;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDataTable/VDataTable.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-data-table tbody tr.v-data-table__selected {
   background: #f5f5f5;
 }
@@ -5726,9 +5608,7 @@
 #sr-styleguide .v-data-table__expand-icon--active {
   transform: rotate(-180deg);
 }
-/*!*********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDataTable/VDataTableHeader.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-data-table .v-data-table-header th.sortable .v-data-table-header__icon {
   color: rgba(0, 0, 0, 0.38);
 }
@@ -5814,9 +5694,7 @@
   align-items: center;
   justify-content: center;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDataTable/VSimpleTable.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-data-table {
   background-color: #FFFFFF;
   color: var(--sr-black);
@@ -5973,9 +5851,7 @@
 #sr-styleguide .v-data-table--fixed-header.v-data-table--dense > .v-data-table__wrapper > table > thead > tr:nth-child(2) > th {
   top: 38px;
 }
-/*!****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDataTable/VEditDialog.sass ***!
-  \****************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-small-dialog__menu-content, #sr-styleguide .theme--light.v-small-dialog__actions {
   background: #FFFFFF;
 }
@@ -6001,9 +5877,7 @@
   text-align: right;
   white-space: pre;
 }
-/*!******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDataTable/VVirtualTable.sass ***!
-  \******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-virtual-table {
   position: relative;
 }
@@ -6017,9 +5891,7 @@
   height: 100%;
   overflow-x: auto;
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDatePicker/VDatePickerTitle.sass ***!
-  \**********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-date-picker-title {
   display: flex;
   justify-content: space-between;
@@ -6055,9 +5927,7 @@
 #sr-styleguide .v-date-picker-title--disabled {
   pointer-events: none;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDatePicker/VDatePickerHeader.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-date-picker-header .v-date-picker-header__value:not(.v-date-picker-header__value--disabled) button:not(:hover):not(:focus) {
   color: var(--sr-black);
 }
@@ -6109,9 +5979,7 @@
 #sr-styleguide .v-date-picker-header--disabled {
   pointer-events: none;
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDatePicker/VDatePickerTable.sass ***!
-  \**********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-date-picker-table th, #sr-styleguide .theme--light.v-date-picker-table .v-date-picker-table--date__week {
   color: rgba(0, 0, 0, 0.38);
 }
@@ -6203,9 +6071,7 @@
 #sr-styleguide .v-date-picker-table--disabled {
   pointer-events: none;
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VDatePicker/VDatePickerYears.sass ***!
-  \**********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-date-picker-years {
   font-size: 16px;
   font-weight: 400;
@@ -6235,9 +6101,7 @@
   padding: 0;
   height: 290px;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VPicker/VPicker.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-picker__title {
   background: #e0e0e0;
 }
@@ -6343,9 +6207,7 @@
 #sr-styleguide .v-picker--flat {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2), 0px 0px 0px 0px rgba(0, 0, 0, 0.14), 0px 0px 0px 0px rgba(0, 0, 0, 0.12);
 }
-/*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VExpansionPanel/VExpansionPanel.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-expansion-panels .v-expansion-panel {
   background-color: #FFFFFF;
   color: var(--sr-black);
@@ -6580,9 +6442,7 @@
 #sr-styleguide .v-expansion-panels--tile > .v-expansion-panel::before {
   border-radius: 0;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VFileInput/VFileInput.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-file-input .v-file-input__text {
   color: var(--sr-black);
 }
@@ -6650,9 +6510,7 @@
 #sr-styleguide .v-file-input.v-text-field--outlined.v-input--dense .v-text-field__slot {
   padding: 3px 0;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VFooter/VFooter.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-footer {
   background-color: #f5f5f5;
   color: var(--sr-black);
@@ -6706,9 +6564,7 @@
 #sr-styleguide .v-footer--padless {
   padding: 0px;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VGrid/_grid.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .container.grow-shrink-0 {
   flex-grow: 0;
   flex-shrink: 0;
@@ -7738,9 +7594,7 @@
 #sr-styleguide .fill-height {
   height: 100%;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VGrid/VGrid.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .container {
   width: 100%;
   padding: 12px;
@@ -8473,9 +8327,6 @@
     margin-right: 91.6666666667%;
   }
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VNavigationDrawer/VNavigationDrawer.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-navigation-drawer {
   background-color: #FFFFFF;
 }
@@ -8626,9 +8477,7 @@
 #sr-styleguide .v-navigation-drawer--is-mobile:not(.v-navigation-drawer--close), #sr-styleguide .v-navigation-drawer--temporary:not(.v-navigation-drawer--close) {
   box-shadow: 0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VOtpInput/VOtpInput.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-otp-input .v-input .v-input__control .v-input__slot {
   background: #FFFFFF;
 }
@@ -8664,9 +8513,7 @@
 #sr-styleguide .v-otp-input .v-input input[type=number] {
   -moz-appearance: textfield;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VOverflowBtn/VOverflowBtn.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-overflow-btn.theme--light.v-overflow-btn > .v-input__control > .v-input__slot {
   border-color: rgba(0, 0, 0, 0.12);
 }
@@ -8810,9 +8657,7 @@
 #sr-styleguide .v-overflow-btn--editable .v-input__append-inner, #sr-styleguide .v-overflow-btn--editable .v-input__append-inner * {
   cursor: pointer;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VPagination/VPagination.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-pagination .v-pagination__item {
   background: #FFFFFF;
   color: var(--sr-black);
@@ -8901,9 +8746,7 @@
   height: 32px;
   width: 32px;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VParallax/VParallax.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-parallax {
   position: relative;
   overflow: hidden;
@@ -8940,9 +8783,7 @@
   justify-content: center;
   padding: 0 1rem;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VRadioGroup/VRadioGroup.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-input--radio-group legend.v-label {
   cursor: text;
   font-size: 14px;
@@ -8977,9 +8818,7 @@
 #sr-styleguide .v-input--radio-group--column .v-input--radio-group__input {
   flex-direction: column;
 }
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VRadioGroup/VRadio.sass ***!
-  \************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-radio--is-disabled label {
   color: rgba(0, 0, 0, 0.38);
 }
@@ -9002,9 +8841,7 @@
 #sr-styleguide .v-input--radio-group.v-input--radio-group--row .v-radio {
   margin-right: 16px;
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VRangeSlider/VRangeSlider.sass ***!
-  \*******************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-input--range-slider.v-input--slider.v-input--is-disabled .v-slider.v-slider .v-slider__thumb {
   background: #fafafa;
 }
@@ -9020,9 +8857,7 @@
 #sr-styleguide .v-input--range-slider.v-input--is-disabled.v-input--slider .v-slider.v-slider .v-slider__thumb {
   border-color: transparent;
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VRating/VRating.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-rating {
   max-width: 100%;
   white-space: nowrap;
@@ -9048,9 +8883,7 @@
 #sr-styleguide .v-rating--dense .v-icon {
   padding: 0.1rem;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSkeletonLoader/VSkeletonLoader.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-skeleton-loader .v-skeleton-loader__bone::after {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
 }
@@ -9358,9 +9191,6 @@
     transform: translateX(100%);
   }
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSnackbar/VSnackbar.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-snack__wrapper {
   color: var(--sr-black);
 }
@@ -9507,9 +9337,7 @@
 #sr-styleguide .v-snack-transition-enter.v-snack__wrapper, #sr-styleguide .v-snack-transition-leave-to.v-snack__wrapper {
   opacity: 0;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSpeedDial/VSpeedDial.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-speed-dial {
   position: relative;
   z-index: 1;
@@ -9580,9 +9408,7 @@
 #sr-styleguide .v-speed-dial:not(.v-speed-dial--is-active) .v-speed-dial__list {
   pointer-events: none;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VStepper/VStepper.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-stepper {
   background: #FFFFFF;
 }
@@ -9853,9 +9679,6 @@
     margin-right: 0;
   }
 }
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSwitch/VSwitch.sass ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
 #sr-styleguide .theme--light.v-input--switch .v-input--switch__thumb {
   color: #FFFFFF;
 }
@@ -9978,9 +9801,7 @@
 #sr-styleguide .v-application--is-rtl .v-input--switch--inset.v-input--is-dirty .v-input--selection-controls__ripple, #sr-styleguide .v-application--is-rtl .v-input--switch--inset.v-input--is-dirty .v-input--switch__thumb {
   transform: translate(-26px, 0) !important;
 }
-/*!***************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VSystemBar/VSystemBar.sass ***!
-  \***************************************************************************************************************************************************************************************************************************************************/
+
 /* Theme */
 #sr-styleguide .theme--light.v-system-bar {
   background-color: #e0e0e0;
@@ -10031,9 +9852,7 @@
   font-size: 0.875rem;
   margin-right: 8px;
 }
-/*!*****************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTabs/VTabs.sass ***!
-  \*****************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-tabs > .v-tabs-bar {
   background-color: #FFFFFF;
 }
@@ -10263,9 +10082,7 @@
 #sr-styleguide .v-tab--disabled, #sr-styleguide .v-tab--disabled * {
   pointer-events: none;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTextarea/VTextarea.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-textarea.v-text-field--solo-inverted.v-input--is-focused textarea {
   color: #FFFFFF;
 }
@@ -10347,9 +10164,7 @@
 #sr-styleguide .v-application--is-rtl .v-textarea.v-text-field--enclosed .v-text-field__slot textarea {
   padding-left: 12px;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTimeline/VTimeline.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 /**
  * * .v-timeline::before - center divider
  * * .v-card::before - arrow shadow (conflicts with active link overlay)
@@ -10643,9 +10458,7 @@
   margin: 0;
   width: inherit;
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTimePicker/VTimePickerTitle.sass ***!
-  \**********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-time-picker-title {
   color: #FFFFFF;
   display: flex;
@@ -10709,9 +10522,7 @@
 #sr-styleguide .v-picker--time .v-picker__title--landscape .v-time-picker-title__time {
   text-align: center;
 }
-/*!**********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTimePicker/VTimePickerClock.sass ***!
-  \**********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-time-picker-clock {
   background: #e0e0e0;
 }
@@ -10878,9 +10689,7 @@
 #sr-styleguide .v-picker--landscape .v-time-picker-clock__ampm {
   flex-direction: column;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTooltip/VTooltip.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-tooltip {
   display: none;
 }
@@ -10916,9 +10725,7 @@
 #sr-styleguide .v-tooltip__content[class*=leave-active] {
   transition-duration: 75ms;
 }
-/*!*************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VTreeview/VTreeview.sass ***!
-  \*************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .theme--light.v-treeview {
   color: var(--sr-black);
 }
@@ -11122,9 +10929,7 @@
 #sr-styleguide .v-application--is-rtl .v-treeview-node__content {
   margin-right: 6px;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-2.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-2.use[3]!./node_modules/vuetify/src/components/VVirtualScroll/VVirtualScroll.sass ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
+
 #sr-styleguide .v-virtual-scroll {
   display: block;
   flex: 1 1 auto;
@@ -26318,9 +26123,9 @@
     float: left !important;
   }
 }
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-3.use[3]!./src/plugins/preset/override.scss ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-3.use[3]!./src/plugins/vuetify/preset/override.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************/
 /* Shoprenter Admin redesign with Vuetify */
 #sr-styleguide .row {
   margin-top: 0;
