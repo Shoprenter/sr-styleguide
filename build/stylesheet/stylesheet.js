@@ -4,4 +4,4 @@ import 'vuetify/src/styles/main.sass'
 import '../../src/plugins/vuetify/preset/override.scss'
 
 
-import './component-styles'
+import './component-styles.scss'
