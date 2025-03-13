@@ -1,0 +1,21 @@
+.sr-admin-icon-link,
+.sr-admin-icon-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    margin: 0;
+    border: 0;
+    color: var(--sr-primary);
+    outline: none;
+
+    &:focus,
+    &:active,
+    &:hover {
+        color: var(--sr-hover-green);
+
+        svg {
+            outline: none;
+        }
+    }
+}

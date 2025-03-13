@@ -1,0 +1,29 @@
+a,
+a:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--sr-hover-green);
+}
+
+.link-secondary {
+    color: var(--sr-link-grey);
+    font-weight: normal;
+    text-shadow: none;
+    text-decoration: none;
+
+    &:visited {
+        color: var(--sr-link-grey);
+    }
+    &:hover,
+    &:active,
+    &:focus, {
+        text-decoration: none;
+        color: var(--sr-dark-grey);
+    }
+}
+
+.theme--light.v-icon {
+    outline: none;
+}
