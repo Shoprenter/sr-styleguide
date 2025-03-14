@@ -1,2 +1,2 @@
-export SrStyleguide from './plugins/vuetify'
-export SrStyleguideComponents from './plugins/component-library'
+export { default as SrStyleguide } from './plugins/vuetify'
+export { default as SrStyleguideComponents } from './plugins/component-library'

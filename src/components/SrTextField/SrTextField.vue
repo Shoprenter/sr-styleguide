@@ -9,12 +9,12 @@
 </template>
 
 <script>
-//import './SrTextField.css'
+// import './SrTextField.css'
 
 export default {
-  name: 'SrTextField',
-  props: [
-      'hint'
-  ]
+    name: 'SrTextField',
+    props: [
+        'hint'
+    ]
 }
 </script>
