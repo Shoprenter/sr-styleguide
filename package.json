@@ -8,6 +8,7 @@
     "dist"
   ],
   "scripts": {
+    "before-commit": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build/\") --fix",
     "lint:all": "eslint \"./{src,build}/**/*.{js,vue}\"",
     "lint:diff": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build/\")",
     "test": "echo \"Error: no test specified\" && exit 1",
