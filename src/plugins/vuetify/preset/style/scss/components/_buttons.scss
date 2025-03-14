@@ -1,0 +1,71 @@
+.v-btn__content {
+    outline: none;
+}
+
+.v-btn--fab {
+    height: 36px;
+    width: 36px;
+    padding: 0;
+    border-radius: 3px;
+
+    .v-icon {
+        font-size: 20px;
+    }
+}
+
+.v-btn:not(.v-btn--round).v-size--small {
+    padding: 0 15px;
+}
+
+.v-btn:not(.v-btn--round).v-size--default {
+    padding: 0 20px;
+}
+
+.v-btn:not(.v-btn--round).v-size--large {
+    padding: 0 30px;
+}
+button.admin-button-link {
+    color: var(--sr-link-grey);
+    height: auto !important;
+    min-width: 0 !important;
+    padding: 1px 0 !important;
+    font-weight: normal;
+    text-shadow: none;
+    text-decoration: none;
+
+    span {
+        font-weight: normal;
+    }
+
+    svg + span {
+        margin-left: 6px;
+    }
+
+    span + svg {
+        margin-left: 6px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus, {
+        text-decoration: none;
+        color: var(--sr-dark-grey);
+    }
+
+    &:visited {
+        color: var(--sr-dark-grey);
+    }
+
+    &:before {
+        background: transparent;
+    }
+
+    .v-ripple__container {
+        display: none;
+    }
+
+    &.v-btn--disabled .v-btn__content {
+        color: var(--sr-dark-grey) !important;
+        opacity: 0.7;
+    }
+}

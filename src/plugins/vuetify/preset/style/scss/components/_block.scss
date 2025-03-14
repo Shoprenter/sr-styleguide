@@ -1,0 +1,12 @@
+.admin-block {
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    margin-bottom: 40px;
+
+    &--dense {
+        margin-bottom: 10px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }
+}

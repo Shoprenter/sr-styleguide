@@ -1,0 +1,93 @@
+.admin-quantity-range {
+    position: relative;
+    width: 100%;
+    @include media-breakpoint-up(md) {
+        width: auto;
+    }
+
+    &__fieldset {
+        border: 1px solid var(--sr-pale-gray);
+        border-collapse: collapse;
+        border-radius: 3px;
+        background: white;
+        position: absolute;
+        padding-left: 12px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition-duration: 0.3s;
+        transition-property: color, border-width;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+
+        legend {
+            line-height: 11px;
+            padding: 0;
+            transition: width 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+        }
+    }
+
+    &:hover .admin-quantity-range__fieldset {
+        border-color: #A7ADAF;
+    }
+
+    &:focus-within {
+        border-color: #A7ADAF;
+    }
+}
+
+.admin-quantity-range__input {
+    position: relative;
+    display: flex;
+
+    .quantity-input {
+        font-size: 12px;
+        border-radius: 3px;
+        border: none;
+        color: $sub-color;
+        padding: 9px 10px 9px 5px;
+        width: 49%;
+        outline: none;
+
+        @include media-breakpoint-up(md) {
+            width: 70px;
+        }
+        margin: 0;
+
+        &:hover,
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .quantity-input-label {
+        color: $sub-color;
+        font-weight: normal;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-color: #fff;
+        position: absolute;
+        pointer-events: none;
+        left: 12px;
+        top: 8px;
+        transition: 300ms ease all;
+
+        &--shrink {
+            transform: translate3d(-8px, -18px, 0) scale(0.75);
+            background: transparent;
+        }
+
+        &--focused {
+            color: var(--sr-primary);
+        }
+    }
+
+    .quantity-divider {
+        position: absolute;
+        left: calc(50% - 10px);
+        top: 50%;
+        font-weight: bold;
+        color: #C5CCD6;
+        transform: translate(-50%, -50%);
+    }
+}

@@ -1,0 +1,80 @@
+.new-style {
+    @import "./scaffolding";
+    @import "./components";
+    @import "./layout";
+    @import "./pages";
+    @import "./utility";
+
+    .admin-filter-box {
+        margin-bottom: 18px;
+    }
+
+    .v-btn--is-elevated.primary:not([disabled]) {
+        box-shadow: 0 3px 10px rgba(110, 180, 0, 0.3) !important;
+
+        &:hover {
+            background-color: var(--sr-hover-green) !important;
+            box-shadow: 0 3px 10px rgba(110, 180, 0, 0.8) !important;
+        }
+    }
+
+    .v-btn--is-elevated.info:not([disabled]) {
+        box-shadow: 0 3px 10px rgba(51, 148, 243, 0.3) !important;
+
+        &:hover {
+            box-shadow: 0 3px 10px rgba(51, 148, 243, 0.8) !important;
+        }
+    }
+
+    .v-btn--outlined {
+        background: #ffffff;
+        box-shadow: 0 3px 10px rgba(110, 180, 0, 0.15) !important;
+
+        &:hover {
+            box-shadow: 0 3px 10px rgba(110, 180, 0, 0.45) !important;
+        }
+    }
+
+    .v-text-field--outlined > .v-input__control > .v-input__slot {
+        background: white;
+    }
+
+    .v-tooltip__content.menuable__content__active {
+        opacity: 1 !important;
+    }
+
+    .theme--light.v-label {
+        font-size: $input-font-size;
+        color: var(--sr-black);
+        font-weight: normal;
+    }
+
+    .v-radio--is-disabled .theme--light.v-label {
+        color: var(--sr-secondary-text);
+    }
+
+    .v-input--switch--inset .v-input--switch__track {
+        opacity: 1;
+        &:not(.primary--text) {
+            background: var(--sr-light-grey);
+        }
+    }
+
+    .v-input--switch--inset .v-input--switch__thumb {
+        color: #fff !important;
+        caret-color: #fff !important;
+    }
+
+    .v-alert__dismissible .v-icon.v-icon {
+        font-size: 18px;
+    }
+
+    .v-input--dense .v-input__icon .v-icon.v-icon {
+        font-size: 16px;
+    }
+
+    .v-input--dense .v-input__icon .v-icon__component {
+        width: 12px;
+        height: 12px;
+    }
+}

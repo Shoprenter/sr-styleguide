@@ -1,0 +1,150 @@
+#content {
+    padding: 0; // remove padding outside vue application
+}
+
+.admin-container {
+    --container-padding: 0;
+    padding: 0 var(--container-padding);
+
+    @include media-breakpoint-up(sm) {
+        --container-padding: 20px;
+    }
+
+    @include media-breakpoint-up(md) {
+        --container-padding: 30px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        --container-padding: 40px;
+    }
+
+    @media screen and (min-width: $container-main-breakpoint) {
+        max-width: $container-main-width;
+        --container-padding: 0;
+    }
+}
+
+.admin-page-cards {
+    @include media-breakpoint-down(xs) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.admin-page-header {
+    @include media-breakpoint-down(xs) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .admin-page-header-title {
+        display: flex;
+        background: transparent;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        @include media-breakpoint-up(sm) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        h1 {
+            margin: 0;
+            color: var(--sr-black);
+
+            svg {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (min-width: 520px) {
+        &.sticky-head-active {
+            position: fixed;
+            width: calc(100% - var(--header-height));
+            margin: 0;
+            top: 0;
+            display: flex;
+            left: var(--header-height);
+            z-index: 201 !important;
+            height: var(--header-height);
+            background-color: var(--sr-black);
+            padding: 0 var(--container-padding);
+            align-items: center;
+            color: #fff;
+
+            .admin-page-header-title {
+                margin: 0;
+                width: 100%;
+
+                h1 {
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+
+            .admin-breadcrumb-container,
+            .admin-page-header-head,
+            .admin-page-header-foot {
+                display: none;
+            }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        &.sticky-head-active {
+            width: calc(100% - var(--sidebar-width));
+            left: var(--sidebar-width);
+        }
+    }
+
+    @media screen and (min-width: $container-main-breakpoint) {
+        &.sticky-head-active {
+            padding: 0 20px;
+        }
+    }
+}
+
+.admin-help-button {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+
+    .v-icon {
+        margin-left: 10px;
+    }
+}
+
+.admin-page-header-content {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+        flex-wrap: wrap;
+
+        .v-toolbar__items {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .v-toolbar__content {
+            height: auto !important;
+        }
+    }
+}
+
+.admin-home-block {
+    margin: 65px 0;
+    &:first-child {
+        margin-top: 15px;
+    }
+
+    &__header {
+        background-color: var(--sr-bg-grey) !important;
+        margin-bottom: 15px;
+        .v-toolbar__content {
+            padding: 0;
+        }
+    }
+}

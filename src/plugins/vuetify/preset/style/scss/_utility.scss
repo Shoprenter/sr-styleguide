@@ -1,0 +1,14 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+.product-status {
+    &--enabled {
+        color: var(--sr-success);
+    }
+    &--disabled {
+        color: var(--v-error-base);
+    }
+    &--discontinued {
+        color: var(--sr-link-grey);
+    }
+}

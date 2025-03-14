@@ -1,0 +1,25 @@
+:root {
+    --sr-black: #282D33;
+    --sr-dark-grey: #5D6978;
+    --sr-link-grey: #647382;
+    --sr-secondary-text: #838B95;
+    --sr-dark-link-grey: #929FAB;
+    --sr-light-grey: #E6E8EC;
+    --sr-bg-grey: #F7F8F9;
+    --sr-pale-gray: #D7DBDD;
+    --sr-white: #ffffff;
+
+    --sr-primary: #6EB400;
+    --sr-success: #3AAA81;
+    --sr-error: #F4541D;
+    --sr-warning: #F8AF24;
+    --sr-info: #3394F3;
+
+    --sr-anchor: #518400;
+    --sr-hover-green: #619D01;
+    --sr-light-green: #AAE600;
+}
+.new-style {
+    --sidebar-background: var(--sr-black);
+    margin: 0;
+}

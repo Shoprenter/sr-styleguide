@@ -1,0 +1,94 @@
+.v-data-table.theme--light {
+    thead {
+        tr {
+            th {
+                font-weight: normal;
+                text-transform: uppercase;
+                background: var(--sr-light-grey);
+                border-bottom: 0 !important;
+                padding: $cell-padding !important;
+                color: var(--sr-link-grey) !important;
+
+                &.active {
+                    color: var(--sr-black) !important;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    tbody {
+        margin-top: 10px;
+
+        tr {
+            border: 1px solid transparent;
+            border-bottom: 1px solid #ECEFF1;
+            margin-bottom: 1px;
+
+            &.selected:not(.v-data-table__expanded__content),
+            &:hover:not(.v-data-table__expanded__content) {
+                background: var(--sr-bg-grey);
+                border: 1px solid #DFE3E7;
+                border-radius: 3px;
+            }
+
+            td {
+                border: 0 !important;
+                padding: $cell-padding !important;
+            }
+        }
+    }
+    .table-select-all-plus {
+        tr:hover {
+            background: unset !important;
+        }
+        td {
+            padding: 0 !important;
+            margin: 0;
+        }
+    }
+
+    .v-data-footer {
+        border-top: 0;
+    }
+}
+
+.admin-data-table__actions {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.admin-bulk-actions-table__bulk-actions,
+.admin-bulk-actions-table__bulk-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.admin-bulk-actions-table__bulk-checkbox {
+    padding: $cell-padding !important;
+}
+
+.admin-data-table__head-row {
+    border-radius: 3px;
+}
+
+.admin-bulk-actions-table-head {
+    th {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 8;
+    }
+}
+
+.admin-table-sticky-head {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.admin-table-sticky-head.sticky {
+    position: fixed;
+    z-index: 197;
+    top: var(--header-height);
+}

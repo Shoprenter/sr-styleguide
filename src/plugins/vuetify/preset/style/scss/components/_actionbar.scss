@@ -1,0 +1,31 @@
+.action-bar-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .items-selected-text {
+        display: flex;
+        align-items: center;
+        width: auto;
+        font-size: 13px;
+        line-height: 1.2em;
+        margin-right: 30px;
+        text-transform: none;
+    }
+}
+
+.admin-order-table__head-row.bulk-action {
+
+    @include media-breakpoint-down(xs) {
+        .actions .primary {
+            word-break: break-all;
+            min-width: 0;
+            white-space: normal;
+
+            .v-btn__content {
+                flex: 1 1 auto;
+            }
+        }
+    }
+
+}

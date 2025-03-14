@@ -1,0 +1,286 @@
+.admin-product-table {
+    background: transparent !important;
+
+    td {
+        height: 60px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 0 3px !important;
+        }
+    }
+}
+
+.admin-product-table__head-row {
+    th {
+        height: auto;
+        min-height: 48px;
+
+        @include media-breakpoint-down(sm) {
+            padding: 5px 3px !important;
+        }
+    }
+}
+
+.admin-product-table__quantity-input {
+    cursor: pointer;
+    display: inline;
+}
+
+.admin-product-table__quantity-unit {
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.admin-product-table__quantity-input__pencil-icon {
+    margin-left: 5px;
+    width: 12px;
+    height: auto;
+}
+
+.admin-product-table__product-image-link {
+    min-width: 70px;
+    min-height: 70px;
+    display: block;
+
+    & .product-image {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.admin-product-table__body {
+    background: #fff;
+}
+
+.admin-product-table__body-row td {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.admin-product-table__head tr.bulk-action {
+    display: grid;
+    grid-template-columns: $product-checkbox-grid-width 1fr;
+    grid-template-areas: "checkbox bulk";
+}
+
+.admin-product-table__head-bulk-checkbox {
+    grid-area: checkbox;
+    justify-content: center;
+}
+
+.admin-product-table__bulk-actions {
+    grid-area: bulk;
+}
+
+.admin-product-table__price .input-save {
+    flex-direction: column;
+}
+
+.admin-product-table__price,
+.admin-product-table__sku,
+.admin-product-table__model {
+    .input-save__input {
+        text-align: left;
+    }
+}
+
+.admin-product-table__sku span {
+    word-break: break-all;
+}
+
+.admin-product-table__head-row,
+.admin-product-table__body-row {
+    display: grid;
+}
+
+.admin-product-table .v-data-table-header th {
+    display: flex;
+    align-items: center;
+
+    & > span:first-child {
+        padding-left: 7px;
+    }
+}
+
+.admin-product-table__product-image {
+    justify-content: center;
+}
+
+@include media-breakpoint-down(sm) {
+    .admin-product-table__head tr.bulk-action {
+        grid-template-columns: $product-checkbox-grid-width 1fr;
+    }
+
+    .admin-product-table__head-row,
+    .admin-product-table__body-row {
+        grid-template-columns: $product-checkbox-grid-width 80px 1fr 1fr;
+        grid-template-areas:
+            "checkbox product-image product product"
+            "checkbox product-image sku quantity"
+            "checkbox product-image status actions";
+    }
+
+    td.admin-product-table__sku {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        font-size: smaller;
+        color: var(--gray-600);
+    }
+
+    td.admin-product-table__quantity,
+    td.admin-product-table__actions {
+        border-top: 0;
+        border-left: 0;
+    }
+
+    td.admin-product-table__status {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+
+        .select-save__select {
+            border: 1px solid #cccccc;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .admin-product-table__head-imageUrl,
+    td.admin-product-table__product-image {
+        border-right: 0;
+    }
+
+    .admin-product-table__product {
+        a {
+            display: inline-block;
+            margin-top: 10px;
+        }
+    }
+
+    .admin-data-table__actions {
+        justify-content: flex-end;
+        margin-top: 12px;
+        margin-bottom: 12px;
+
+
+        .v-btn:first-child {
+            margin-right: 5px;
+        }
+    }
+
+    .admin-product-table__model,
+    .admin-product-table__price,
+    .admin-product-table__head-row > th:nth-child(n+4) {
+        display: none !important;
+    }
+}
+
+@include media-breakpoint-only(md) {
+    .admin-product-table__head-row,
+    .admin-product-table__body-row {
+        grid-template-columns: $product-checkbox-grid-width 70px 30% minmax(10%, 1fr) 62px minmax(10%, 1fr) 94px;
+        grid-template-areas:
+            "checkbox product-image product price quantity status actions"
+            "checkbox product-image sku price quantity status actions";
+    }
+
+    .admin-product-table__model,
+    .admin-product-table__head-sku,
+    .admin-product-table__head-model {
+        display: none !important;
+    }
+
+    td.admin-product-table__sku {
+        border-top: 0;
+        font-size: smaller;
+        color: var(--gray-600);
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .admin-product-table__head-row,
+    .admin-product-table__body-row {
+        grid-template-columns: $product-checkbox-grid-width 70px 30% repeat(3, minmax(10%, 1fr)) 100px minmax(120px, 1fr) 64px;
+        grid-template-areas: "checkbox product-image product sku model price quantity status actions";
+    }
+}
+
+.admin-product-table__head-bulk-checkbox,
+.admin-product-table__checkbox {
+    grid-area: checkbox;
+}
+
+.admin-product-table__head-imageUrl,
+.admin-product-table__product-image {
+    grid-area: product-image;
+}
+
+.admin-product-table__head-name,
+.admin-product-table__product {
+    grid-area: product;
+}
+
+.admin-product-table__head-sku,
+.admin-product-table__sku {
+    grid-area: sku;
+}
+
+.admin-product-table__head-model,
+.admin-product-table__model {
+    grid-area: model;
+}
+
+.admin-product-table__head-grossPrice,
+.admin-product-table__price {
+    grid-area: price;
+}
+
+.admin-product-table__head-quantity,
+.admin-product-table__quantity {
+    grid-area: quantity;
+}
+
+.admin-product-table__head-status,
+.admin-product-table__status {
+    grid-area: status;
+}
+
+.admin-product-table__head-actions,
+.admin-product-table__actions {
+    grid-area: actions;
+}
+
+.product-filter-box {
+
+    @include media-breakpoint-down(xs) {
+        .filtered-data-box {
+            padding-top: 6px;
+            padding-bottom: 6px;
+        }
+
+        .admin-filter-close-btn {
+            width: 100%;
+            display: flex;
+            max-width: 100%;
+        }
+    }
+
+
+    .admin-filter-close-btn {
+        height: 40px;
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+            height: 30px;
+            max-width: 100%;
+            width: auto;
+        }
+    }
+
+}
