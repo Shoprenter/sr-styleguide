@@ -1,17 +1,17 @@
-import Vue from 'vue';
-import Router from 'vue-router';
-import StyleGuide from "../components/StyleGuide.vue";
+import Vue from 'vue'
+import Router from 'vue-router'
+import StyleGuide from '../components/StyleGuide.vue'
 
-Vue.use(Router);
+Vue.use(Router)
 
 const router = new Router({
     routes: [
         {
             path: '/sr-styleguide',
             name: 'styleguide',
-            component: StyleGuide,
-        },
+            component: StyleGuide
+        }
     ]
-});
+})
 
-export default router;
+export default router

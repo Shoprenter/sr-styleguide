@@ -1,6 +1,6 @@
 import Emitter from 'tiny-emitter'
 
-let emitter = new Emitter()
+const emitter = new Emitter()
 
 emitter.emitCloseMenus = () => {
     emitter.emit('closeMenus')
@@ -12,8 +12,8 @@ emitter.onCloseMenus = (callback) => {
 
 export default emitter
 
-export const emitShowSnackBar = ({text, color, timeout, link, reloadPage}) => {
-    emitter.emit('showSnackBar', {text, color, timeout, link, reloadPage})
+export const emitShowSnackBar = ({ text, color, timeout, link, reloadPage }) => {
+    emitter.emit('showSnackBar', { text, color, timeout, link, reloadPage })
 }
 
 export const onShowSnackBar = (callback) => {

@@ -113,7 +113,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../demo/index.html'),
             chunks: ['demo']
-        }),
+        })
     ],
     resolve: {
         extensions: ['.js', '.vue', '.css'],

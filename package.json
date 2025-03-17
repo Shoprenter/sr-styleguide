@@ -8,9 +8,9 @@
     "dist"
   ],
   "scripts": {
-    "before-commit": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build/\") --fix",
-    "lint:all": "eslint \"./{src,build}/**/*.{js,vue}\"",
-    "lint:diff": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build/\")",
+    "before-commit": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build|^demo/\") --fix",
+    "lint:all": "eslint \"./{src,build,demo}/**/*.{js,vue}\"",
+    "lint:diff": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build|^demo/\")",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack --config build/webpack.config.js --mode development",
     "serve-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config build/webpack.config.js --mode development"
