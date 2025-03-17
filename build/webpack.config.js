@@ -33,7 +33,7 @@ module.exports = {
         devMiddleware: {
             publicPath: '/',
             writeToDisk: (filePath) => {
-                return filePath.endsWith('.html') || filePath.endsWith('.css') // Only writes HTML & CSS
+                return filePath.endsWith('.html') || filePath.endsWith('.css')
             }
         }
     },
@@ -122,7 +122,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin(), // For Vue files processing
+        new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
             filename: 'sr-styleguide.css'
         }),
