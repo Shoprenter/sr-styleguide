@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify'
-import {preset} from "./preset";
+import { preset } from './preset'
 
 Vue.use(Vuetify)
 

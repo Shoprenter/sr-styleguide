@@ -1,6 +1,6 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const {VueLoaderPlugin} = require("vue-loader");
-const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
+const path = require('path')
 
 module.exports = {
     mode: 'development',
@@ -14,9 +14,9 @@ module.exports = {
         hot: true,
         port: 8089,
         headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-            "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+            'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
         }
     },
     module: {
@@ -35,14 +35,14 @@ module.exports = {
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    require("postcss-prefixwrap")("#sr-styleguide", {
-                                        ignoredSelectors: [":root"],
+                                    require('postcss-prefixwrap')('#sr-styleguide', {
+                                        ignoredSelectors: [':root']
                                     })
-                                ],
-                            },
-                        },
-                    },
-                ],
+                                ]
+                            }
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(sass)$/,
@@ -54,24 +54,24 @@ module.exports = {
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    require("postcss-prefixwrap")("#sr-styleguide", {
-                                        ignoredSelectors: [":root"],
+                                    require('postcss-prefixwrap')('#sr-styleguide', {
+                                        ignoredSelectors: [':root']
                                     })
-                                ],
-                            },
-                        },
+                                ]
+                            }
+                        }
                     },
                     {
                         loader: 'sass-loader',
                         options: {
-                            additionalData: `@import "@/plugins/vuetify/preset/variables.scss";`,
+                            additionalData: '@import "@/plugins/vuetify/preset/variables.scss";',
                             sassOptions: {
-                                includePaths: ["../node_modules"],
-                                indentedSyntax: true, // Enables SASS (not SCSS)
+                                includePaths: ['../node_modules'],
+                                indentedSyntax: true // Enables SASS (not SCSS)
                             }
-                        },
-                    },
-                ],
+                        }
+                    }
+                ]
             },
             {
                 test: /\.(scss)$/,
@@ -83,36 +83,36 @@ module.exports = {
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    require("postcss-prefixwrap")("#sr-styleguide", {
-                                        ignoredSelectors: [":root"],
+                                    require('postcss-prefixwrap')('#sr-styleguide', {
+                                        ignoredSelectors: [':root']
                                     })
-                                ],
-                            },
-                        },
+                                ]
+                            }
+                        }
                     },
                     {
                         loader: 'sass-loader',
                         options: {
                             sassOptions: {
-                                includePaths: ["../node_modules"],
+                                includePaths: ['../node_modules']
                             },
-                            additionalData: `@import "@/plugins/vuetify/preset/variables.scss";`,
-                        },
-                    },
-                ],
+                            additionalData: '@import "@/plugins/vuetify/preset/variables.scss";'
+                        }
+                    }
+                ]
             }
         ]
     },
     plugins: [
         new VueLoaderPlugin(), // For Vue files processing
         new MiniCssExtractPlugin({
-            filename: "sr-styleguide.css",
+            filename: 'sr-styleguide.css'
         })
     ],
     resolve: {
         extensions: ['.js', '.vue', '.css'],
         alias: {
-            '@': path.resolve(__dirname, '../src'),
-        },
+            '@': path.resolve(__dirname, '../src')
+        }
     }
-};
+}

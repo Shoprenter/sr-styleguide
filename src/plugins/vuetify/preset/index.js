@@ -3,7 +3,7 @@ import hu from 'vuetify/es5/locale/hu'
 
 export const preset = {
     lang: {
-        locales: {en, hu},
+        locales: { en, hu },
         current: 'hu'
     },
     theme: {
