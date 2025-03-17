@@ -15,6 +15,9 @@ module.exports = {
         },
         hot: true,
         port: 8090,
+        client: {
+            overlay: false
+        },
         headers: {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
