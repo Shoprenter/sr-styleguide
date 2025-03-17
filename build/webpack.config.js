@@ -9,6 +9,10 @@ module.exports = {
         stylesheet: path.resolve(__dirname, './stylesheet/stylesheet.js'),
         demo: path.resolve(__dirname, '../demo/index.js')
     },
+    output: {
+        path: path.resolve(__dirname, '../dist'),
+        publicPath: '/'
+    },
     devServer: {
         static: {
             directory: path.resolve(__dirname, '../dist')
@@ -16,13 +20,22 @@ module.exports = {
         hot: true,
         port: 8090,
         client: {
-            overlay: false
+            overlay: {
+                warnings: false,
+                runtimeErrors: false
+            }
         },
         headers: {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
             'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
-        }
+        },
+        devMiddleware: {
+            publicPath: '/',
+            writeToDisk: (filePath) => {
+                return filePath.endsWith('.html') || filePath.endsWith('.css'); // Only writes HTML & CSS
+            }
+        },
     },
     module: {
         rules: [
