@@ -1,0 +1,28 @@
+@import '../../../../src/plugins/preset/variables';
+@import '../../../../src/plugins/preset/style/scss/mixins/breakpoints';
+
+.admin-form-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .admin-form-row {
+    flex: 0 0 100%;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .admin-form-row {
+      flex: 1;
+      margin-right: 10px;
+      margin-left: 10px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

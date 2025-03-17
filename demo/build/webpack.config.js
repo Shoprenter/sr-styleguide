@@ -1,11 +1,28 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     mode: 'development',
     entry: {
-        stylesheet: path.resolve(__dirname, './stylesheet/stylesheet.js')
+        main: path.resolve(__dirname, '../index.js')
+    },
+    output: {
+        filename: '[name].demo.bundle.js',
+        path: path.resolve(__dirname, '../dist')
+    },
+    devServer: {
+        static: {
+            directory: path.resolve(__dirname, '../dist')
+        },
+        hot: true,
+        port: 8090,
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+            'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
+        }
     },
     module: {
         rules: [
@@ -16,7 +33,7 @@ module.exports = {
             {
                 test: /\.(css)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    'vue-style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -35,7 +52,7 @@ module.exports = {
             {
                 test: /\.(sass)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    'vue-style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -64,7 +81,7 @@ module.exports = {
             {
                 test: /\.(scss)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    'vue-style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -92,15 +109,23 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin(), // For Vue files processing
-        new MiniCssExtractPlugin({
-            filename: 'sr-styleguide.css'
+        new VueLoaderPlugin(),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, '../index.html')
+        }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, '../../dist/sr-styleguide.css'),
+                    to: path.resolve(__dirname, '../dist/sr-styleguide.css')
+                }
+            ]
         })
     ],
     resolve: {
         extensions: ['.js', '.vue', '.css'],
         alias: {
-            '@': path.resolve(__dirname, '../src')
+            '@': path.resolve(__dirname, '../../src')
         }
     }
 }
