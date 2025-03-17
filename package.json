@@ -13,9 +13,7 @@
     "lint:diff": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build/\")",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack --config build/webpack.config.js --mode development",
-    "serve-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config build/webpack.config.js --mode development",
-    "build-demo": "NODE_OPTIONS=--openssl-legacy-provider webpack --config demo/build/webpack.config.js --mode development",
-    "serve-demo": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config demo/build/webpack.config.js --mode development"
+    "serve-dev": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config build/webpack.config.js --mode development"
   },
   "author": "",
   "license": "ISC",

@@ -1,11 +1,25 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
     mode: 'development',
     entry: {
-        stylesheet: path.resolve(__dirname, './stylesheet/stylesheet.js')
+        stylesheet: path.resolve(__dirname, './stylesheet/stylesheet.js'),
+        demo: path.resolve(__dirname, '../demo/index.js')
+    },
+    devServer: {
+        static: {
+            directory: path.resolve(__dirname, '../dist')
+        },
+        hot: true,
+        port: 8090,
+        headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+            'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
+        }
     },
     module: {
         rules: [
@@ -95,7 +109,11 @@ module.exports = {
         new VueLoaderPlugin(), // For Vue files processing
         new MiniCssExtractPlugin({
             filename: 'sr-styleguide.css'
-        })
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, '../demo/index.html'),
+            chunks: ['demo']
+        }),
     ],
     resolve: {
         extensions: ['.js', '.vue', '.css'],
