@@ -33,9 +33,9 @@ module.exports = {
         devMiddleware: {
             publicPath: '/',
             writeToDisk: (filePath) => {
-                return filePath.endsWith('.html') || filePath.endsWith('.css'); // Only writes HTML & CSS
+                return filePath.endsWith('.html') || filePath.endsWith('.css') // Only writes HTML & CSS
             }
-        },
+        }
     },
     module: {
         rules: [
