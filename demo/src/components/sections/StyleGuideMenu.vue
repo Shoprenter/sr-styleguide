@@ -40,22 +40,16 @@ export default {
     data () {
         return {
             sections: [
-                {text: 'Colors', goTo: '#colors'},
-                {text: 'Typography', goTo: '#typography'},
-                {text: 'Layout', goTo: '#layout'},
-                {text: 'Components',
+                {
+                    /*
+                    text: 'Components',
                     goTo: '#components',
                     components: [
-                        {text: 'Buttons', goTo: '#buttons'},
-                        {text: 'Input forms', goTo: '#input-forms'},
-                        {text: 'Form rows', goTo: '#form-rows'},
-                        {text: 'Alerts', goTo: '#alerts'},
-                        {text: 'Tooltips', goTo: '#tooltips'},
-                        {text: 'Icons', goTo: '#icons'},
-                        {text: 'Cards', goTo: '#cards'},
-                        {text: 'Tables', goTo: '#tables'},
-                        {text: 'Dialogs', goTo: '#dialogs'}
+                        { text: 'Buttons', goTo: '#buttons' },
+                        { text: 'Input forms', goTo: '#input-forms' },
                     ]
+
+                   */
                 }
             ]
         }

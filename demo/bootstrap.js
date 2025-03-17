@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import { SrStyleguide, SrStyleguideComponents } from '../src/index'
-import App from './src/components/SrAdminApp.vue'
-import SrComponents from './src/components/SrComponents'
+import App from '../src/components/SrAdminApp/SrAdminApp.vue'
 import router from './src/router/router'
 import StyleGuide from './src/components/StyleGuide.vue'
 
@@ -13,7 +12,7 @@ Vue.mixin({
     }
 })
 
-Vue.use(SrComponents)
+Vue.use(SrStyleguideComponents)
 
 const app = new Vue({
     vuetify: SrStyleguide,
