@@ -10,7 +10,7 @@ module.exports = {
         demo: path.resolve(__dirname, '../demo/index.js')
     },
     output: {
-        path: path.resolve(__dirname, '../dist/demo/src')
+        path: path.resolve(__dirname, '../dist/demo/src'),
     },
     optimization: {
         splitChunks: false,
@@ -18,7 +18,7 @@ module.exports = {
         concatenateModules: true,
     },
     stats: {
-        warnings:false
+        warnings: false
     },
     devServer: {
         static: {
