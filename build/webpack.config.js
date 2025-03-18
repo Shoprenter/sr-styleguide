@@ -10,8 +10,7 @@ module.exports = {
         demo: path.resolve(__dirname, '../demo/index.js')
     },
     output: {
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/'
+        path: path.resolve(__dirname, '../dist/demo')
     },
     devServer: {
         static: {
@@ -31,10 +30,7 @@ module.exports = {
             'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
         },
         devMiddleware: {
-            publicPath: '/',
-            writeToDisk: (filePath) => {
-                return filePath.endsWith('.html') || filePath.endsWith('.css')
-            }
+            writeToDisk: true
         }
     },
     module: {
@@ -124,11 +120,18 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'sr-styleguide.css'
+            filename: ({ chunk }) => {
+                if (chunk.name === 'stylesheet') {
+                    return '../stylesheet/sr-styleguide.css'
+                }
+
+                return '[name]'
+            }
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../demo/index.html'),
-            chunks: ['demo']
+            chunks: ['demo'],
+            filename: '../index.html'
         })
     ],
     resolve: {
