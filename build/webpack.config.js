@@ -30,7 +30,9 @@ module.exports = {
             'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
         },
         devMiddleware: {
-            writeToDisk: true
+            writeToDisk: (filePath) => {
+                return !filePath.includes('hot-update')
+            }
         }
     },
     module: {
