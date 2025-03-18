@@ -10,12 +10,12 @@ module.exports = {
         demo: path.resolve(__dirname, '../demo/index.js')
     },
     output: {
-        path: path.resolve(__dirname, '../dist/demo/src'),
+        path: path.resolve(__dirname, '../dist/demo/src')
     },
     optimization: {
         splitChunks: false,
         runtimeChunk: false,
-        concatenateModules: true,
+        concatenateModules: true
     },
     stats: {
         warnings: false
@@ -36,12 +36,15 @@ module.exports = {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
             'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
-        },
+        }
+        /*
         devMiddleware: {
+
             writeToDisk: (filePath) => {
                 return !filePath.includes('hot-update')
             }
         }
+        */
     },
     module: {
         rules: [
