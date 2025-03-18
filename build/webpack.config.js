@@ -10,7 +10,7 @@ module.exports = {
         demo: path.resolve(__dirname, '../demo/index.js')
     },
     output: {
-        path: path.resolve(__dirname, '../dist/demo')
+        path: path.resolve(__dirname, '../dist/demo/src')
     },
     devServer: {
         static: {
@@ -124,7 +124,7 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: ({ chunk }) => {
                 if (chunk.name === 'stylesheet') {
-                    return '../stylesheet/sr-styleguide.css'
+                    return '../../stylesheet/sr-styleguide.css'
                 }
 
                 return '[name]'
