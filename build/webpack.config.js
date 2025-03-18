@@ -12,6 +12,14 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, '../dist/demo/src')
     },
+    optimization: {
+        splitChunks: false,
+        runtimeChunk: false,
+        concatenateModules: true,
+    },
+    stats: {
+        warnings:false
+    },
     devServer: {
         static: {
             directory: path.resolve(__dirname, '../dist')

@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import { SrStyleguide, SrStyleguideComponents } from '../src/index'
-import App from '../src/components/SrAdminApp/SrAdminApp.vue'
+import App from './src/components/SrAdminApp/SrAdminApp.vue'
 import router from './src/router/router'
 import StyleGuide from './src/components/StyleGuide.vue'
+import DemoComponents from './src/DemoComponents'
 
 Vue.use(SrStyleguideComponents)
+Vue.use(DemoComponents)
 
 Vue.mixin({
     methods: {

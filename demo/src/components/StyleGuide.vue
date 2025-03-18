@@ -34,6 +34,8 @@
     </sr-page-layout>
 </template>
 <script>
+import './StyleGuide.scss'
+
 import StyleGuideMenu from './sections/StyleGuideMenu'
 
 export default {

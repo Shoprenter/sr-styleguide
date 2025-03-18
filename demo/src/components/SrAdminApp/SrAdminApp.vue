@@ -17,6 +17,8 @@
 </template>
 
 <script>
+import './SrAdminApp.scss'
+
 import GlobalSnackBar from '../SrGlobalSnackBar/SrGlobalSnackBar.vue'
 
 export default {

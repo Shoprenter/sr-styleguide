@@ -1,0 +1,136 @@
+/*!***********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-3.use[3]!./demo/src/components/SrAdminApp/SrAdminApp.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************/
+#sr-styleguide .vb > .vb-dragger {
+  z-index: 5;
+  width: 12px;
+  right: 0;
+}
+
+#sr-styleguide .vb > .vb-dragger > .vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
+  -webkit-transition: background-color 100ms ease-out, margin 100ms ease-out, height 100ms ease-out;
+  transition: background-color 100ms ease-out, margin 100ms ease-out, height 100ms ease-out;
+  background-color: var(--sr-primary);
+  opacity: 0.1;
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+#sr-styleguide .vb.vb-scrolling-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: var(--sr-primary);
+  opacity: 0.3;
+}
+
+#sr-styleguide .vb > .vb-dragger:hover > .vb-dragger-styler {
+  background-color: var(--sr-primary);
+  opacity: 0.5;
+  margin: 0px;
+  height: 100%;
+}
+
+#sr-styleguide .vb.vb-dragging > .vb-dragger > .vb-dragger-styler {
+  background-color: var(--sr-primary);
+  opacity: 0.5;
+  margin: 0;
+  height: 100%;
+}
+
+#sr-styleguide .vb.vb-dragging-phantom > .vb-dragger > .vb-dragger-styler {
+  background-color: var(--sr-primary);
+  opacity: 0.5;
+}
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-3.use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-3.use[3]!./demo/src/components/StyleGuide.scss ***!
+  \************************************************************************************************************************************************************************************************************************/
+#sr-styleguide .admin-style-guide-layout {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr;
+}
+@media only screen and (min-width: 600px) {
+  #sr-styleguide .admin-style-guide-layout {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (min-width: 960px) {
+  #sr-styleguide .admin-style-guide-layout {
+    grid-template-columns: 250px 1fr;
+  }
+}
+@media only screen and (min-width: 1264px) {
+  #sr-styleguide .admin-style-guide-layout {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+#sr-styleguide .admin-style-guide__menu {
+  position: sticky;
+  top: 60px;
+  height: 100vh;
+}
+
+#sr-styleguide .sg-page-header {
+  padding: 30px 0 60px 0;
+}
+
+#sr-styleguide .sg-section {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+#sr-styleguide .sg-section-header {
+  border-left: 5px solid var(--sr-black);
+  padding: 0 0 0 15px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#sr-styleguide .sg-subsection {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+#sr-styleguide .sg-subsection h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 40px;
+  text-transform: uppercase;
+}
+#sr-styleguide .sg-subsection h2:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: var(--sr-black);
+  position: absolute;
+  left: 0;
+  top: calc(50% - 2px);
+}
+#sr-styleguide .sg-subsection h4 {
+  font-weight: 400;
+  border-left: 3px solid var(--v-secondary-base);
+  padding: 0 0 0 15px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+#sr-styleguide .sg-block {
+  margin-top: 50px;
+}
+
+#sr-styleguide .sg-button-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sr-styleguide .sg-button-type {
+  flex: 0 0 20%;
+}

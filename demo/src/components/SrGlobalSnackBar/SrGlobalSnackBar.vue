@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { onShowSnackBar } from '../../plugins/emitter'
+import { onShowSnackBar } from '../../emitter'
 
 export default {
     name: 'SrGlobalSnackBar',
