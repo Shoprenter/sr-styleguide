@@ -1,5 +1,10 @@
 # SR Styleguide
 
+## Környezet
+
+- **Node**: 22
+- **Npm**: 10
+
 
 ## Használat
 
@@ -31,4 +36,8 @@ const app = new Vue({
 import 'sr-styleguide/dist/stylesheet/sr-styleguide.css'
 ```
 
+## Fejlesztés
 
+Devszervert az `npm run watch` paranccsal tudsz indítani, ez valós időben frissíti is a látható eredményt a fájlváltozások alapján. 
+
+A devszerver a `http://localhost:8090/demo/` url-en lesz látható.
