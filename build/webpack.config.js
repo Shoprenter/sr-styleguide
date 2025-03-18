@@ -142,7 +142,7 @@ module.exports = (env, argv) => ({
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, '../demo/index.html'),
-            filename: '../index.html'
+            filename: 'index.html'
         })
     ],
     resolve: {
