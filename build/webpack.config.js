@@ -37,14 +37,6 @@ module.exports = {
             'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
             'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
         }
-        /* Ha a jövőben mégis egyben akarunk build-elni és serve-elni
-        devMiddleware: {
-
-            writeToDisk: (filePath) => {
-                return !filePath.includes('hot-update')
-            }
-        }
-        */
     },
     module: {
         rules: [
