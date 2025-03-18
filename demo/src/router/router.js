@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import StyleGuide from '../components/StyleGuide.vue'
+import StyleGuide from '../components/SrStyleGuide/SrStyleGuide.vue'
 
 Vue.use(Router)
 

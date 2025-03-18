@@ -36,7 +36,7 @@
 
 <script>
 export default {
-    name: 'StyleGuideMenu',
+    name: 'SrStyleGuideMenu',
     data () {
         return {
             sections: [

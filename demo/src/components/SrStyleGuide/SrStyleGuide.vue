@@ -4,7 +4,7 @@
 
         <div class="admin-style-guide-layout">
             <div>
-                <style-guide-menu />
+                <sr-style-guide-menu />
             </div>
             <div>
                 <v-flex class="pb-5">
@@ -34,14 +34,14 @@
     </sr-page-layout>
 </template>
 <script>
-import './StyleGuide.scss'
+import './SrStyleGuide.scss'
 
-import StyleGuideMenu from './sections/StyleGuideMenu'
+import SrStyleGuideMenu from '../sections/SrStyleGuideMenu/SrStyleGuideMenu.vue'
 
 export default {
     name: 'StyleGuide',
     components: {
-        StyleGuideMenu
+        SrStyleGuideMenu
     }
 }
 </script>
