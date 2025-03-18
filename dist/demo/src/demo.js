@@ -15,7 +15,7 @@
   \***********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("__webpack_require__.e(/*! import() */ \"demo_styles_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./styles */ \"./demo/styles.js\"))\n__webpack_require__.e(/*! import() */ \"demo_bootstrap_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./demo/bootstrap.js\"))\n\n\n//# sourceURL=webpack://sr-styleguide/./demo/index.js?");
+eval("__webpack_require__.e(/*! import() */ \"demo_bootstrap_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./bootstrap */ \"./demo/bootstrap.js\"))\n\n\n//# sourceURL=webpack://sr-styleguide/./demo/index.js?");
 
 /***/ }),
 
@@ -234,7 +234,7 @@ eval("/** @typedef {\"info\" | \"warning\" | \"error\"} LogLevel */\n\n/** @type
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("d6e16f8ada2c2ed27840")
+/******/ 		__webpack_require__.h = () => ("33e1f62ff9c8da489802")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -792,7 +792,7 @@ eval("/** @typedef {\"info\" | \"warning\" | \"error\"} LogLevel */\n\n/** @type
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.miniCss = (chunkId, promises) => {
-/******/ 			var cssChunks = {"demo_styles_js":1,"demo_bootstrap_js":1};
+/******/ 			var cssChunks = {"demo_bootstrap_js":1};
 /******/ 			if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 			else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 				promises.push(installedCssChunks[chunkId] = loadStylesheet(chunkId).then(() => {
