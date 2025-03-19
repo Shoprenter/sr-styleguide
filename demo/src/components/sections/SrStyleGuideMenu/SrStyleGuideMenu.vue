@@ -44,7 +44,7 @@ export default {
                     text: 'Components',
                     goTo: '#components',
                     components: [
-                        { text: 'Buttons', goTo: '#buttons' },
+                        // { text: 'Buttons', goTo: '#buttons' },
                         { text: 'Icons', goTo: '#icons' }
                     ]
                 }
