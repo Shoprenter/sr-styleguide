@@ -1,24 +1,49 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
-    mode: 'development',
+module.exports = (env, argv) => ({
+    mode: argv.mode || 'development',  // <--- FONTOS: így CLI-ből állítható
     entry: {
-        stylesheet: path.resolve(__dirname, './stylesheet/stylesheet.js')
+        stylesheet: path.resolve(__dirname, './stylesheet/stylesheet.js'),
+        demo: path.resolve(__dirname, '../demo/index.js')
     },
-    devServer: {
+    output: {
+        path: path.resolve(__dirname, '../dist/demo/src'),
+        filename: '[name].js',
+        chunkFilename: '[name].js',
+        clean: true                          // dist mappa tisztítása build előtt
+    },
+    optimization: {
+        splitChunks: false,
+        runtimeChunk: false,
+        concatenateModules: true,
+        minimize: argv.mode === 'production',  // optimalizálás bekapcsolása prod-nál
+        moduleIds: 'named',
+        chunkIds: 'named'
+    },
+    stats: {
+        warnings: false
+    },
+    devServer: argv.mode === 'development' ? {
         static: {
             directory: path.resolve(__dirname, '../dist')
         },
         hot: true,
-        port: 8089,
+        port: 8090,
+        client: {
+            overlay: {
+                warnings: false,
+                runtimeErrors: false
+            }
+        },
         headers: {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
             'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
         }
-    },
+    } : undefined,  // devServer csak development módban kell
     module: {
         rules: [
             {
@@ -28,7 +53,7 @@ module.exports = {
             {
                 test: /\.(css)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -47,7 +72,7 @@ module.exports = {
             {
                 test: /\.(sass)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -76,7 +101,7 @@ module.exports = {
             {
                 test: /\.(scss)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -104,9 +129,20 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin(), // For Vue files processing
+        new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'sr-styleguide.css'
+            filename: ({ chunk }) => {
+                if (chunk.name === 'stylesheet') {
+                    return '../../stylesheet/sr-styleguide.css'
+                }
+
+                return '[name]'
+            },
+            chunkFilename: '[name].css'
+        }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, '../demo/index.html'),
+            filename: 'index.html'
         })
     ],
     resolve: {
@@ -115,4 +151,4 @@ module.exports = {
             '@': path.resolve(__dirname, '../src')
         }
     }
-}
+})
