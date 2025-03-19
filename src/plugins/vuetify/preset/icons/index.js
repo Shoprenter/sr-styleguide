@@ -1,33 +1,39 @@
-import HelpCircleOutline from '../../../../components/icons/HelpCircleOutlineIcon'
-import SettingIcon from '../../../../components/icons/SettingIcon'
-import MailIcon from '../../../../components/icons/MailIcon'
-import DuplicateIcon from '../../../../components/icons/DuplicateIcon'
-import CheckboxOn from '../../../../components/icons/CheckboxOnIcon'
-import CheckboxOff from '../../../../components/icons/CheckboxOffIcon'
+import HelpCircleOutline from './components/HelpCircleOutlineIcon'
+import SettingIcon from './components/SettingIcon'
+import MailIcon from './components/MailIcon'
+import DuplicateIcon from './components/DuplicateIcon'
+import CheckboxOn from './components/CheckboxOnIcon'
+import CheckboxOff from './components/CheckboxOffIcon'
 import CheckboxIndeterminate
-    from '../../../../components/icons/CheckboxIndeterminateIcon'
+    from './components/CheckboxIndeterminateIcon'
 import AddCircleOutline
-    from '../../../../components/icons/AddCircleOutlineIcon'
-import ExportIcon from '../../../../components/icons/ExportIcon'
-import ImportIcon from '../../../../components/icons/ImportIcon'
-import MagnifyIcon from '../../../../components/icons/MagnifyIcon'
-import FilterIcon from '../../../../components/icons/FilterIcon'
-import InfoIcon from '../../../../components/icons/InfoIcon'
-import TrashIcon from '../../../../components/icons/TrashIcon'
-import PencilIcon from '../../../../components/icons/PencilIcon'
-import LightningIcon from '../../../../components/icons/LightningIcon'
-import OpenInNewIcon from '../../../../components/icons/OpenInNewIcon'
-import FindIcon from '../../../../components/icons/FindIcon'
-import SuccessIcon from '../../../../components/icons/SuccessIcon'
-import ErrorIcon from '../../../../components/icons/ErrorIcon'
-import RadioOn from '../../../../components/icons/RadioOn'
-import RadioOff from '../../../../components/icons/RadioOff'
-import InformationIcon from '../../../../components/icons/InformationIcon'
-import PackageIcon from '../../../../components/icons/PackageIcon'
-import PadlockOutlineIcon from '../../../../components/icons/PadlockOutlineIcon.vue'
-import WarningCircleOutlineIcon from '../../../../components/icons/WarningCircleOutlineIcon.vue'
-import ErrorCircleOutlineIcon from '../../../../components/icons/ErrorCircleOutlineIcon.vue'
-import SuccessCircleOutlineIcon from '../../../../components/icons/SuccessCircleOutlineIcon.vue'
+    from './components/AddCircleOutlineIcon'
+import ExportIcon from './components/ExportIcon'
+import ImportIcon from './components/ImportIcon'
+import MagnifyIcon from './components/MagnifyIcon'
+import FilterIcon from './components/FilterIcon'
+import InfoIcon from './components/InfoIcon'
+import TrashIcon from './components/TrashIcon'
+import PencilIcon from './components/PencilIcon'
+import LightningIcon from './components/LightningIcon'
+import OpenInNewIcon from './components/OpenInNewIcon'
+import FindIcon from './components/FindIcon'
+import SuccessIcon from './components/SuccessIcon'
+import ErrorIcon from './components/ErrorIcon'
+import RadioOn from './components/RadioOn'
+import RadioOff from './components/RadioOff'
+import InformationIcon from './components/InformationIcon'
+import PackageIcon from './components/PackageIcon'
+import PadlockOutlineIcon from './components/PadlockOutlineIcon.vue'
+import WarningCircleOutlineIcon from './components/WarningCircleOutlineIcon.vue'
+import ErrorCircleOutlineIcon from './components/ErrorCircleOutlineIcon.vue'
+import SuccessCircleOutlineIcon from './components/SuccessCircleOutlineIcon.vue'
+import CalendarIcon from './components/CalendarIcon.vue'
+import FileWithStarIcon from './components/FileWithStarIcon.vue'
+import SearchCloseIcon from './components/SearchCloseIcon.vue'
+import InvoiceStornoIcon from './components/InvoiceStornoIcon.vue'
+import InvoiceIcon from './components/InvoiceIcon.vue'
+import NextIcon from './components/NextIcon.vue'
 
 export default {
     iconfont: 'mdi',
@@ -65,7 +71,7 @@ export default {
         },
         arrowDown: 'mdi-arrow-down',
         cart: 'mdi-cart',
-        trashCan: {
+        trashcan: {
             component: TrashIcon
         },
         dropdown: 'mdi-chevron-down',
@@ -100,16 +106,16 @@ export default {
         mailOutline: 'mdi-email-outline',
         blankCircle: 'mdi-checkbox-blank-circle',
         alert: 'mdi-alert',
-        findIcon: {
+        find: {
             component: FindIcon
         },
-        srSuccessIcon: {
+        success: {
             component: SuccessIcon
         },
-        srErrorIcon: {
+        error: {
             component: ErrorIcon
         },
-        informationIcon: {
+        information: {
             component: InformationIcon
         },
         download: 'mdi-download',
@@ -127,6 +133,24 @@ export default {
         },
         successCircleOutline: {
             component: SuccessCircleOutlineIcon
+        },
+        calendar: {
+            component: CalendarIcon
+        },
+        fileWithStar: {
+            component: FileWithStarIcon
+        },
+        searchClose: {
+            component: SearchCloseIcon
+        },
+        invoice: {
+            component: InvoiceIcon
+        },
+        invoiceStorno: {
+            component: InvoiceStornoIcon
+        },
+        next: {
+            component: NextIcon
         }
     }
 }

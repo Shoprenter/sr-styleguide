@@ -1,83 +1,83 @@
-import AddCircleOutlineIcon from '../../../components/icons/AddCircleOutlineIcon.vue'
-import ArrowRightIcon from '../../../components/icons/ArrowRightIcon.vue'
-import CalendarIcon from '../../../components/icons/CalendarIcon.vue'
-import CheckboxIndeterminateIcon from '../../../components/icons/CheckboxIndeterminateIcon.vue'
-import CheckboxOffIcon from '../../../components/icons/CheckboxOffIcon.vue'
-import CheckboxOnIcon from '../../../components/icons/CheckboxOnIcon.vue'
-import CloseIcon from '../../../components/icons/CloseIcon.vue'
-import DuplicateIcon from '../../../components/icons/DuplicateIcon.vue'
-import EditIcon from '../../../components/icons/EditIcon.vue'
-import ErrorCircleOutlineIcon from '../../../components/icons/ErrorCircleOutlineIcon.vue'
-import ErrorIcon from '../../../components/icons/ErrorIcon.vue'
-import ExportIcon from '../../../components/icons/ExportIcon.vue'
-import FileWithStarIcon from '../../../components/icons/FileWithStarIcon.vue'
-import FilterIcon from '../../../components/icons/FilterIcon.vue'
-import FindIcon from '../../../components/icons/FindIcon.vue'
-import HelpCircleOutlineIcon from '../../../components/icons/HelpCircleOutlineIcon.vue'
-import ImportIcon from '../../../components/icons/ImportIcon.vue'
-import InfoIcon from '../../../components/icons/InfoIcon.vue'
-import InformationIcon from '../../../components/icons/InformationIcon.vue'
-import InvoiceIcon from '../../../components/icons/InvoiceIcon.vue'
-import InvoiceStornoIcon from '../../../components/icons/InvoiceStornoIcon.vue'
-import LightningIcon from '../../../components/icons/LightningIcon.vue'
-import MagnifyIcon from '../../../components/icons/MagnifyIcon.vue'
-import MailIcon from '../../../components/icons/MailIcon.vue'
-import NextIcon from '../../../components/icons/NextIcon.vue'
-import OpenInNewIcon from '../../../components/icons/OpenInNewIcon.vue'
-import PackageIcon from '../../../components/icons/PackageIcon.vue'
-import PadlockOutlineIcon from '../../../components/icons/PadlockOutlineIcon.vue'
-import PencilIcon from '../../../components/icons/PencilIcon.vue'
-import PrevIcon from '../../../components/icons/PrevIcon.vue'
-import RadioOff from '../../../components/icons/RadioOff.vue'
-import RadioOn from '../../../components/icons/RadioOn.vue'
-import SearchCloseIcon from '../../../components/icons/SearchCloseIcon.vue'
-import SearchIcon from '../../../components/icons/SearchIcon.vue'
-import SettingIcon from '../../../components/icons/SettingIcon.vue'
-import SuccessCircleOutlineIcon from '../../../components/icons/SuccessCircleOutlineIcon.vue'
-import SuccessIcon from '../../../components/icons/SuccessIcon.vue'
-import TrashIcon from '../../../components/icons/TrashIcon.vue'
-import WarningCircleOutlineIcon from '../../../components/icons/WarningCircleOutlineIcon.vue'
+import SrAddCircleOutlineIcon from '../../../components/icons/SrAddCircleOutlineIcon.vue'
+import SrArrowRightIcon from '../../../components/icons/SrArrowRightIcon.vue'
+import SrCalendarIcon from '../../../components/icons/SrCalendarIcon.vue'
+import SrCheckboxIndeterminateIcon from '../../../components/icons/SrCheckboxIndeterminateIcon.vue'
+import SrCheckboxOffIcon from '../../../components/icons/SrCheckboxOffIcon.vue'
+import SrCheckboxOnIcon from '../../../components/icons/SrCheckboxOnIcon.vue'
+import SrCloseIcon from '../../../components/icons/SrCloseIcon.vue'
+import SrDuplicateIcon from '../../../components/icons/SrDuplicateIcon.vue'
+import SrEditIcon from '../../../components/icons/SrEditIcon.vue'
+import SrErrorCircleOutlineIcon from '../../../components/icons/SrErrorCircleOutlineIcon.vue'
+import SrErrorIcon from '../../../components/icons/SrErrorIcon.vue'
+import SrExportIcon from '../../../components/icons/SrExportIcon.vue'
+import SrFileWithStarIcon from '../../../components/icons/SrFileWithStarIcon.vue'
+import SrFilterIcon from '../../../components/icons/SrFilterIcon.vue'
+import SrFindIcon from '../../../components/icons/SrFindIcon.vue'
+import SrHelpCircleOutlineIcon from '../../../components/icons/SrHelpCircleOutlineIcon.vue'
+import SrImportIcon from '../../../components/icons/SrImportIcon.vue'
+import SrInfoIcon from '../../../components/icons/SrInfoIcon.vue'
+import SrInformationIcon from '../../../components/icons/SrInformationIcon.vue'
+import SrInvoiceIcon from '../../../components/icons/SrInvoiceIcon.vue'
+import SrInvoiceStornoIcon from '../../../components/icons/SrInvoiceStornoIcon.vue'
+import SrLightningIcon from '../../../components/icons/SrLightningIcon.vue'
+import SrMagnifyIcon from '../../../components/icons/SrMagnifyIcon.vue'
+import SrMailIcon from '../../../components/icons/SrMailIcon.vue'
+import SrNextIcon from '../../../components/icons/SrNextIcon.vue'
+import SrOpenInNewIcon from '../../../components/icons/SrOpenInNewIcon.vue'
+import SrPackageIcon from '../../../components/icons/SrPackageIcon.vue'
+import SrPadlockOutlineIcon from '../../../components/icons/SrPadlockOutlineIcon.vue'
+import SrPencilIcon from '../../../components/icons/SrPencilIcon.vue'
+import SrPrevIcon from '../../../components/icons/SrPrevIcon.vue'
+import SrRadioOff from '../../../components/icons/SrRadioOff.vue'
+import SrRadioOn from '../../../components/icons/SrRadioOn.vue'
+import SrSearchCloseIcon from '../../../components/icons/SrSearchCloseIcon.vue'
+import SrSearchIcon from '../../../components/icons/SrSearchIcon.vue'
+import SrSettingIcon from '../../../components/icons/SrSettingIcon.vue'
+import SrSuccessCircleOutlineIcon from '../../../components/icons/SrSuccessCircleOutlineIcon.vue'
+import SrSuccessIcon from '../../../components/icons/SrSuccessIcon.vue'
+import SrTrashIcon from '../../../components/icons/SrTrashIcon.vue'
+import SrWarningCircleOutlineIcon from '../../../components/icons/SrWarningCircleOutlineIcon.vue'
 
 export default {
     install (Vue, options = {}) {
-        Vue.component('AddCircleOutlineIcon', AddCircleOutlineIcon)
-        Vue.component('ArrowRightIcon', ArrowRightIcon)
-        Vue.component('CalendarIcon', CalendarIcon)
-        Vue.component('CheckboxIndeterminateIcon', CheckboxIndeterminateIcon)
-        Vue.component('CheckboxOffIcon', CheckboxOffIcon)
-        Vue.component('CheckboxOnIcon', CheckboxOnIcon)
-        Vue.component('CloseIcon', CloseIcon)
-        Vue.component('DuplicateIcon', DuplicateIcon)
-        Vue.component('EditIcon', EditIcon)
-        Vue.component('ErrorCircleOutlineIcon', ErrorCircleOutlineIcon)
-        Vue.component('ErrorIcon', ErrorIcon)
-        Vue.component('ExportIcon', ExportIcon)
-        Vue.component('FileWithStarIcon', FileWithStarIcon)
-        Vue.component('FilterIcon', FilterIcon)
-        Vue.component('FindIcon', FindIcon)
-        Vue.component('HelpCircleOutlineIcon', HelpCircleOutlineIcon)
-        Vue.component('ImportIcon', ImportIcon)
-        Vue.component('InfoIcon', InfoIcon)
-        Vue.component('InformationIcon', InformationIcon)
-        Vue.component('InvoiceIcon', InvoiceIcon)
-        Vue.component('InvoiceStornoIcon', InvoiceStornoIcon)
-        Vue.component('LightningIcon', LightningIcon)
-        Vue.component('MagnifyIcon', MagnifyIcon)
-        Vue.component('MailIcon', MailIcon)
-        Vue.component('NextIcon', NextIcon)
-        Vue.component('OpenInNewIcon', OpenInNewIcon)
-        Vue.component('PackageIcon', PackageIcon)
-        Vue.component('PadlockOutlineIcon', PadlockOutlineIcon)
-        Vue.component('PencilIcon', PencilIcon)
-        Vue.component('PrevIcon', PrevIcon)
-        Vue.component('RadioOff', RadioOff)
-        Vue.component('RadioOn', RadioOn)
-        Vue.component('SearchCloseIcon', SearchCloseIcon)
-        Vue.component('SearchIcon', SearchIcon)
-        Vue.component('SettingIcon', SettingIcon)
-        Vue.component('SuccessCircleOutlineIcon', SuccessCircleOutlineIcon)
-        Vue.component('SuccessIcon', SuccessIcon)
-        Vue.component('TrashIcon', TrashIcon)
-        Vue.component('WarningCircleOutlineIcon', WarningCircleOutlineIcon)
+        Vue.component('SrAddCircleOutlineIcon', SrAddCircleOutlineIcon)
+        Vue.component('SrArrowRightIcon', SrArrowRightIcon)
+        Vue.component('SrCalendarIcon', SrCalendarIcon)
+        Vue.component('SrCheckboxIndeterminateIcon', SrCheckboxIndeterminateIcon)
+        Vue.component('SrCheckboxOffIcon', SrCheckboxOffIcon)
+        Vue.component('SrCheckboxOnIcon', SrCheckboxOnIcon)
+        Vue.component('SrCloseIcon', SrCloseIcon)
+        Vue.component('SrDuplicateIcon', SrDuplicateIcon)
+        Vue.component('SrEditIcon', SrEditIcon)
+        Vue.component('SrErrorCircleOutlineIcon', SrErrorCircleOutlineIcon)
+        Vue.component('SrErrorIcon', SrErrorIcon)
+        Vue.component('SrExportIcon', SrExportIcon)
+        Vue.component('SrFileWithStarIcon', SrFileWithStarIcon)
+        Vue.component('SrFilterIcon', SrFilterIcon)
+        Vue.component('SrFindIcon', SrFindIcon)
+        Vue.component('SrHelpCircleOutlineIcon', SrHelpCircleOutlineIcon)
+        Vue.component('SrImportIcon', SrImportIcon)
+        Vue.component('SrInfoIcon', SrInfoIcon)
+        Vue.component('SrInformationIcon', SrInformationIcon)
+        Vue.component('SrInvoiceIcon', SrInvoiceIcon)
+        Vue.component('SrInvoiceStornoIcon', SrInvoiceStornoIcon)
+        Vue.component('SrLightningIcon', SrLightningIcon)
+        Vue.component('SrMagnifyIcon', SrMagnifyIcon)
+        Vue.component('SrMailIcon', SrMailIcon)
+        Vue.component('SrNextIcon', SrNextIcon)
+        Vue.component('SrOpenInNewIcon', SrOpenInNewIcon)
+        Vue.component('SrPackageIcon', SrPackageIcon)
+        Vue.component('SrPadlockOutlineIcon', SrPadlockOutlineIcon)
+        Vue.component('SrPencilIcon', SrPencilIcon)
+        Vue.component('SrPrevIcon', SrPrevIcon)
+        Vue.component('SrRadioOff', SrRadioOff)
+        Vue.component('SrRadioOn', SrRadioOn)
+        Vue.component('SrSearchCloseIcon', SrSearchCloseIcon)
+        Vue.component('SrSearchIcon', SrSearchIcon)
+        Vue.component('SrSettingIcon', SrSettingIcon)
+        Vue.component('SrSuccessCircleOutlineIcon', SrSuccessCircleOutlineIcon)
+        Vue.component('SrSuccessIcon', SrSuccessIcon)
+        Vue.component('SrTrashIcon', SrTrashIcon)
+        Vue.component('SrWarningCircleOutlineIcon', SrWarningCircleOutlineIcon)
     }
 }
