@@ -53,7 +53,7 @@ module.exports = (env, argv) => ({
             {
                 test: /\.(css)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -72,7 +72,7 @@ module.exports = (env, argv) => ({
             {
                 test: /\.(sass)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
@@ -101,7 +101,7 @@ module.exports = (env, argv) => ({
             {
                 test: /\.(scss)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    argv.mode === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                     'css-loader',
                     {
                         loader: 'postcss-loader',
