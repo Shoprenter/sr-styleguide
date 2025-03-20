@@ -3,7 +3,7 @@
 .sg-iconset {
   --icon-size: 50px;
   display: grid;
-  grid-template-columns: 1fr; /* Egy oszlop, de flexbox kezeli az elrendezést */
+  grid-template-columns: 1fr;
   grid-gap: 20px;
 }
 
@@ -14,18 +14,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-shrink: 0; /* Ne zsugorodjon össze az ikon */
+  flex-shrink: 0;
 }
 
-/* Itt a varázslat: a közvetlen div-eket flexboxszá alakítjuk */
 .sg-iconset > div {
   display: flex;
   align-items: center;
-  gap: 20px; /* Távolság az ikon és a kód között */
+  gap: 20px;
 }
 
-/* A kódblokk kitölti a fennmaradó helyet */
 sr-code-block {
   flex-grow: 1;
-  min-width: 300px; /* Ne legyen túl keskeny */
+  min-width: 300px;
 }
