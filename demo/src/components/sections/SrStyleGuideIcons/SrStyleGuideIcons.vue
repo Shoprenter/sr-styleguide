@@ -8,207 +8,207 @@
       <div class="sg-iconset">
         <div>
           <div class="sg-icon-container">
-            <sr-help-circle-outline-icon width="20" height="20"/>
+            <sr-help-circle-outline-icon />
           </div>
-          <sr-code-block :code="'<sr-help-circle-outline-icon  width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-help-circle-outline-icon  />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-mail-icon width="20" height="20"/>
+            <sr-mail-icon />
           </div>
-          <sr-code-block :code="'<sr-mail-icon  width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-mail-icon  />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-duplicate-icon width="20" height="20"/>
+            <sr-duplicate-icon />
           </div>
-          <sr-code-block :code="'<sr-duplicate-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-duplicate-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-checkbox-on-icon width="20" height="20"/>
+            <sr-checkbox-on-icon />
           </div>
-          <sr-code-block :code="'<sr-checkbox-on-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-checkbox-on-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-checkbox-off-icon width="20" height="20"/>
+            <sr-checkbox-off-icon />
           </div>
-          <sr-code-block :code="'<sr-checkbox-off-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-checkbox-off-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-checkbox-indeterminate-icon width="20" height="20"/>
+            <sr-checkbox-indeterminate-icon />
           </div>
-          <sr-code-block :code="'<sr-checkbox-indeterminate-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-checkbox-indeterminate-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-radio-on width="20" height="20"/>
+            <sr-radio-on />
           </div>
-          <sr-code-block :code="'<sr-radio-on width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-radio-on />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-radio-off width="20" height="20"/>
+            <sr-radio-off />
           </div>
-          <sr-code-block :code="'<sr-radio-off width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-radio-off />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-add-circle-outline-icon width="20" height="20"/>
+            <sr-add-circle-outline-icon />
           </div>
-          <sr-code-block :code="'<sr-add-circle-outline-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-add-circle-outline-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-export-icon width="20" height="20"/>
+            <sr-export-icon />
           </div>
-          <sr-code-block :code="'<sr-export-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-export-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-import-icon width="20" height="20"/>
+            <sr-import-icon />
           </div>
-          <sr-code-block :code="'<sr-import-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-import-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-filter-icon width="20" height="20"/>
+            <sr-filter-icon />
           </div>
-          <sr-code-block :code="'<sr-filter-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-filter-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-file-with-star-icon width="20" height="20"/>
+            <sr-file-with-star-icon />
           </div>
-          <sr-code-block :code="'<sr-file-with-star-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-file-with-star-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-info-icon width="20" height="20"/>
+            <sr-info-icon />
           </div>
-          <sr-code-block :code="'<sr-info-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-info-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-information-icon width="20" height="20"/>
+            <sr-information-icon />
           </div>
-          <sr-code-block :code="'<sr-information-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-information-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-magnify-icon width="20" height="20"/>
+            <sr-magnify-icon />
           </div>
-          <sr-code-block :code="'<sr-magnify-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-magnify-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-trash-icon width="20" height="20"/>
+            <sr-trash-icon />
           </div>
-          <sr-code-block :code="'<sr-trash-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-trash-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-pencil-icon width="20" height="20"/>
+            <sr-pencil-icon />
           </div>
-          <sr-code-block :code="'<sr-pencil-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-pencil-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-lightning-icon width="20" height="20"/>
+            <sr-lightning-icon />
           </div>
-          <sr-code-block :code="'<sr-lighting-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-lighting-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-open-in-new-icon width="20" height="20"/>
+            <sr-open-in-new-icon />
           </div>
-          <sr-code-block :code="'<sr-open-in-new-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-open-in-new-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-success-icon width="20" height="20"/>
+            <sr-success-icon />
           </div>
-          <sr-code-block :code="'<sr-success-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-success-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-error-icon width="20" height="20"/>
+            <sr-error-icon />
           </div>
-          <sr-code-block :code="'<sr-error-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-error-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-find-icon width="20" height="20"/>
+            <sr-find-icon />
           </div>
-          <sr-code-block :code="'<sr-find-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-find-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-package-icon width="20" height="20"/>
+            <sr-package-icon />
           </div>
-          <sr-code-block :code="'<sr-package-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-package-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-padlock-outline-icon width="20" height="20"/>
+            <sr-padlock-outline-icon />
           </div>
-          <sr-code-block :code="'<sr-padlock-outline-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-padlock-outline-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-warning-circle-outline-icon width="20" height="20"/>
+            <sr-warning-circle-outline-icon />
           </div>
-          <sr-code-block :code="'<sr-warning-circle-outline-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-warning-circle-outline-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-error-circle-outline-icon width="20" height="20"/>
+            <sr-error-circle-outline-icon />
           </div>
-          <sr-code-block :code="'<sr-error-circle-outline-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-error-circle-outline-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-success-circle-outline-icon width="20" height="20"/>
+            <sr-success-circle-outline-icon />
           </div>
-          <sr-code-block :code="'<sr-success-circle-outline-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-success-circle-outline-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-calendar-icon width="20" height="20"/>
+            <sr-calendar-icon />
           </div>
-          <sr-code-block :code="'<sr-calendar-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-calendar-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-close-icon width="20" height="20"/>
+            <sr-close-icon />
           </div>
-          <sr-code-block :code="'<sr-close-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-close-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-search-close-icon width="20" height="20"/>
+            <sr-search-close-icon />
           </div>
-          <sr-code-block :code="'<sr-search-close-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-search-close-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-invoice-icon width="20" height="20"/>
+            <sr-invoice-icon />
           </div>
-          <sr-code-block :code="'<sr-invoice-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-invoice-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-invoice-storno-icon width="20" height="20"/>
+            <sr-invoice-storno-icon />
           </div>
-          <sr-code-block :code="'<sr-invoice-storno-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-invoice-storno-icon />'"/>
         </div>
         <div>
           <div class="sg-icon-container">
-            <sr-next-icon width="20" height="20"/>
+            <sr-next-icon />
           </div>
-          <sr-code-block :code="'<sr-next-icon width=\'20\' height=\'20\' />'"/>
+          <sr-code-block :code="'<sr-next-icon />'"/>
         </div>
       </div>
     </div>
