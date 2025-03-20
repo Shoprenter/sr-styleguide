@@ -11,13 +11,13 @@
 
 <script>
 export default {
-  props: {
-    code: {
-      type: String,
-      required: true
+    props: {
+        code: {
+            type: String,
+            required: true
+        }
     }
-  }
-};
+}
 </script>
 
 <style scoped>

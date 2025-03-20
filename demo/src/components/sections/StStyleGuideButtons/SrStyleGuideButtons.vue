@@ -32,11 +32,10 @@
 
 <script>
 
-
-import SrStyleGuideItemRow from "../../SrStyleGuideItemRow/SrStyleGuideItemRow.vue";
+import SrStyleGuideItemRow from '../../SrStyleGuideItemRow/SrStyleGuideItemRow.vue'
 
 export default {
-  name: 'SrStyleGuideButtons',
-  components: {SrStyleGuideItemRow},
+    name: 'SrStyleGuideButtons',
+    components: { SrStyleGuideItemRow }
 }
 </script>
