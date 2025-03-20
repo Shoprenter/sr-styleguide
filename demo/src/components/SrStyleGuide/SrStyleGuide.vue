@@ -14,6 +14,12 @@
           <v-flex xs12>
             <h1 class="sg-section-header">Components</h1>
           </v-flex>
+          <v-flex class="sg-subsection" id="buttons" column wrap>
+            <v-flex xs12>
+              <h2>Buttons</h2>
+            </v-flex>
+            <sr-style-guide-buttons/>
+          </v-flex>
           <v-flex class="sg-subsection" id="icons" column wrap>
             <v-flex xs12>
               <h2>Icons</h2>
@@ -43,10 +49,12 @@
 import './SrStyleGuide.scss'
 
 import SrStyleGuideMenu from '../sections/SrStyleGuideMenu/SrStyleGuideMenu.vue'
+import SrStyleGuideButtons from '../sections/StStyleGuideButtons/SrStyleGuideButtons.vue'
 
 export default {
     name: 'StyleGuide',
     components: {
+        SrStyleGuideButtons,
         SrStyleGuideMenu
     }
 }
