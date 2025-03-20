@@ -41,6 +41,10 @@ export default {
         return {
             sections: [
                 {
+                    text: 'Layouts',
+                    goTo: '#layouts'
+                },
+                {
                     text: 'Components',
                     goTo: '#components',
                     components: [

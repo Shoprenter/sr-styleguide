@@ -10,6 +10,12 @@
         <v-flex class="pb-5">
           <p>Vuetify version: 2.6.14</p>
         </v-flex>
+        <v-layout class="sg-section" id="layouts" column wrap>
+          <v-flex xs12>
+            <h1 class="sg-section-header">Layout</h1>
+          </v-flex>
+          <sr-style-guide-layouts />
+        </v-layout>
         <v-layout class="sg-section" id="components" column wrap>
           <v-flex xs12>
             <h1 class="sg-section-header">Components</h1>

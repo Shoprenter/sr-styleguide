@@ -4,6 +4,7 @@ import SrPageHeader from './SrPageHeader/SrPageHeader.vue'
 import SrBreadcrumb from './SrBreadcrumb/SrBreadcrumb.vue'
 import SrStyleGuideIcons from './sections/SrStyleGuideIcons/SrStyleGuideIcons.vue'
 import SrCodeBlock from './SrCodeBlock/SrCodeBlock.vue'
+import SrStyleGuideLayouts from './sections/SrStyleGuideLayouts/SrStyleGuideLayouts.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -13,5 +14,6 @@ export default {
         Vue.component('SrBreadcrumb', SrBreadcrumb)
         Vue.component('SrStyleGuideIcons', SrStyleGuideIcons)
         Vue.component('SrCodeBlock', SrCodeBlock)
+        Vue.component('SrStyleGuideLayouts', SrStyleGuideLayouts)
     }
 }

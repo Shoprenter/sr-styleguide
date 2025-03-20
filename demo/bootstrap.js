@@ -14,8 +14,6 @@ Vue.mixin({
     }
 })
 
-Vue.use(SrStyleguideComponents)
-
 const app = new Vue({
     vuetify: SrStyleguide,
     router,
