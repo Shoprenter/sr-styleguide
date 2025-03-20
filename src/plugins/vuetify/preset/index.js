@@ -1,11 +1,14 @@
 import en from 'vuetify/es5/locale/en'
 import hu from 'vuetify/es5/locale/hu'
 
+import icons from './icons'
+
 export const preset = {
     lang: {
         locales: { en, hu },
         current: 'hu'
     },
+    icons,
     theme: {
         options: {
             customProperties: true

@@ -41,15 +41,12 @@ export default {
         return {
             sections: [
                 {
-                    /*
                     text: 'Components',
                     goTo: '#components',
                     components: [
-                        { text: 'Buttons', goTo: '#buttons' },
-                        { text: 'Input forms', goTo: '#input-forms' },
+                        // { text: 'Buttons', goTo: '#buttons' },
+                        { text: 'Icons', goTo: '#icons' }
                     ]
-
-                   */
                 }
             ]
         }

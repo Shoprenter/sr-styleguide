@@ -1,0 +1,23 @@
+@import '~vuetify/src/styles/settings/_variables';
+
+.sg-iconset {
+  --icon-size: 50px;
+
+  & .sg-icon-container {
+    height: var(--icon-size);
+    width: var(--icon-size);
+    background-color: var(--sr-light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  & > div {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, var(--icon-size));
+  }
+}
+
+
