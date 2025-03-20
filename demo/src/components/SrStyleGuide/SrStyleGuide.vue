@@ -26,20 +26,12 @@
             </v-flex>
             <sr-style-guide-icons/>
           </v-flex>
-          <!--
-            <v-flex class="sg-subsection" id="buttons" column wrap>
+            <v-flex class="sg-subsection" id="inputs" column wrap>
                 <v-flex xs12>
-                    <h2>Buttons</h2>
+                    <h2>Inputs</h2>
                 </v-flex>
-                <style-guide-buttons />
+                <sr-style-guide-inputs />
             </v-flex>
-            <v-flex class="sg-subsection" id="input-forms" column wrap>
-                <v-flex xs12>
-                    <h2>Input forms</h2>
-                </v-flex>
-                <style-guide-input-forms />
-            </v-flex>
-            -->
         </v-layout>
       </div>
     </div>
@@ -48,14 +40,7 @@
 <script>
 import './SrStyleGuide.scss'
 
-import SrStyleGuideMenu from '../sections/SrStyleGuideMenu/SrStyleGuideMenu.vue'
-import SrStyleGuideButtons from '../sections/StStyleGuideButtons/SrStyleGuideButtons.vue'
-
 export default {
-    name: 'StyleGuide',
-    components: {
-        SrStyleGuideButtons,
-        SrStyleGuideMenu
-    }
+    name: 'StyleGuide'
 }
 </script>

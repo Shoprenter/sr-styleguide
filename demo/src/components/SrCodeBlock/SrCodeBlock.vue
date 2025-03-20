@@ -1,6 +1,6 @@
 <template>
   <div class="code-block">
-    <pre :class="`language-${language}`"><code ref="code">{{ code }}</code></pre>
+    <pre :class="`language-${language} ma-0`"><code ref="code">{{ code }}</code></pre>
     <v-btn icon class="copy-button" @click="copyCode">
       <v-icon>mdi-content-copy</v-icon>
     </v-btn>
@@ -46,7 +46,7 @@ export default {
             this.copied = true
             setTimeout(() => {
                 this.copied = false
-            }, 2000)
+            }, 600)
         }
     }
 }
