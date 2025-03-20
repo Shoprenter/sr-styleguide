@@ -1,3 +1,5 @@
+@import '~vuetify/src/styles/settings/_variables';
+
 .code-block {
   position: relative;
   background: transparent;
@@ -12,7 +14,7 @@
 
 .code-block {
   pre {
-    background: #f0f0f0 !important;
+    background: var(--sr-light-grey) !important;
     border: none !important;
     border-radius: 5px;
     padding: 12px 40px 12px 12px;
@@ -45,16 +47,17 @@
     position: absolute;
     top: 5px;
     right: 10px;
-    background: #4caf50;
-    color: white;
+    background: var(--sr-primary);
+    color: var(--sr-white);
     padding: 6px 12px;
     border-radius: 6px;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: $input-font-size;
+    font-weight: map-get($font-weights, 'medium');
     opacity: 1;
     z-index: 10;
     transition: opacity 0.3s, transform 0.3s;
     transform: translateY(0);
+    font-family: $body-font-family;
   }
 
   .fade-enter-active, .fade-leave-active {

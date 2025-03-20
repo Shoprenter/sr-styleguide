@@ -2,7 +2,7 @@
   <div class="code-block">
     <pre :class="`language-${language} ma-0`"><code ref="code">{{ code }}</code></pre>
     <v-btn icon class="copy-button" @click="copyCode">
-      <v-icon>mdi-content-copy</v-icon>
+      <sr-duplicate-icon medium/>
     </v-btn>
     <transition name="fade">
       <span v-if="copied" class="copied-text">Másolva!</span>
