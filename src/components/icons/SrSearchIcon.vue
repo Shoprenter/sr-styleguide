@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$search</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$search</v-icon>
 </template>
 
 <script>

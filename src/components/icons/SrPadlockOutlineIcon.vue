@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$padlockOutline</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$padlockOutline</v-icon>
 </template>
 
 <script>

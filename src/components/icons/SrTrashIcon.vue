@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$trashcan</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$trashcan</v-icon>
 </template>
 
 <script>

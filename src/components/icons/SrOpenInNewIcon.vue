@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$openInNew</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$openInNew</v-icon>
 </template>
 
 <script>

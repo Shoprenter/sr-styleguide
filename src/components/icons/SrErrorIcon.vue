@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$error</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$error</v-icon>
 </template>
 
 <script>

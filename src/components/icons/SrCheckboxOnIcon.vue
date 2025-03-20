@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$checkboxOn</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$checkboxOn</v-icon>
 </template>
 
 <script>

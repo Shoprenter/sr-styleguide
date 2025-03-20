@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$magnify</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$magnify</v-icon>
 </template>
 
 <script>

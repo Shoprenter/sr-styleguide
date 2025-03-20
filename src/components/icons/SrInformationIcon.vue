@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$information</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$information</v-icon>
 </template>
 
 <script>

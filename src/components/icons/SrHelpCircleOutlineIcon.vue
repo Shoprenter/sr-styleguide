@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$helpCircleOutline</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$helpCircleOutline</v-icon>
 </template>
 
 <script>

@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$export</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$export</v-icon>
 </template>
 
 <script>

@@ -1,5 +1,6 @@
 <template>
-    <v-icon>$radioOn</v-icon>
+    <!-- eslint-disable-next-line -->
+    <v-icon v-bind="$attrs" v-on="$listeners">$radioOn</v-icon>
 </template>
 
 <script>
