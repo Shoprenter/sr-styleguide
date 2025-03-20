@@ -2,22 +2,30 @@
 
 .sg-iconset {
   --icon-size: 50px;
-
-  & .sg-icon-container {
-    height: var(--icon-size);
-    width: var(--icon-size);
-    background-color: var(--sr-light-grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-
-  & > div {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, var(--icon-size));
-  }
+  display: grid;
+  grid-template-columns: 1fr; /* Egy oszlop, de flexbox kezeli az elrendezést */
+  grid-gap: 20px;
 }
 
+.sg-icon-container {
+  height: var(--icon-size);
+  width: var(--icon-size);
+  background-color: var(--sr-light-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0; /* Ne zsugorodjon össze az ikon */
+}
 
+/* Itt a varázslat: a közvetlen div-eket flexboxszá alakítjuk */
+.sg-iconset > div {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Távolság az ikon és a kód között */
+}
+
+/* A kódblokk kitölti a fennmaradó helyet */
+sr-code-block {
+  flex-grow: 1;
+  min-width: 300px; /* Ne legyen túl keskeny */
+}
