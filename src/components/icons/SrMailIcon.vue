@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrMailIcon.vue'
+    name: 'SrMailIcon.vue',
+    inheritAttrs: false
 }
 </script>

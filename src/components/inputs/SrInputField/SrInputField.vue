@@ -11,6 +11,7 @@
 
 <script>
 export default {
-    name: 'SrInputField'
+    name: 'SrInputField',
+    inheritAttrs: false
 }
 </script>

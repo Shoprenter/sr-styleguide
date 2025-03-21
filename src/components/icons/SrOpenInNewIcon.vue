@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrOpenInNewIcon'
+    name: 'SrOpenInNewIcon',
+    inheritAttrs: false
 }
 </script>

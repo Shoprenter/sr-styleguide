@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrFindIcon'
+    name: 'SrFindIcon',
+    inheritAttrs: false
 }
 </script>
