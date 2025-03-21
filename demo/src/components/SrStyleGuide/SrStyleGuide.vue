@@ -26,6 +26,12 @@
             </v-flex>
             <sr-style-guide-icons/>
           </v-flex>
+          <v-flex class="sg-subsection" id="form-row" column wrap>
+            <v-flex xs12>
+              <h2>Icons</h2>
+            </v-flex>
+            <sr-style-guide-form-row/>
+          </v-flex>
           <!--
             <v-flex class="sg-subsection" id="buttons" column wrap>
                 <v-flex xs12>
@@ -50,10 +56,12 @@ import './SrStyleGuide.scss'
 
 import SrStyleGuideMenu from '../sections/SrStyleGuideMenu/SrStyleGuideMenu.vue'
 import SrStyleGuideButtons from '../sections/StStyleGuideButtons/SrStyleGuideButtons.vue'
+import SrStyleGuideFormRow from '../sections/SrStyleGuideFormRow/SrStyleGuideFormRow.vue'
 
 export default {
     name: 'StyleGuide',
     components: {
+      SrStyleGuideFormRow,
         SrStyleGuideButtons,
         SrStyleGuideMenu
     }
