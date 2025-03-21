@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrCalendarIcon'
+    name: 'SrCalendarIcon',
+    inheritAttrs: false
 }
 </script>

@@ -1,4 +1,71 @@
-.sr-code-block-container {
-  display: grid;
-  place-items: center;
+@import '~vuetify/src/styles/settings/_variables';
+
+.code-block {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  color: #333;
+  font-family: monospace;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.code-block {
+  pre {
+    background: var(--sr-light-grey) !important;
+    border: none !important;
+    border-radius: 5px;
+    padding: 12px 40px 12px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+  }
+
+  code {
+    background: none !important;
+    border: none !important;
+    font-weight: bold;
+  }
+
+  .copy-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copied-text {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: var(--sr-primary);
+    color: var(--sr-white);
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: $input-font-size;
+    font-weight: map-get($font-weights, 'medium');
+    opacity: 1;
+    z-index: 10;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(0);
+    font-family: $body-font-family;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
 }

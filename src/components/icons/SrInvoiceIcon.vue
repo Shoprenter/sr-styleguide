@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrInvoiceIcon'
+    name: 'SrInvoiceIcon',
+    inheritAttrs: false
 }
 </script>

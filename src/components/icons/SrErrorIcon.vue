@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrErrorIcon'
+    name: 'SrErrorIcon',
+    inheritAttrs: false
 }
 </script>
