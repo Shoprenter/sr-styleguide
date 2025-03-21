@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
-    name: 'SrDeleteButton'
+    name: 'SrDeleteButton',
+    inheritAttrs: false
 }
 </script>

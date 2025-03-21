@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrPadlockOutlineIcon'
+    name: 'SrPadlockOutlineIcon',
+    inheritAttrs: false
 }
 </script>

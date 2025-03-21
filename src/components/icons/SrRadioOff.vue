@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrRadioOff'
+    name: 'SrRadioOff',
+    inheritAttrs: false
 }
 </script>

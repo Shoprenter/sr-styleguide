@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrAddCircleOutlineIcon'
+    name: 'SrAddCircleOutlineIcon',
+    inheritAttrs: false
 }
 </script>

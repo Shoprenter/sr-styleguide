@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrSuccessCircleOutlineIcon'
+    name: 'SrSuccessCircleOutlineIcon',
+    inheritAttrs: false
 }
 </script>

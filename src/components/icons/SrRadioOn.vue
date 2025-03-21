@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrRadioOn'
+    name: 'SrRadioOn',
+    inheritAttrs: false
 }
 </script>

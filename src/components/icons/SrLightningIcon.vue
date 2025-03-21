@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrLightningIcon.vue'
+    name: 'SrLightningIcon.vue',
+    inheritAttrs: false
 }
 </script>

@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrInfoIcon.vue'
+    name: 'SrInfoIcon.vue',
+    inheritAttrs: false
 }
 </script>
