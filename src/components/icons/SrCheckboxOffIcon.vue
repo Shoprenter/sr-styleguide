@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrCheckboxOffIcon'
+    name: 'SrCheckboxOffIcon',
+    inheritAttrs: false
 }
 </script>

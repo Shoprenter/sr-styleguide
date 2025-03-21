@@ -45,8 +45,8 @@ export default {
                     goTo: '#components',
                     components: [
                         { text: 'Buttons', goTo: '#buttons' },
-                        { text: 'Icons', goTo: '#icons' },
-                        { text: 'Inputs', goTo: '#inputs' }
+                        { text: 'Inputs', goTo: '#inputs' },
+                        { text: 'Icons', goTo: '#icons' }
                     ]
                 }
             ]

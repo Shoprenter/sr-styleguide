@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrCloseIcon'
+    name: 'SrCloseIcon',
+    inheritAttrs: false
 }
 </script>

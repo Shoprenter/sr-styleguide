@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrCheckboxOnIcon.vue'
+    name: 'SrCheckboxOnIcon.vue',
+    inheritAttrs: false
 }
 </script>

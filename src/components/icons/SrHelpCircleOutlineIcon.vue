@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrHelpCircleOutlineIcon.vue'
+    name: 'SrHelpCircleOutlineIcon.vue',
+    inheritAttrs: false
 }
 </script>
