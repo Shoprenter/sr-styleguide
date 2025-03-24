@@ -6,11 +6,11 @@
             </v-flex>
             <sr-slim-layout>
               <sr-slim-heading :title="'Page title'">
-                <v-btn outlined color="primary">Cancel</v-btn>
-                <v-btn class="ml-3" color="primary">Save</v-btn>
+                <sr-primary-button outlined>Cancel</sr-primary-button>
+                <sr-primary-button class="ml-3">Save</sr-primary-button>
               </sr-slim-heading>
               <sr-slim-content>
-                <h3>Admin page content</h3>
+                Admin example slim content
               </sr-slim-content>
             </sr-slim-layout>
         </v-flex>

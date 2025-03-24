@@ -7,3 +7,21 @@
 :root {
   font-size: $font-size-root;
 }
+
+/* new admin layout design */
+
+/* src/Aurora/AdminBundle/Resources/front-end/adminMenu/assets/scss/layout/_layout.scss */
+
+$container-slim-width: 760px;
+$container-slim-width-sm: 560px;
+
+.page-layout--slim {
+  margin: 0 auto 70px auto;
+  padding: 0 30px;
+  @include media-breakpoint-up(sm) {
+    max-width: $container-slim-width-sm;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: $container-slim-width;
+  }
+}
