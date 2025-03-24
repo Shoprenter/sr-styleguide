@@ -10,36 +10,28 @@
         <v-flex class="pb-5">
           <p>Vuetify version: 2.6.14</p>
         </v-flex>
-        <v-layout class="sg-section" id="layouts" column wrap>
-          <v-flex xs12>
-            <h1 class="sg-section-header">Layout</h1>
-          </v-flex>
-          <sr-style-guide-layouts />
-        </v-layout>
-        <v-layout class="sg-section" id="components" column wrap>
+        <v-layout id="components" class="sg-section" column wrap>
           <v-flex xs12>
             <h1 class="sg-section-header">Components</h1>
           </v-flex>
-          <v-flex class="sg-subsection" id="icons" column wrap>
+          <v-flex id="buttons" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Buttons</h2>
+            </v-flex>
+            <sr-style-guide-buttons/>
+          </v-flex>
+          <v-flex id="inputs" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Inputs</h2>
+            </v-flex>
+            <sr-style-guide-inputs/>
+          </v-flex>
+          <v-flex id="icons" class="sg-subsection" column wrap>
             <v-flex xs12>
               <h2>Icons</h2>
             </v-flex>
             <sr-style-guide-icons/>
           </v-flex>
-          <!--
-            <v-flex class="sg-subsection" id="buttons" column wrap>
-                <v-flex xs12>
-                    <h2>Buttons</h2>
-                </v-flex>
-                <style-guide-buttons />
-            </v-flex>
-            <v-flex class="sg-subsection" id="input-forms" column wrap>
-                <v-flex xs12>
-                    <h2>Input forms</h2>
-                </v-flex>
-                <style-guide-input-forms />
-            </v-flex>
-            -->
         </v-layout>
       </div>
     </div>
@@ -48,12 +40,7 @@
 <script>
 import './SrStyleGuide.scss'
 
-import SrStyleGuideMenu from '../sections/SrStyleGuideMenu/SrStyleGuideMenu.vue'
-
 export default {
-    name: 'StyleGuide',
-    components: {
-        SrStyleGuideMenu
-    }
+    name: 'StyleGuide'
 }
 </script>

@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrFilterIcon.vue'
+    name: 'SrFilterIcon.vue',
+    inheritAttrs: false
 }
 </script>

@@ -5,6 +5,7 @@
 
 <script>
 export default {
-    name: 'SrMagnifyIcon.vue'
+    name: 'SrMagnifyIcon.vue',
+    inheritAttrs: false
 }
 </script>
