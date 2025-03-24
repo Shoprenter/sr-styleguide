@@ -27,21 +27,21 @@
 import './sr-form-row.scss'
 
 export default {
-  name: 'SrFormRow',
-  props: {
-    label: {
-      type: String,
-      required: false
-    },
-    help: {
-      type: String,
-      required: false
-    },
-    required: {
-      type: Boolean,
-      required: false,
-      default: false
+    name: 'SrFormRow',
+    props: {
+        label: {
+            type: String,
+            required: false
+        },
+        help: {
+            type: String,
+            required: false
+        },
+        required: {
+            type: Boolean,
+            required: false,
+            default: false
+        }
     }
-  }
 }
 </script>

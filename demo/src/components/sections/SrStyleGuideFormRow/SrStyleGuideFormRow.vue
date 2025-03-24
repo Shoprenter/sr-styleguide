@@ -30,20 +30,20 @@
 import '../../SrStyleGuideItemRow/SrStyleGuideItemRow.scss'
 
 export default {
-  name: 'SrStyleGuideFormRow',
-  data () {
-    return {
-      copied: false
+    name: 'SrStyleGuideFormRow',
+    data () {
+        return {
+            copied: false
+        }
+    },
+    methods: {
+        copyCode () {
+            navigator.clipboard.writeText(this.code)
+            this.copied = true
+            setTimeout(() => {
+                this.copied = false
+            }, 600)
+        }
     }
-  },
-  methods: {
-    copyCode () {
-      navigator.clipboard.writeText(this.code)
-      this.copied = true
-      setTimeout(() => {
-        this.copied = false
-      }, 600)
-    }
-  }
 }
 </script>
