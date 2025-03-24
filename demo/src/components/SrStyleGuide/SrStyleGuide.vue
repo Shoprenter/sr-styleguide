@@ -32,6 +32,12 @@
             </v-flex>
             <sr-style-guide-inputs/>
           </v-flex>
+          <v-flex id="form-row" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Form Row</h2>
+            </v-flex>
+            <sr-style-guide-form-row/>
+          </v-flex>
           <v-flex id="icons" class="sg-subsection" column wrap>
             <v-flex xs12>
               <h2>Icons</h2>

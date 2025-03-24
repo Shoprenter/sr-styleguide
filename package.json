@@ -10,6 +10,7 @@
   "scripts": {
     "before-commit": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build|^demo/\") --fix && npm run build",
     "lint:all": "eslint \"./{src,build,demo}/**/*.{js,vue}\"",
+    "lint:all:fix": "eslint \"./{src,build,demo}/**/*.{js,vue}\" --fix",
     "lint:diff": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build|^demo/\")",
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server --config build/webpack.config.js --mode development  --progress",
