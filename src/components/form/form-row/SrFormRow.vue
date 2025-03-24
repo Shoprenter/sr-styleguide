@@ -24,7 +24,7 @@
 
 <script>
 
-import './sr-form-row.scss'
+import './SrFormRow.scss'
 
 export default {
     name: 'SrFormRow',
