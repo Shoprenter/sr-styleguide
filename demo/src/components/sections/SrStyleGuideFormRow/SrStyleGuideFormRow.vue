@@ -13,7 +13,7 @@
     <sr-input-field type="text"></sr-input-field>
  </sr-form-row>
 '/>
-      <div class="flex">
+      <div class="flex style-guide-row">
         <v-btn icon class="copy-button ml-2" color="primary" @click="copyCode">
           <sr-duplicate-icon size="20"/>
         </v-btn>
