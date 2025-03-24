@@ -22,33 +22,15 @@
           </v-flex>
           <v-flex id="inputs" class="sg-subsection" column wrap>
             <v-flex xs12>
-              <h2>Icons</h2>
-            </v-flex>
-            <sr-style-guide-icons/>
-          </v-flex>
-          <v-flex class="sg-subsection" id="form-row" column wrap>
-            <v-flex xs12>
-              <h2>Icons</h2>
-            </v-flex>
-            <sr-style-guide-form-row/>
-          </v-flex>
-          <!--
-            <v-flex class="sg-subsection" id="buttons" column wrap>
-                <v-flex xs12>
-                    <h2>Buttons</h2>
-                </v-flex>
-                <style-guide-buttons />
-            </v-flex>
-            <v-flex class="sg-subsection" id="input-forms" column wrap>
-                <v-flex xs12>
-                    <h2>Input forms</h2>
-                </v-flex>
-                <style-guide-input-forms />
-            </v-flex>
-            -->
               <h2>Inputs</h2>
             </v-flex>
             <sr-style-guide-inputs/>
+          </v-flex>
+          <v-flex id="form-row" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Form Row</h2>
+            </v-flex>
+            <sr-style-guide-form-row/>
           </v-flex>
           <v-flex id="icons" class="sg-subsection" column wrap>
             <v-flex xs12>
@@ -65,6 +47,6 @@
 import './SrStyleGuide.scss'
 
 export default {
-    name: 'StyleGuide'
+  name: 'StyleGuide'
 }
 </script>

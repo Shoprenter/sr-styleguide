@@ -1,34 +1,39 @@
 <template>
   <v-row dense>
-    <v-col cols="3">
+    <v-col cols="12" sm="3">
       <div class="admin-form-row">
         <div class="admin-form-row__label">
           <slot name="label">
-            <v-label>{{ label }}<span v-if="required" class="required">*</span></v-label>
+            <v-label><span v-if="required" class="required-form-row">* </span>{{ label }}</v-label>
             <div class="help">
-              Ez lesz a help szöveg
+              {{ help }}
             </div>
           </slot>
         </div>
-        <div class="admin-form-row__element">
-          <slot/>
-        </div>
       </div>
     </v-col>
-    <v-col cols="4">
-      <sr-input-field type="text"></sr-input-field>
+    <v-col cols="12" sm="4">
+      <div class="admin-form-row__element">
+        <slot />
+      </div>
     </v-col>
-    <v-col cols="5">
+    <v-col cols="5" class="d-none d-sm-block">
     </v-col>
   </v-row>
 </template>
 
 <script>
 
+import './sr-form-row.scss'
+
 export default {
   name: 'SrFormRow',
   props: {
     label: {
+      type: String,
+      required: false
+    },
+    help: {
       type: String,
       required: false
     },
@@ -40,22 +45,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped>
-.admin-form-row {
-  margin-bottom: 16px;
-}
-
-.admin-form-row__label {
-  margin-bottom: 5px;
-}
-
-.new-style .form-help,.new-style .help {
-  color: var(--sr-dark-grey);
-  font-size: 12px;
-  font-weight: 400;
-  display: block;
-  text-transform: none;
-  margin-top: 4px
-}
-</style>
