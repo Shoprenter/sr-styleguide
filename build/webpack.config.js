@@ -4,7 +4,7 @@ const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = (env, argv) => ({
-    mode: argv.mode || 'development',  // <--- FONTOS: így CLI-ből állítható
+    mode: argv.mode || 'development', // <--- FONTOS: így CLI-ből állítható
     entry: {
         stylesheet: path.resolve(__dirname, './stylesheet/stylesheet.js'),
         demo: path.resolve(__dirname, '../demo/index.js')
@@ -13,37 +13,39 @@ module.exports = (env, argv) => ({
         path: path.resolve(__dirname, '../dist/demo/src'),
         filename: '[name].js',
         chunkFilename: '[name].js',
-        clean: true                          // dist mappa tisztítása build előtt
+        clean: true // dist mappa tisztítása build előtt
     },
     optimization: {
         splitChunks: false,
         runtimeChunk: false,
         concatenateModules: true,
-        minimize: argv.mode === 'production',  // optimalizálás bekapcsolása prod-nál
+        minimize: argv.mode === 'production', // optimalizálás bekapcsolása prod-nál
         moduleIds: 'named',
         chunkIds: 'named'
     },
     stats: {
         warnings: false
     },
-    devServer: argv.mode === 'development' ? {
-        static: {
-            directory: path.resolve(__dirname, '../dist')
-        },
-        hot: true,
-        port: 8090,
-        client: {
-            overlay: {
-                warnings: false,
-                runtimeErrors: false
+    devServer: argv.mode === 'development'
+        ? {
+            static: {
+                directory: path.resolve(__dirname, '../dist')
+            },
+            hot: true,
+            port: 8090,
+            client: {
+                overlay: {
+                    warnings: false,
+                    runtimeErrors: false
+                }
+            },
+            headers: {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
+                'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
             }
-        },
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
-            'Access-Control-Allow-Headers': 'X-Requested-With, content-type, Authorization'
         }
-    } : undefined,  // devServer csak development módban kell
+        : undefined, // devServer csak development módban kell
     module: {
         rules: [
             {
