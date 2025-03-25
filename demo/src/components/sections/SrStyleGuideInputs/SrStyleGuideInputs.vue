@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="sr-style-guide-inputs">
     <div class="sg-block">
       <h4 class="text-h4">Text</h4>
       <sr-style-guide-item-row
@@ -44,11 +44,20 @@
         />
       </sr-style-guide-item-row>
     </div>
+    <div class="sg-block">
+      <h4 class="text-h4">Checkbox</h4>
+      <sr-style-guide-item-row code='<sr-checkbox label="This is a checkbox." />' class="mb-4">
+          <sr-checkbox label="This is a checkbox." />
+      </sr-style-guide-item-row>
+
+      <sr-style-guide-item-row code='<sr-checkbox disabled label="This is a disabled checkbox." />'>
+        <sr-checkbox disabled label="This is a disabled checkbox."/>
+      </sr-style-guide-item-row>
+    </div>
   </div>
 </template>
 
 <script>
-
 export default {
     name: 'StyleGuideInputs'
 
