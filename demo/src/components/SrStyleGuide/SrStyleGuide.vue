@@ -12,7 +12,7 @@
         </v-flex>
         <v-layout class="sg-section" id="layouts" column wrap>
           <v-flex xs12>
-            <h1 class="sg-section-header">Layout</h1>
+            <h1 class="sg-section-header">Layouts</h1>
           </v-flex>
           <sr-style-guide-layouts />
         </v-layout>
