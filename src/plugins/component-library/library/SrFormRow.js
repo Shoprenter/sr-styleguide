@@ -1,4 +1,4 @@
-import SrFormRow from '../../../components/form/form-row/SrFormRow.vue'
+import SrFormRow from '../../../components/form/SrFormRow/SrFormRow.vue'
 
 export default {
     install (Vue, options = {}) {
