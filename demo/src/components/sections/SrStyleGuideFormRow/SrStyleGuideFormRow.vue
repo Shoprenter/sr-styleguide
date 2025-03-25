@@ -13,14 +13,6 @@
     <sr-input-field type="text"></sr-input-field>
  </sr-form-row>
 '/>
-      <div class="flex style-guide-row">
-        <v-btn icon class="copy-button ml-2" color="primary" @click="copyCode">
-          <sr-duplicate-icon size="20"/>
-        </v-btn>
-        <transition name="fade">
-          <span class="copied-text" v-if="copied">Másolva!</span>
-        </transition>
-      </div>
     </v-row>
   </div>
 </template>
