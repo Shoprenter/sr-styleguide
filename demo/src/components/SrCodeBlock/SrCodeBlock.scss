@@ -1,6 +1,6 @@
 @import '../../../../src/plugins/vuetify/preset/variables';
 
-.code-block {
+.sr-code-block .code-block {
   position: relative;
   background: transparent;
   padding: 0;
@@ -14,7 +14,7 @@
   line-height: 1.4;
 }
 
-.code-block {
+.sr-code-block .code-block {
   pre {
     background: var(--sr-light-grey) !important;
     border: none !important;
@@ -30,4 +30,34 @@
     border: none !important;
     font-weight: bold;
   }
+}
+
+.sr-code-block.code-container {
+  flex-grow: 1;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.sr-code-block .copied-text {
+  background: var(--sr-primary);
+  color: var(--sr-white);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: $input-font-size;
+  font-weight: map-get($font-weights, 'medium');
+  opacity: 1;
+  z-index: 10;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateY(0);
+  font-family: $body-font-family;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
 }
