@@ -59,6 +59,6 @@
 import './SrStyleGuide.scss'
 
 export default {
-    name: 'StyleGuide',
+    name: 'StyleGuide'
 }
 </script>

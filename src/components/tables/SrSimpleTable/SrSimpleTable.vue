@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name: "SrSimpleTable",
-  inheritAttrs: false,
+    name: 'SrSimpleTable',
+    inheritAttrs: false
 }
 </script>

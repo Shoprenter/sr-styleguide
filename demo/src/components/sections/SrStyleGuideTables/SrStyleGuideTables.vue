@@ -91,6 +91,6 @@
 <script>
 
 export default {
-  name: 'SrStyleGuideTables'
+    name: 'SrStyleGuideTables'
 }
 </script>
