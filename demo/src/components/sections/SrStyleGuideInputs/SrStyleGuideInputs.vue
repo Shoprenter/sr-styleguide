@@ -1,13 +1,13 @@
 <template>
   <div id="sr-style-guide-inputs">
-    <div class="sg-block">
+    <div id="text-inputs" class="sg-block">
       <h4 class="text-h4">Text</h4>
       <sr-style-guide-item-row
           align="start"
           code="<sr-input-field type='text' hint='This is a hint'/>">
         <sr-input-field
-            type="text"
             hint="This is a hint"
+            type="text"
         />
       </sr-style-guide-item-row>
     </div>
@@ -17,8 +17,8 @@
           align="start"
           code="<sr-input-field type='number' hint='This is a hint'/>">
         <sr-input-field
-            type="number"
             hint="This is a hint"
+            type="number"
         />
       </sr-style-guide-item-row>
     </div>
@@ -28,12 +28,12 @@
           align="start"
           code="<sr-input-field type='text' error-messages='Here is an error'/>">
         <sr-input-field
-            type="text"
             error-messages="Here is an error"
+            type="text"
         />
       </sr-style-guide-item-row>
     </div>
-    <div class="sg-block">
+    <div id="select-inputs" class="sg-block">
       <h4 class="text-h4">Select</h4>
       <sr-style-guide-item-row
           align="start"
@@ -44,14 +44,24 @@
         />
       </sr-style-guide-item-row>
     </div>
-    <div class="sg-block">
+    <div id="checkbox-inputs" class="sg-block">
       <h4 class="text-h4">Checkbox</h4>
-      <sr-style-guide-item-row code='<sr-checkbox label="This is a checkbox." />' class="mb-4">
-          <sr-checkbox label="This is a checkbox." />
+      <sr-style-guide-item-row class="mb-4" code='<sr-checkbox label="This is a checkbox." />'>
+        <sr-checkbox label="This is a checkbox."/>
       </sr-style-guide-item-row>
 
       <sr-style-guide-item-row code='<sr-checkbox disabled label="This is a disabled checkbox." />'>
         <sr-checkbox disabled label="This is a disabled checkbox."/>
+      </sr-style-guide-item-row>
+    </div>
+    <div id="switch-inputs" class="sg-block">
+      <h4 class="text-h4">Switch</h4>
+      <sr-style-guide-item-row class="mb-4" code='<sr-switch v-model="switchValue"/>'>
+        <sr-switch v-model="switchValue"/>
+      </sr-style-guide-item-row>
+
+      <sr-style-guide-item-row code='<sr-switch dense v-model="switchValue"/>'>
+        <sr-switch dense v-model="switchValueDense"/>
       </sr-style-guide-item-row>
     </div>
   </div>
@@ -59,7 +69,12 @@
 
 <script>
 export default {
-    name: 'StyleGuideInputs'
-
+    name: 'StyleGuideInputs',
+    data () {
+        return {
+            switchValue: true,
+            switchValueDense: false
+        }
+    }
 }
 </script>
