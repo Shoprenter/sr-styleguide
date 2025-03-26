@@ -69,7 +69,8 @@ export default {
                                 { text: 'Input Fields', goTo: '#text-inputs' },
                                 { text: 'Select', goTo: '#select-inputs' },
                                 { text: 'Checkbox', goTo: '#checkbox-inputs' },
-                                { text: 'Switch ', goTo: '#switch-inputs' }
+                                { text: 'Switch ', goTo: '#switch-inputs' },
+                                { text: 'Radio ', goTo: '#radio-inputs' }
                             ]
                         },
                         { text: 'Form Row', goTo: '#form-row' },
