@@ -10,6 +10,7 @@ import SrStyleGuideButtons from './sections/StStyleGuideButtons/SrStyleGuideButt
 import SrStyleGuideItemRow from './SrStyleGuideItemRow/SrStyleGuideItemRow.vue'
 import SrStyleGuideFormRow from './sections/SrStyleGuideFormRow/SrStyleGuideFormRow.vue'
 import SrStyleGuideLayouts from './sections/SrStyleGuideLayouts/SrStyleGuideLayouts.vue'
+import SrStyleGuideTables from "./sections/SrStyleGuideTables/SrStyleGuideTables.vue";
 
 export default {
     install (Vue, options = {}) {
@@ -25,5 +26,6 @@ export default {
         Vue.component('SrStyleGuideItemRow', SrStyleGuideItemRow)
         Vue.component('SrStyleGuideFormRow', SrStyleGuideFormRow)
         Vue.component('SrStyleGuideLayouts', SrStyleGuideLayouts)
+        Vue.component('SrStyleGuideTables', SrStyleGuideTables)
     }
 }
