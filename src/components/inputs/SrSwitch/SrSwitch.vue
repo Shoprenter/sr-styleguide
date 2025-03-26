@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import translator from '../../translator/ComponentTranslator'
-
 export default {
     name: 'SrSwitch',
     inheritAttrs: false,
@@ -25,7 +23,7 @@ export default {
     },
     computed: {
         getLabel () {
-            return this.value ? translator.translate('yes') : translator.translate('no')
+            return this.value ? this.$vuetify.lang.t('$vuetify.yes') : this.$vuetify.lang.t('$vuetify.no')
         }
     }
 }

@@ -1,5 +1,5 @@
-import en from 'vuetify/es5/locale/en'
-import hu from 'vuetify/es5/locale/hu'
+import en from './locale/sr-en'
+import hu from './locale/sr-hu'
 
 import icons from './icons'
 
