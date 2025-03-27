@@ -10,3 +10,7 @@
   min-height: unset;
   max-width: unset;
 }
+
+.new-style:has( > .sr-module) {
+  background: unset;
+}
