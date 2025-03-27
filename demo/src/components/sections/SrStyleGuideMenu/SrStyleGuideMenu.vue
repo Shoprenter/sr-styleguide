@@ -77,9 +77,12 @@ export default {
                         { text: 'Tables', goTo: '#tables' },
                         { text: 'Alerts', goTo: '#alerts' },
                         { text: 'Icons', goTo: '#icons' },
-                        { text: 'App Containers', goTo: '#app-containers' }
                     ]
-                }
+                },
+              {
+                text: 'App Containers',
+                goTo: '#app-containers'
+              }
             ]
         }
     }
