@@ -12,6 +12,7 @@ import SrStyleGuideFormRow from './sections/SrStyleGuideFormRow/SrStyleGuideForm
 import SrStyleGuideLayouts from './sections/SrStyleGuideLayouts/SrStyleGuideLayouts.vue'
 import SrStyleGuideTables from './sections/SrStyleGuideTables/SrStyleGuideTables.vue'
 import SrStyleGuideAppContainers from './sections/SrStyleGuideAppContainers/SrStyleGuideAppContainers.vue'
+import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -29,5 +30,6 @@ export default {
         Vue.component('SrStyleGuideLayouts', SrStyleGuideLayouts)
         Vue.component('SrStyleGuideTables', SrStyleGuideTables)
         Vue.component('SrStyleGuideAppContainers', SrStyleGuideAppContainers)
+        Vue.component('SrStyleGuideAlerts', SrStyleGuideAlerts)
     }
 }
