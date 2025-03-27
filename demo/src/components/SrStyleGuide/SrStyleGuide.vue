@@ -44,6 +44,12 @@
             </v-flex>
             <sr-style-guide-tables/>
           </v-flex>
+          <v-flex id="alerts" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Alerts</h2>
+            </v-flex>
+            <sr-style-guide-alerts/>
+          </v-flex>
           <v-flex id="icons" class="sg-subsection" column wrap>
             <v-flex xs12>
               <h2>Icons</h2>
