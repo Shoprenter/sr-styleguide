@@ -1,6 +1,6 @@
 <template>
   <sr-page-layout class="admin-style-guide">
-    <sr-page-header :title="translate('help.style_guide')"></sr-page-header>
+    <sr-page-header title="SR Style Guide"></sr-page-header>
 
     <div class="admin-style-guide-layout">
       <div>
@@ -37,6 +37,12 @@
               <h2>Form Row</h2>
             </v-flex>
             <sr-style-guide-form-row/>
+          </v-flex>
+          <v-flex id="tables" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Tables</h2>
+            </v-flex>
+            <sr-style-guide-tables/>
           </v-flex>
           <v-flex id="icons" class="sg-subsection" column wrap>
             <v-flex xs12>

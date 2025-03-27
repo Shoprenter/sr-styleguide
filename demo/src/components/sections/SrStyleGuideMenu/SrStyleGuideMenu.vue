@@ -51,6 +51,7 @@ export default {
                         { text: 'Buttons', goTo: '#buttons' },
                         { text: 'Inputs', goTo: '#inputs' },
                         { text: 'Form Row', goTo: '#form-row' },
+                        { text: 'Tables', goTo: '#tables' },
                         { text: 'Icons', goTo: '#icons' }
                     ]
                 }
