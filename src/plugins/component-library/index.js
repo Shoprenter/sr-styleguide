@@ -4,6 +4,7 @@ import SrInputs from './library/SrInputs'
 import SrFormRow from './library/SrFormRow'
 import SrLayouts from './library/SrLayouts'
 import SrTables from './library/SrTables'
+import SrAlerts from './library/SrAlerts'
 
 export default {
     install (Vue, options = {}) {
@@ -13,5 +14,6 @@ export default {
         Vue.use(SrFormRow)
         Vue.use(SrLayouts)
         Vue.use(SrTables)
+        Vue.use(SrAlerts)
     }
 }

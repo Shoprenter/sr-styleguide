@@ -75,6 +75,7 @@ export default {
                         },
                         { text: 'Form Row', goTo: '#form-row' },
                         { text: 'Tables', goTo: '#tables' },
+                        { text: 'Alerts', goTo: '#alerts' },
                         { text: 'Icons', goTo: '#icons' }
                     ]
                 }
