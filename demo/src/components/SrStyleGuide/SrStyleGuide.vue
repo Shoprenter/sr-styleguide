@@ -51,6 +51,12 @@
             <sr-style-guide-icons/>
           </v-flex>
         </v-layout>
+        <v-layout class="sg-section" id="app-containers" column wrap>
+          <v-flex xs12>
+            <h1 class="sg-section-header">App Containers</h1>
+          </v-flex>
+          <sr-style-guide-app-containers />
+        </v-layout>
       </div>
     </div>
   </sr-page-layout>
