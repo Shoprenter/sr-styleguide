@@ -1,37 +1,47 @@
 <template>
-    <div class="admin-style-guide__menu">
-        <v-list flat>
-            <v-list-item-group>
-                <v-list-item
-                    v-for="section in sections" :key="section.text"
-                >
-                    <div v-if="section.components">
-                        <v-list-item-content
-                            @click="$vuetify.goTo(section.goTo, {offset: 100})">
-                            {{section.text}}
-                        </v-list-item-content>
-                        <v-list-item-group>
-                            <v-list-item
-                                v-for="component in section.components" :key="component.text"
-                                @click="$vuetify.goTo(component.goTo, {offset: 110})"
-                            >
-                                <v-list-item-content>
-                                    {{component.text}}
-                                </v-list-item-content>
-                            </v-list-item>
-                        </v-list-item-group>
-                    </div>
-                    <div v-else>
-                        <v-list-item-content
-                            @click="$vuetify.goTo(section.goTo, {offset: 100})"
+  <div class="admin-style-guide__menu">
+    <v-list flat>
+      <v-list-item-group>
+        <template v-for="section in sections">
+          <v-list-item :key="section.text">
+            <div>
+              <v-list-item-content @click="$vuetify.goTo(section.goTo, { offset: 100 })">
+                {{ section.text }}
+              </v-list-item-content>
+
+              <v-list dense v-if="section.components">
+                <template v-for="component in section.components">
+                  <v-list-item :key="component.text">
+                    <div>
+                      <v-list-item-content @click="$vuetify.goTo(component.goTo, { offset: 110 })">
+                        {{ component.text }}
+                      </v-list-item-content>
+
+                      <!-- Harmadik szint -->
+                      <v-list dense v-if="component.subComponents">
+                        <v-list-item
+                            v-for="sub in component.subComponents"
+                            :key="sub.text"
+                            class="pl-4"
+                            @click="$vuetify.goTo(sub.goTo, { offset: 120 })"
                         >
-                            {{section.text}}
-                        </v-list-item-content>
+                          <v-list-item-content>
+                            {{ sub.text }}
+                          </v-list-item-content>
+                        </v-list-item>
+                      </v-list>
+
                     </div>
-                </v-list-item>
-            </v-list-item-group>
-        </v-list>
-    </div>
+                  </v-list-item>
+                </template>
+              </v-list>
+
+            </div>
+          </v-list-item>
+        </template>
+      </v-list-item-group>
+    </v-list>
+  </div>
 </template>
 
 <script>
@@ -48,8 +58,20 @@ export default {
                     text: 'Components',
                     goTo: '#components',
                     components: [
-                        { text: 'Buttons', goTo: '#buttons' },
-                        { text: 'Inputs', goTo: '#inputs' },
+                        {
+                            text: 'Buttons',
+                            goTo: '#buttons'
+                        },
+                        {
+                            text: 'Inputs',
+                            goTo: '#inputs',
+                            subComponents: [
+                                { text: 'Input Fields', goTo: '#text-inputs' },
+                                { text: 'Select', goTo: '#select-inputs' },
+                                { text: 'Checkbox', goTo: '#checkbox-inputs' },
+                                { text: 'Switch ', goTo: '#switch-inputs' }
+                            ]
+                        },
                         { text: 'Form Row', goTo: '#form-row' },
                         { text: 'Tables', goTo: '#tables' },
                         { text: 'Icons', goTo: '#icons' }
