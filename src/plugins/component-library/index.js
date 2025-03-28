@@ -6,6 +6,7 @@ import SrLayouts from './library/SrLayouts'
 import SrTables from './library/SrTables'
 import SrAppContainers from './library/SrAppContainers'
 import SrAlerts from './library/SrAlerts'
+import SrMilestoneIndicators from './library/SrMilestoneIndicators'
 
 export default {
     install (Vue, options = {}) {
@@ -17,5 +18,6 @@ export default {
         Vue.use(SrTables)
         Vue.use(SrAlerts)
         Vue.use(SrAppContainers)
+        Vue.use(SrMilestoneIndicators)
     }
 }

@@ -13,6 +13,8 @@ import SrStyleGuideLayouts from './sections/SrStyleGuideLayouts/SrStyleGuideLayo
 import SrStyleGuideTables from './sections/SrStyleGuideTables/SrStyleGuideTables.vue'
 import SrStyleGuideAppContainers from './sections/SrStyleGuideAppContainers/SrStyleGuideAppContainers.vue'
 import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts.vue'
+import SrStyleGuideMilestoneIndicators
+    from './sections/SrStyleGuideMilestoneIndicators/SrStyleGuideMilestoneIndicators.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -31,5 +33,6 @@ export default {
         Vue.component('SrStyleGuideTables', SrStyleGuideTables)
         Vue.component('SrStyleGuideAppContainers', SrStyleGuideAppContainers)
         Vue.component('SrStyleGuideAlerts', SrStyleGuideAlerts)
+        Vue.component('SrStyleGuideMilestoneIndicators', SrStyleGuideMilestoneIndicators)
     }
 }

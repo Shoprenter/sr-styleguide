@@ -50,6 +50,12 @@
             </v-flex>
             <sr-style-guide-alerts/>
           </v-flex>
+          <v-flex id="milestone-indicators" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Milestone Indicators</h2>
+            </v-flex>
+            <sr-style-guide-milestone-indicators/>
+          </v-flex>
           <v-flex id="icons" class="sg-subsection" column wrap>
             <v-flex xs12>
               <h2>Icons</h2>
