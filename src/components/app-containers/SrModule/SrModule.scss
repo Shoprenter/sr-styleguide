@@ -1,0 +1,16 @@
+#sr-styleguide:has(div.new-style > .sr-module) {
+  overflow-y:auto;
+}
+
+.new-style > div.v-application.sr-module {
+  background: unset;
+}
+
+.new-style > div.v-application.sr-module > div.v-application--wrap {
+  min-height: unset;
+  max-width: unset;
+}
+
+.new-style:has( > .sr-module) {
+  background: unset;
+}

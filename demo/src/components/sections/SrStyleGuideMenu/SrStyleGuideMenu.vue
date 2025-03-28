@@ -2,16 +2,16 @@
   <div class="admin-style-guide__menu">
     <v-list flat>
       <v-list-item-group>
-        <template v-for="section in sections">
-          <v-list-item :key="section.text">
+        <template>
+          <v-list-item v-for="section in sections" :key="section.text">
             <div>
               <v-list-item-content @click="$vuetify.goTo(section.goTo, { offset: 100 })">
                 {{ section.text }}
               </v-list-item-content>
 
               <v-list dense v-if="section.components">
-                <template v-for="component in section.components">
-                  <v-list-item :key="component.text">
+                <template>
+                  <v-list-item v-for="component in section.components" :key="component.text">
                     <div>
                       <v-list-item-content @click="$vuetify.goTo(component.goTo, { offset: 110 })">
                         {{ component.text }}
@@ -79,6 +79,10 @@ export default {
                         { text: 'Alerts', goTo: '#alerts' },
                         { text: 'Icons', goTo: '#icons' }
                     ]
+                },
+                {
+                    text: 'App Containers',
+                    goTo: '#app-containers'
                 }
             ]
         }
