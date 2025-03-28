@@ -5,7 +5,11 @@
         <h4 class="text-h4">Multi-step Progress Bar</h4>
       </v-flex>
       <div class="sg-block mb-4">
-        <sr-multi-step-progress-bar/>
+        <sr-multi-step-progress-bar>
+          <sr-progress-bar-step>Step 1</sr-progress-bar-step>
+          <sr-progress-bar-step class="text-right">Step 2</sr-progress-bar-step>
+          <sr-progress-bar-step>Step 3</sr-progress-bar-step>
+        </sr-multi-step-progress-bar>
       </div>
       <div class="code-container">
         <sr-code-block code='<sr-page>

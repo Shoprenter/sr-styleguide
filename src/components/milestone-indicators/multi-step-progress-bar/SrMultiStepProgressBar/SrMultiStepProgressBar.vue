@@ -1,6 +1,6 @@
 <template>
   <v-timeline>
-
+    <slot />
   </v-timeline>
 </template>
 
