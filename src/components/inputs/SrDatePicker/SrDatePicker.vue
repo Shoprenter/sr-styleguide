@@ -26,31 +26,31 @@
 
 <script>
 export default {
-  name: 'SrDatePicker',
-  props: {
-    value: {
-      required: false,
-      default: null
+    name: 'SrDatePicker',
+    props: {
+        value: {
+            required: false,
+            default: null
+        },
+        placeholder: {
+            required: false,
+            default: ''
+        },
+        clearable: {
+            required: false,
+            default: false
+        }
     },
-    placeholder: {
-      required: false,
-      default: ''
+    data () {
+        return {
+            menuOpen: false
+        }
     },
-    clearable: {
-      required: false,
-      default: false
+    methods: {
+        selectDate (value) {
+            this.$emit('input', value)
+            this.menuOpen = false
+        }
     }
-  },
-  data () {
-    return {
-      menuOpen: false
-    }
-  },
-  methods: {
-    selectDate (value) {
-      this.$emit('input', value)
-      this.menuOpen = false
-    }
-  }
 }
 </script>
