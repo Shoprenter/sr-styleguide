@@ -3,14 +3,15 @@
     <v-row>
       <v-col :cols="6" sm="9" class="admin-pagination-pages">
         <v-pagination v-if="pageLength > 1"
-                      data-test-id="adminPaginationPages"
                       :total-visible="9"
                       :value="value"
                       @input="updateValue"
+                      next-icon="mdi-chevron-right"
+                      prev-icon="mdi-chevron-left"
                       :length="pageLength"/>
       </v-col>
-      <v-col :cols="6" sm="3" class="admin-pagination-results" data-test-id="paginationPageInfo">
-        {{pageInterval}} {{totalCount}} <span class="admin-pagination-results__label">{{translate('text_item')}}</span>
+      <v-col :cols="6" sm="3" class="admin-pagination-results">
+        {{pageInterval}} {{totalCount}}
       </v-col>
     </v-row>
   </div>
