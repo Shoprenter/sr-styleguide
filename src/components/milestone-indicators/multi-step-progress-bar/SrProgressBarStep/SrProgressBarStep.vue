@@ -1,11 +1,27 @@
 <template>
-  <v-timeline-item>
+  <div class="sr-progress-bar-step"
+       :class="{completed: !selected && completed, selected: selected}"
+       v-bind="$attrs"
+       v-on="$listeners"
+  >
     <slot />
-  </v-timeline-item>
+  </div>
 </template>
 
 <script>
+import './SrProgressBarStep.scss'
 export default {
-    name: 'SrProgressBarStep'
+    name: 'SrProgressBarStep',
+    inheritAttrs: false,
+    props: {
+        completed: {
+            type: Boolean,
+            default: false
+        },
+        selected: {
+            type: Boolean,
+            default: false
+        }
+    }
 }
 </script>

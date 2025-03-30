@@ -1,10 +1,11 @@
 <template>
-  <v-timeline>
+  <div class="sr-multi-step-progress-bar" v-bind="$attrs" v-on="$listeners">
     <slot />
-  </v-timeline>
+  </div>
 </template>
 
 <script>
+import './SrMultiStepProgressBar.scss'
 export default {
     name: 'SrMultiStepProgressBar',
     inheritAttrs: false
