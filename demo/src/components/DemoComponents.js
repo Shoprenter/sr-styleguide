@@ -11,6 +11,7 @@ import SrStyleGuideItemRow from './SrStyleGuideItemRow/SrStyleGuideItemRow.vue'
 import SrStyleGuideFormRow from './sections/SrStyleGuideFormRow/SrStyleGuideFormRow.vue'
 import SrStyleGuideLayouts from './sections/SrStyleGuideLayouts/SrStyleGuideLayouts.vue'
 import SrStyleGuideTables from './sections/SrStyleGuideTables/SrStyleGuideTables.vue'
+import SrStyleGuidePagination from './sections/SrStyleguidePagination/SrStyleGuidePagination.vue'
 import SrStyleGuideAppContainers from './sections/SrStyleGuideAppContainers/SrStyleGuideAppContainers.vue'
 import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts.vue'
 import SrStyleGuideMilestoneIndicators
@@ -31,6 +32,7 @@ export default {
         Vue.component('SrStyleGuideFormRow', SrStyleGuideFormRow)
         Vue.component('SrStyleGuideLayouts', SrStyleGuideLayouts)
         Vue.component('SrStyleGuideTables', SrStyleGuideTables)
+        Vue.component('SrStyleGuidePagination', SrStyleGuidePagination)
         Vue.component('SrStyleGuideAppContainers', SrStyleGuideAppContainers)
         Vue.component('SrStyleGuideAlerts', SrStyleGuideAlerts)
         Vue.component('SrStyleGuideMilestoneIndicators', SrStyleGuideMilestoneIndicators)

@@ -78,6 +78,14 @@
         </sr-radio-group>
       </sr-style-guide-item-row>
     </div>
+    <div id="date-picker-input" class="sg-block">
+      <h4 class="text-h4">Date Picker</h4>
+      <sr-style-guide-item-row class="mb-4" code='<sr-date-picker v-model="date"/>
+// accepts ISO 8601 date strings (YYYY-MM-DD)
+// date: new Date().toISOString().substring(0, 10)'>
+        <sr-date-picker v-model="date"/>
+      </sr-style-guide-item-row>
+    </div>
   </div>
 </template>
 
@@ -88,7 +96,8 @@ export default {
         return {
             switchValue: true,
             switchValueDense: false,
-            radioGroupValue: '1'
+            radioGroupValue: '1',
+            date: new Date().toISOString().substring(0, 10)
         }
     }
 }
