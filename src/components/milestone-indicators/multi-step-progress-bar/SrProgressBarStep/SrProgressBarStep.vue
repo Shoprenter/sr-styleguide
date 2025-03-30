@@ -1,9 +1,8 @@
 <template>
   <div class="sr-progress-bar-step"
-       :class="{completed: !selected && completed, selected: selected}"
+       :class="{completed: !active && completed, active: active}"
        v-bind="$attrs"
-       v-on="$listeners"
-  >
+       v-on="$listeners">
     <slot />
   </div>
 </template>
@@ -18,7 +17,7 @@ export default {
             type: Boolean,
             default: false
         },
-        selected: {
+        active: {
             type: Boolean,
             default: false
         }

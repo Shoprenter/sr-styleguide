@@ -6,18 +6,17 @@
       </v-flex>
       <div class="sg-block mb-4">
         <sr-multi-step-progress-bar>
-          <sr-progress-bar-step completed>Completed step</sr-progress-bar-step>
-          <sr-progress-bar-step selected>Active step</sr-progress-bar-step>
-          <sr-progress-bar-step>Step</sr-progress-bar-step>
+          <sr-progress-bar-step
+            v-for="step in steps" :key="step.text"
+            :completed="step.completed"
+            :active="step.active"
+          >
+            {{ step.text }}
+          </sr-progress-bar-step>
         </sr-multi-step-progress-bar>
       </div>
       <div class="code-container">
-        <sr-code-block code='<sr-multi-step-progress-bar>
-    <sr-progress-bar-step completed>Completed step</sr-progress-bar-step>
-    <sr-progress-bar-step selected>Active step</sr-progress-bar-step>
-    <sr-progress-bar-step>Step</sr-progress-bar-step>
- </sr-multi-step-progress-bar>
-'/>
+        <sr-code-block :code='code'/>
       </div>
     </v-flex>
   </v-flex>
@@ -27,6 +26,36 @@
 
 export default {
     name: 'SrStyleGuideMilestoneIndicators',
-    inheritAttrs: false
+    inheritAttrs: false,
+    data () {
+        return {
+            steps: [
+                {
+                    text: 'Completed step',
+                    active: false,
+                    completed: true
+                },
+                {
+                    text: 'Active step',
+                    active: true,
+                    completed: false
+                },
+                {
+                    text: 'Step',
+                    active: false,
+                    completed: false
+                }
+            ],
+            code: `<sr-multi-step-progress-bar>
+    <sr-progress-bar-step
+        v-for="step in steps" :key="step.text"
+        :completed="step.completed"
+        :active="step.active">
+        {{ step.text }}
+    </sr-progress-bar-step>
+ </sr-multi-step-progress-bar>`
+        }
+    }
+
 }
 </script>
