@@ -69,13 +69,14 @@ export default {
                                 { text: 'Input Fields', goTo: '#text-inputs' },
                                 { text: 'Select', goTo: '#select-inputs' },
                                 { text: 'Checkbox', goTo: '#checkbox-inputs' },
-                                { text: 'Switch ', goTo: '#switch-inputs' },
-                                { text: 'Radio ', goTo: '#radio-inputs' },
+                                { text: 'Switch', goTo: '#switch-inputs' },
+                                { text: 'Radio', goTo: '#radio-inputs' },
                                 { text: 'Date Picker', goTo: '#date-picker-input' }
                             ]
                         },
                         { text: 'Form Row', goTo: '#form-row' },
                         { text: 'Tables', goTo: '#tables' },
+                        { text: 'Pagination', goTo: '#pagination' },
                         { text: 'Alerts', goTo: '#alerts' },
                         { text: 'Icons', goTo: '#icons' }
                     ]
