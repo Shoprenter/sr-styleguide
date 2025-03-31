@@ -62,6 +62,12 @@
             </v-flex>
             <sr-style-guide-milestone-indicators/>
           </v-flex>
+          <v-flex id="tabs" class="sg-subsection" column wrap>
+            <v-flex xs12>
+              <h2>Tabs</h2>
+            </v-flex>
+            <sr-style-guide-tabs/>
+          </v-flex>
           <v-flex id="icons" class="sg-subsection" column wrap>
             <v-flex xs12>
               <h2>Icons</h2>

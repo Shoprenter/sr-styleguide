@@ -1,0 +1,4 @@
+.sr-tab.v-tab--active::before,
+.sr-tab:focus::before {
+  opacity: 0 !important;
+}
