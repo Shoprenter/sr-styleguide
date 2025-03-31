@@ -78,6 +78,7 @@ export default {
                         { text: 'Tables', goTo: '#tables' },
                         { text: 'Pagination', goTo: '#pagination' },
                         { text: 'Alerts', goTo: '#alerts' },
+                        { text: 'Milestone Indicators', goTo: '#milestone-indicators' },
                         { text: 'Icons', goTo: '#icons' }
                     ]
                 },

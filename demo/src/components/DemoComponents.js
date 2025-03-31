@@ -14,6 +14,8 @@ import SrStyleGuideTables from './sections/SrStyleGuideTables/SrStyleGuideTables
 import SrStyleGuidePagination from './sections/SrStyleguidePagination/SrStyleGuidePagination.vue'
 import SrStyleGuideAppContainers from './sections/SrStyleGuideAppContainers/SrStyleGuideAppContainers.vue'
 import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts.vue'
+import SrStyleGuideMilestoneIndicators
+    from './sections/SrStyleGuideMilestoneIndicators/SrStyleGuideMilestoneIndicators.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -33,5 +35,6 @@ export default {
         Vue.component('SrStyleGuidePagination', SrStyleGuidePagination)
         Vue.component('SrStyleGuideAppContainers', SrStyleGuideAppContainers)
         Vue.component('SrStyleGuideAlerts', SrStyleGuideAlerts)
+        Vue.component('SrStyleGuideMilestoneIndicators', SrStyleGuideMilestoneIndicators)
     }
 }
