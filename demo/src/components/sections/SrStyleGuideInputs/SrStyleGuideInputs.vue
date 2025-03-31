@@ -54,6 +54,19 @@
         <sr-checkbox disabled label="This is a disabled checkbox."/>
       </sr-style-guide-item-row>
     </div>
+    <div id="multi-checkbox-inputs" class="sg-block">
+      <h4 class="text-h4">Multi Checkbox</h4>
+      <v-row>
+        <sr-multi-checkbox :loading="false">
+          <sr-checkbox
+              v-for="option in multiCheckboxOptions"
+              :key="option.value"
+              :label="option.label"
+              :value="option.value">
+          </sr-checkbox>
+        </sr-multi-checkbox>
+      </v-row>
+    </div>
     <div id="switch-inputs" class="sg-block">
       <h4 class="text-h4">Switch</h4>
       <sr-style-guide-item-row class="mb-4" code='<sr-switch v-model="switchValue"/>'>
@@ -93,12 +106,27 @@
 export default {
     name: 'StyleGuideInputs',
     data () {
-        return {
-            switchValue: true,
-            switchValueDense: false,
-            radioGroupValue: '1',
-            date: new Date().toISOString().substring(0, 10)
-        }
+      return {
+        switchValue: true,
+        switchValueDense: false,
+        radioGroupValue: '1',
+        date: new Date().toISOString().substring(0, 10),
+        multiCheckboxOptions: [
+          {label: 'Option 1', value: 1},
+          {label: 'Option 2', value: 2},
+          {label: 'Option 3', value: 3},
+          {label: 'Option 4', value: 4},
+          {label: 'Option 5', value: 5},
+          {label: 'Option 6', value: 6},
+          {label: 'Option 7', value: 7},
+          {label: 'Option 8', value: 8},
+          {label: 'Option 9', value: 9},
+          {label: 'Option 10', value: 10},
+          {label: 'Option 11', value: 11},
+          {label: 'Option 12', value: 12}
+        ],
+        selectedOptions: ['Option 2', 'Option 3']
+      }
     }
 }
 </script>
