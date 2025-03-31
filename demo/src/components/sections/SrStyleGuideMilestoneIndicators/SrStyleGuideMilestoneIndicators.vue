@@ -15,9 +15,34 @@
           </sr-progress-bar-step>
         </sr-multi-step-progress-bar>
       </div>
-      <div class="code-container">
-        <sr-code-block :code='code'/>
-      </div>
+      <v-row>
+        <v-col :cols="6">
+            <sr-code-block :code='code'/>
+        </v-col>
+        <v-col :cols="6">
+          <sr-code-block language="JavaScript" code="data () {
+        return {
+            steps: [
+                {
+                    text: 'Completed step',
+                    active: false,
+                    completed: true
+                },
+                {
+                    text: 'Active step',
+                    active: true,
+                    completed: false
+                },
+                {
+                    text: 'Step',
+                    active: false,
+                    completed: false
+                }
+            ]
+        }"/>
+        </v-col>
+      </v-row>
+
     </v-flex>
   </v-flex>
 </template>
