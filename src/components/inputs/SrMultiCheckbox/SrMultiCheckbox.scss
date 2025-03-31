@@ -1,0 +1,32 @@
+.checkbox-container > .preloader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-container {
+  height: 100px;
+  width: 400px;
+  min-height: 100px;
+  min-width: 400px;
+  max-width: 600px;
+  max-height: 500px;
+  overflow-y: auto;
+  resize: both;
+  border-radius: 3px;
+  border: 1px solid var(--sr-pale-gray);
+  background-color: var(--sr-white);
+  padding: 0.2em 1em 1em 1em;
+}
+
+.multi-checkbox-actions {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 14px;
+}
+
+.multi-checkbox-separator {
+  color: var(--sr-primary);
+}

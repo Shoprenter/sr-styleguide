@@ -58,13 +58,16 @@
       <h4 class="text-h4">Multi Checkbox</h4>
       <v-row>
         <sr-multi-checkbox :loading="false">
-          <sr-checkbox
+          <sr-array-checkbox
               v-for="option in multiCheckboxOptions"
+              :model-value="selectedOptions"
               :key="option.value"
               :label="option.label"
-              :value="option.value">
-          </sr-checkbox>
+              @change:modelValue="selectedOptions = $event"
+              :checkbox-value="option.value">
+          </sr-array-checkbox>
         </sr-multi-checkbox>
+        {{ selectedOptions }}
       </v-row>
     </div>
     <div id="switch-inputs" class="sg-block">
@@ -110,6 +113,7 @@ export default {
         switchValue: true,
         switchValueDense: false,
         radioGroupValue: '1',
+        inputTest: 'asd',
         date: new Date().toISOString().substring(0, 10),
         multiCheckboxOptions: [
           {label: 'Option 1', value: 1},
@@ -117,6 +121,7 @@ export default {
           {label: 'Option 3', value: 3},
           {label: 'Option 4', value: 4},
           {label: 'Option 5', value: 5},
+            /*
           {label: 'Option 6', value: 6},
           {label: 'Option 7', value: 7},
           {label: 'Option 8', value: 8},
@@ -124,8 +129,10 @@ export default {
           {label: 'Option 10', value: 10},
           {label: 'Option 11', value: 11},
           {label: 'Option 12', value: 12}
+
+             */
         ],
-        selectedOptions: ['Option 2', 'Option 3']
+        selectedOptions: [2, 3]
       }
     }
 }
