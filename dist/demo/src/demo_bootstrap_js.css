@@ -123,4 +123,3 @@
 #sr-styleguide .style-guide-row{display:flex;flex-wrap:nowrap;gap:10px;align-items:center}#sr-styleguide .style-guide-row .element-container{width:200px;min-width:200px;display:flex;justify-content:flex-start}@media(max-width: 768px){#sr-styleguide .style-guide-row .style-guide-row{flex-direction:column}#sr-styleguide .style-guide-row .element-container{width:100%}}
 #sr-styleguide #sr-style-guide-layouts .page-layout--slim, #sr-styleguide #sr-style-guide-layouts .sr-code-block{margin:0 auto 48px auto;padding:0 30px}@media(min-width: 600px){#sr-styleguide #sr-style-guide-layouts .page-layout--slim, #sr-styleguide #sr-style-guide-layouts .sr-code-block{max-width:560px}}@media(min-width: 960px){#sr-styleguide #sr-style-guide-layouts .page-layout--slim, #sr-styleguide #sr-style-guide-layouts .sr-code-block{max-width:760px}}
 #sr-styleguide #app-containers .sr-page, #sr-styleguide .sr-module{border:1px solid var(--sr-dark-grey)}
-

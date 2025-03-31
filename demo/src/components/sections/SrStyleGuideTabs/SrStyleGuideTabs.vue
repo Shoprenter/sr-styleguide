@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import './SrStyleGuideTabs.scss'
 
 export default {
     name: 'SrStyleGuideTabs',
