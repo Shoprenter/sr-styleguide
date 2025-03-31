@@ -2,3 +2,8 @@
 .sr-tab:focus::before {
   opacity: 0 !important;
 }
+
+.sr-tab.v-tab--active:hover,
+.sr-tab:focus:hover {
+  color: inherit;
+}
