@@ -1,21 +1,15 @@
-import Vuetify from 'vuetify'
-import { SrStyleguideComponents } from '../../../../index'
-import { mount, createLocalVue } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 import SrMultiCheckbox from '../SrMultiCheckbox.vue'
-import { preset } from '../../../../plugins/vuetify/preset'
 
-const localVue = createLocalVue()
-localVue.use(SrStyleguideComponents)
 describe('SrMultiCheckbox.vue', () => {
     let vuetify
 
     beforeEach(() => {
-        vuetify = new Vuetify(preset)
+        vuetify = createVuetify()
     })
 
     it('renders loading state with progress circular', () => {
         const wrapper = mount(SrMultiCheckbox, {
-            localVue,
             vuetify,
             propsData: { loading: true }
         })
@@ -25,7 +19,6 @@ describe('SrMultiCheckbox.vue', () => {
 
     it('renders slot content when not loading', () => {
         const wrapper = mount(SrMultiCheckbox, {
-            localVue,
             vuetify,
             slots: {
                 default: '<div class="slot-content">Checkbox content</div>'
@@ -37,7 +30,6 @@ describe('SrMultiCheckbox.vue', () => {
 
     it('calls selectAllCheckboxes and emits event', async () => {
         const wrapper = mount(SrMultiCheckbox, {
-            localVue,
             vuetify,
             propsData: { loading: false },
             slots: {
@@ -59,7 +51,6 @@ describe('SrMultiCheckbox.vue', () => {
 
     it('calls unSelectAllCheckboxes and emits event', async () => {
         const wrapper = mount(SrMultiCheckbox, {
-            localVue,
             vuetify,
             propsData: { loading: false },
             slots: {
@@ -81,7 +72,6 @@ describe('SrMultiCheckbox.vue', () => {
 
     it('renders both action buttons', () => {
         const wrapper = mount(SrMultiCheckbox, {
-            localVue,
             vuetify,
             propsData: { loading: false }
         })

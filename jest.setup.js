@@ -9,7 +9,6 @@ Vue.use(Vuetify)
 Vue.use(SrStyleguideComponents)
 
 const localVue = createLocalVue()
-localVue.use(SrStyleguideComponents)
 
 // Globálisan beállítjuk az alapértelmezett `localVue`-t
 config.global = {
