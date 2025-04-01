@@ -8,6 +8,7 @@ import SrPagination from './library/SrPagination'
 import SrAppContainers from './library/SrAppContainers'
 import SrAlerts from './library/SrAlerts'
 import SrMilestoneIndicators from './library/SrMilestoneIndicators'
+import SrTabs from './library/SrTabs'
 
 export default {
     install (Vue, options = {}) {
@@ -21,5 +22,6 @@ export default {
         Vue.use(SrPagination)
         Vue.use(SrAppContainers)
         Vue.use(SrMilestoneIndicators)
+        Vue.use(SrTabs)
     }
 }

@@ -79,6 +79,7 @@ export default {
                         { text: 'Pagination', goTo: '#pagination' },
                         { text: 'Alerts', goTo: '#alerts' },
                         { text: 'Milestone Indicators', goTo: '#milestone-indicators' },
+                        { text: 'Tabs', goTo: '#tabs' },
                         { text: 'Icons', goTo: '#icons' }
                     ]
                 },

@@ -34,6 +34,7 @@ module.exports = (env, argv) => ({
             hot: true,
             port: 8090,
             client: {
+                logging: 'error',
                 overlay: {
                     warnings: false,
                     runtimeErrors: false

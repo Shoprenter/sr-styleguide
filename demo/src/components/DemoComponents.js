@@ -16,6 +16,7 @@ import SrStyleGuideAppContainers from './sections/SrStyleGuideAppContainers/SrSt
 import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts.vue'
 import SrStyleGuideMilestoneIndicators
     from './sections/SrStyleGuideMilestoneIndicators/SrStyleGuideMilestoneIndicators.vue'
+import SrStyleGuideTabs from './sections/SrStyleGuideTabs/SrStyleGuideTabs.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -36,5 +37,6 @@ export default {
         Vue.component('SrStyleGuideAppContainers', SrStyleGuideAppContainers)
         Vue.component('SrStyleGuideAlerts', SrStyleGuideAlerts)
         Vue.component('SrStyleGuideMilestoneIndicators', SrStyleGuideMilestoneIndicators)
+        Vue.component('SrStyleGuideTabs', SrStyleGuideTabs)
     }
 }
