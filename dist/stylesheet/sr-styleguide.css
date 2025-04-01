@@ -18,6 +18,8 @@
     --sr-anchor: #518400;
     --sr-hover-green: #619D01;
     --sr-light-green: #AAE600;
+
+    --sr-black-rgb: 40, 45, 51;
 }
 #sr-styleguide .new-style {
     --sidebar-background: var(--sr-black);

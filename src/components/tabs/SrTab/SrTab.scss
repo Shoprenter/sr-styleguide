@@ -1,9 +1,9 @@
-.sr-tab.v-tab--active::before,
+.sr-tab.sr-tab-active::before,
 .sr-tab:focus::before {
   opacity: 0 !important;
 }
 
-.sr-tab.v-tab--active:hover,
+.sr-tab.sr-tab-active:hover,
 .sr-tab:focus:hover {
   color: inherit;
 }

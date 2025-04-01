@@ -41,6 +41,9 @@ import SrUnitedKingdomFlag from '../../../components/icons/flags/SrUnitedKingdom
 import SrHungaryFlag from '../../../components/icons/flags/SrHungaryFlag.vue'
 import SrGermanyFlag from '../../../components/icons/flags/SrGermanyFlag.vue'
 import SrCroatiaFlag from '../../../components/icons/flags/SrCroatiaFlag.vue'
+import SrRomaniaFlag from '../../../components/icons/flags/SrRomaniaFlag.vue'
+import SrSerbiaFlag from '../../../components/icons/flags/SrSerbiaFlag.vue'
+import SrSloveniaFlag from '../../../components/icons/flags/SrSloveniaFlag.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -88,5 +91,8 @@ export default {
         Vue.component('SrUntiedKingdomFlag', SrUnitedKingdomFlag)
         Vue.component('SrGermanyFlag', SrGermanyFlag)
         Vue.component('SrCroatiaFlag', SrCroatiaFlag)
+        Vue.component('SrRomaniaFlag', SrRomaniaFlag)
+        Vue.component('SrSerbiaFlag', SrSerbiaFlag)
+        Vue.component('SrSloveniaFlag', SrSloveniaFlag)
     }
 }

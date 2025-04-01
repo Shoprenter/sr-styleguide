@@ -2,6 +2,9 @@ import SrUnitedKingdomFlag from '../../icons/flags/SrUnitedKingdomFlag.vue'
 import SrHungaryFlag from '../../icons/flags/SrHungaryFlag.vue'
 import SrGermanyFlag from '../../icons/flags/SrGermanyFlag.vue'
 import SrCroatiaFlag from '../../icons/flags/SrCroatiaFlag.vue'
+import SrRomaniaFlag from '../../icons/flags/SrRomaniaFlag.vue'
+import SrSerbiaFlag from '../../icons/flags/SrSerbiaFlag.vue'
+import SrSloveniaFlag from '../../icons/flags/SrSloveniaFlag.vue'
 
 const adminLanguageList = [
     {
@@ -26,25 +29,36 @@ const adminLanguageList = [
     },
     {
         code: 'ro',
-        icon: '',
+        icon: SrRomaniaFlag,
         text: 'Romanian'
     },
     {
         code: 'sr',
-        icon: '',
+        icon: SrSerbiaFlag,
         text: 'Serbian'
     },
     {
         code: 'sl',
-        icon: '',
+        icon: SrSloveniaFlag,
         text: 'Slovenian'
     }
 ]
 
 function getLanguage (code) {
-    return adminLanguageList.filter((language) => {
+    const languages = adminLanguageList.filter((language) => {
         return language.code === code
-    })[0]
+    })
+
+    if (!languages[0]) {
+        console.error('Invalid language code: "' + code + '"')
+        return {
+            code,
+            icon: '',
+            text: ''
+        }
+    }
+
+    return languages[0]
 }
 
 export default getLanguage

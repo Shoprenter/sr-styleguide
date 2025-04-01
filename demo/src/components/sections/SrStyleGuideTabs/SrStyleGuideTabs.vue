@@ -43,6 +43,9 @@
             <sr-language-tab :href="'#tab-2'" lang="en" />
             <sr-language-tab :href="'#tab-3'" lang="de" />
             <sr-language-tab :href="'#tab-4'" lang="hr" />
+            <sr-language-tab :href="'#tab-5'" lang="ro" />
+            <sr-language-tab :href="'#tab-6'" lang="sr" />
+            <sr-language-tab :href="'#tab-7'" lang="sl" />
           </sr-tabs>
 
           <sr-tabs-items v-model="languageTab">
@@ -66,10 +69,25 @@
                 <v-card-text><b>Croatian</b> content</v-card-text>
               </v-card>
             </sr-tab-item>
+            <sr-tab-item :value="'tab-5'">
+              <v-card flat>
+                <v-card-text><b>Romanian</b> content</v-card-text>
+              </v-card>
+            </sr-tab-item>
+            <sr-tab-item :value="'tab-6'">
+              <v-card flat>
+                <v-card-text><b>Serbian</b> content</v-card-text>
+              </v-card>
+            </sr-tab-item>
+            <sr-tab-item :value="'tab-7'">
+              <v-card flat>
+                <v-card-text><b>Slovenian</b> content</v-card-text>
+              </v-card>
+            </sr-tab-item>
           </sr-tabs-items>
         </div>
       </div>
-      <sr-code-block :code='codeBlock1'/>
+      <sr-code-block :code='codeBlock2'/>
     </v-flex>
   </v-flex>
 </template>
@@ -107,11 +125,25 @@ export default {
     </v-card>
   </sr-tab-item>
 </sr-tabs-items>`,
-            codeBlock2: `data () {
-    return {
-        model: 'tab-2'
-    }
-}`
+            codeBlock2: `<!-- languageTab: "tab-2" -->
+<sr-tabs v-model="languageTab">
+  <sr-language-tab :href="'#tab-1'" lang="hu" />
+  <sr-language-tab :href="'#tab-2'" lang="en" />
+</sr-tabs>
+
+<sr-tabs-items v-model="languageTab">
+  <sr-tab-item :value="'tab-1'">
+    <v-card flat>
+      <v-card-text><b>Hungarian</b> content</v-card-text>
+    </v-card>
+  </sr-tab-item>
+  <sr-tab-item :value="'tab-2'">
+    <v-card flat>
+      <v-card-text><b>English</b> content</v-card-text>
+    </v-card>
+  </sr-tab-item>
+</sr-tabs-items>
+`
         }
     }
 
