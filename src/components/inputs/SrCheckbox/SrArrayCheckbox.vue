@@ -11,22 +11,23 @@
 
 <script>
 export default {
-  name: 'SrCheckboxArrayModel',
-  inheritAttrs: false,
-  props: {
-    modelValue: {
-      type: Array,
-      default: []
+    name: 'SrCheckboxArrayModel',
+    inheritAttrs: false,
+    emits: ['change:modelValue'],
+    props: {
+        modelValue: {
+            type: Array,
+            default: () => []
+        },
+        checkboxValue: {
+            type: [Number, String],
+            default: 0
+        }
     },
-    checkboxValue: {
-      type: [Number, String],
-      default: 0
+    methods: {
+        handleChange (checked) {
+            this.$emit('change:modelValue', checked)
+        }
     }
-  },
-  methods: {
-    handleChange(checked) {
-      this.$emit('change:modelValue', checked)
-    }
-  }
 }
 </script>

@@ -29,41 +29,41 @@
 <script>
 import './SrMultiCheckbox.scss'
 export default {
-  name: "SrMultiCheckbox",
-  props: {
-    loading: {
-      type: Boolean,
-      default: false
-    }
-  },
-  emits: ["select-all", "unselect-all"],
-  methods: {
-    async selectAllCheckboxes() {
-      const wrapper = this.$refs.checkboxWrapper;
-      const checkboxes = wrapper.querySelectorAll('input[type="checkbox"]');
-
-      for (const cb of checkboxes) {
-        if (cb.getAttribute('aria-checked') !== 'true') {
-          cb.click();
-          await this.$nextTick();
+    name: 'SrMultiCheckbox',
+    props: {
+        loading: {
+            type: Boolean,
+            default: false
         }
-      }
-
-      this.$emit("select-all");
     },
-    async unSelectAllCheckboxes() {
-      const wrapper = this.$refs.checkboxWrapper;
-      const checkboxes = wrapper.querySelectorAll('input[type="checkbox"]');
+    emits: ['select-all', 'unselect-all'],
+    methods: {
+        async selectAllCheckboxes () {
+            const wrapper = this.$refs.checkboxWrapper
+            const checkboxes = wrapper.querySelectorAll('input[type="checkbox"]')
 
-      for (const cb of checkboxes) {
-        if (cb.getAttribute('aria-checked') === 'true') {
-          cb.click();
-          await this.$nextTick();
+            for (const cb of checkboxes) {
+                if (cb.getAttribute('aria-checked') !== 'true') {
+                    cb.click()
+                    await this.$nextTick()
+                }
+            }
+
+            this.$emit('select-all')
+        },
+        async unSelectAllCheckboxes () {
+            const wrapper = this.$refs.checkboxWrapper
+            const checkboxes = wrapper.querySelectorAll('input[type="checkbox"]')
+
+            for (const cb of checkboxes) {
+                if (cb.getAttribute('aria-checked') === 'true') {
+                    cb.click()
+                    await this.$nextTick()
+                }
+            }
+
+            this.$emit('unselect-all')
         }
-      }
-
-      this.$emit("unselect-all");
     }
-  }
 }
 </script>
