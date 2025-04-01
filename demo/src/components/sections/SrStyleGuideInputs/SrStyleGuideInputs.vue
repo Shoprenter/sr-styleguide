@@ -57,6 +57,7 @@
     <div id="multi-checkbox-inputs" class="sg-block">
       <h4 class="text-h4">Multi Checkbox</h4>
       <v-row>
+        <v-col>
         <sr-multi-checkbox :loading="false">
           <sr-array-checkbox
               v-for="option in multiCheckboxOptions"
@@ -67,7 +68,38 @@
               :checkbox-value="option.value">
           </sr-array-checkbox>
         </sr-multi-checkbox>
-        {{ selectedOptions }}
+        </v-col>
+        <v-col>
+          Selected options debug: {{ selectedOptions }}
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="6">
+          <sr-code-block code='<sr-multi-checkbox :loading="false">
+   <sr-array-checkbox
+       v-for="option in multiCheckboxOptions"
+       :model-value="selectedOptions"
+       :key="option.value"
+       :label="option.label"
+       @change:modelValue="selectedOptions = $event"
+       :checkbox-value="option.value">
+   </sr-array-checkbox>
+ </sr-multi-checkbox>'/>
+        </v-col>
+        <v-col cols="6">
+          <sr-code-block language="JavaScript" code="data () {
+      return {
+          multiCheckboxOptions: [
+            {label: 'Option 1', value: 1},
+            {label: 'Option 2', value: 2},
+            {label: 'Option 3', value: 3},
+            {label: 'Option 4', value: 4},
+            {label: 'Option 5', value: 5},
+          ],
+          selectedOptions: [2, 3]
+      }
+}"/>
+        </v-col>
       </v-row>
     </div>
     <div id="switch-inputs" class="sg-block">
@@ -121,16 +153,6 @@ export default {
           {label: 'Option 3', value: 3},
           {label: 'Option 4', value: 4},
           {label: 'Option 5', value: 5},
-            /*
-          {label: 'Option 6', value: 6},
-          {label: 'Option 7', value: 7},
-          {label: 'Option 8', value: 8},
-          {label: 'Option 9', value: 9},
-          {label: 'Option 10', value: 10},
-          {label: 'Option 11', value: 11},
-          {label: 'Option 12', value: 12}
-
-             */
         ],
         selectedOptions: [2, 3]
       }
