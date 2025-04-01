@@ -12,7 +12,15 @@ export default [
     baseDirectory: path.dirname(url.fileURLToPath(import.meta.url)),
   }).extends('eslint-config-standard')),
   {files: ["**/*.{js,mjs,cjs,vue}"]},
-  {languageOptions: { globals: globals.browser }},
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.jest,
+        createVuetify: 'readonly'
+      }
+    }
+  },
   pluginJs.configs.recommended,
   ...pluginVue.configs["flat/vue2-essential"],
   {

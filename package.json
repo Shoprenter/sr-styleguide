@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "before-commit": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build|^demo/\") --fix && npm run build",
+    "before-commit": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build|^demo/\") --fix && npm run test && npm run build",
     "lint:all": "eslint \"./{src,build,demo}/**/*.{js,vue}\"",
     "lint:all:fix": "eslint \"./{src,build,demo}/**/*.{js,vue}\" --fix",
     "lint:diff": "eslint $(git diff --name-only --diff-filter=ACMRTUXB master | grep -E \"(.js$|.vue$)\" | grep -E \"^src/|^build|^demo/\")",
