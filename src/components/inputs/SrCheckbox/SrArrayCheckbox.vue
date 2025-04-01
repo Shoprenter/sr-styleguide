@@ -11,7 +11,7 @@
 
 <script>
 export default {
-    name: 'SrCheckboxArrayModel',
+    name: 'SrArrayCheckbox',
     inheritAttrs: false,
     emits: ['change:modelValue'],
     props: {
