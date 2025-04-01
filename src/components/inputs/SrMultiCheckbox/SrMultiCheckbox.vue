@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sr-multi-checkbox">
     <div class="checkbox-container" ref="checkboxWrapper">
       <template v-if="loading">
         <div class="preloader-container">
@@ -16,13 +16,13 @@
       </template>
     </div>
     <div class="multi-checkbox-actions">
-      <sr-primary-button text small data-test-id="selectAllCheckbox" @click="selectAllCheckboxes()">
+      <a data-test-id="selectAllCheckbox" @click="selectAllCheckboxes()">
         {{ this.$vuetify.lang.t('$vuetify.selectAll') }}
-      </sr-primary-button>
+      </a>
       <span class="multi-checkbox-separator">/</span>
-      <sr-primary-button text small data-test-id="unSelectAllCheckbox" @click="unSelectAllCheckboxes()">
+      <a data-test-id="unSelectAllCheckbox" @click="unSelectAllCheckboxes()">
         {{ this.$vuetify.lang.t('$vuetify.clearAll') }}
-      </sr-primary-button>
+      </a>
     </div>
   </div>
 </template>

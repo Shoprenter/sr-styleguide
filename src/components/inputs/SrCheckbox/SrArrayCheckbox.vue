@@ -1,5 +1,6 @@
 <template>
   <v-checkbox
+      class="mb-2 mt-2"
       :input-value="modelValue"
       :ripple="false"
       :value="checkboxValue"
