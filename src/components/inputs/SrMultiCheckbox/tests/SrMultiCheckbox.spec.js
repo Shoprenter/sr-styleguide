@@ -75,7 +75,7 @@ describe('SrMultiCheckbox.vue', () => {
             vuetify,
             propsData: { loading: false }
         })
-        const buttons = wrapper.findAll('a')
+        const buttons = wrapper.findAllComponents({ name: 'sr-primary-button' })
         expect(buttons.length).toBe(2)
     })
 })

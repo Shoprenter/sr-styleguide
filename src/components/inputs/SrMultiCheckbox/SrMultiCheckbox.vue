@@ -16,13 +16,13 @@
       </template>
     </div>
     <div class="multi-checkbox-actions">
-      <a data-test-id="selectAllCheckbox" @click="selectAllCheckboxes()">
+      <sr-primary-button text data-test-id="selectAllCheckbox" @click="selectAllCheckboxes()">
         {{ this.$vuetify.lang.t('$vuetify.selectAll') }}
-      </a>
+      </sr-primary-button>
       <span class="multi-checkbox-separator">/</span>
-      <a data-test-id="unSelectAllCheckbox" @click="unSelectAllCheckboxes()">
+      <sr-primary-button text data-test-id="unSelectAllCheckbox" @click="unSelectAllCheckboxes()">
         {{ this.$vuetify.lang.t('$vuetify.clearAll') }}
-      </a>
+      </sr-primary-button>
     </div>
   </div>
 </template>
