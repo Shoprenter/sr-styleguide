@@ -45,6 +45,21 @@
         code="<sr-primary-button large outlined>Primary Button</sr-primary-button>">
       <sr-primary-button large outlined>Outlined Button</sr-primary-button>
     </sr-style-guide-item-row>
+    <sr-style-guide-item-row
+        class="mb-4"
+        code="<sr-primary-button small text>Primary Button</sr-primary-button>">
+      <sr-primary-button small text>Text Button</sr-primary-button>
+    </sr-style-guide-item-row>
+    <sr-style-guide-item-row
+        class="mb-4"
+        code="<sr-primary-button text>Primary Button</sr-primary-button>">
+      <sr-primary-button text>Text Button</sr-primary-button>
+    </sr-style-guide-item-row>
+    <sr-style-guide-item-row
+        class="mb-4"
+        code="<sr-primary-button large outlined>Primary Button</sr-primary-button>">
+      <sr-primary-button large text>Text Button</sr-primary-button>
+    </sr-style-guide-item-row>
   </div>
 </template>
 
