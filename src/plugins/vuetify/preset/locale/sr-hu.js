@@ -5,5 +5,6 @@ export default {
     yes: 'Igen',
     no: 'Nem',
     clearAll: 'Mindet töröl',
-    selectAll: 'Mindet választ'
+    selectAll: 'Mindet választ',
+    help: 'Segítség'
 }
