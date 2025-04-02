@@ -1,0 +1,12 @@
+.sr-language-tab {
+  display: flex;
+  gap: 6px;
+}
+
+.sr-language-tab.sr-tab-active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sr-language-tab:not(.sr-tab-active) svg {
+  opacity: 0.9;
+}

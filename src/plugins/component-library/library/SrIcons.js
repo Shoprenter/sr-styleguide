@@ -37,6 +37,13 @@ import SrSuccessCircleOutlineIcon from '../../../components/icons/SrSuccessCircl
 import SrSuccessIcon from '../../../components/icons/SrSuccessIcon.vue'
 import SrTrashIcon from '../../../components/icons/SrTrashIcon.vue'
 import SrWarningCircleOutlineIcon from '../../../components/icons/SrWarningCircleOutlineIcon.vue'
+import SrUnitedKingdomFlag from '../../../components/icons/flags/SrUnitedKingdomFlag.vue'
+import SrHungaryFlag from '../../../components/icons/flags/SrHungaryFlag.vue'
+import SrGermanyFlag from '../../../components/icons/flags/SrGermanyFlag.vue'
+import SrCroatiaFlag from '../../../components/icons/flags/SrCroatiaFlag.vue'
+import SrRomaniaFlag from '../../../components/icons/flags/SrRomaniaFlag.vue'
+import SrSerbiaFlag from '../../../components/icons/flags/SrSerbiaFlag.vue'
+import SrSloveniaFlag from '../../../components/icons/flags/SrSloveniaFlag.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -79,5 +86,13 @@ export default {
         Vue.component('SrSuccessIcon', SrSuccessIcon)
         Vue.component('SrTrashIcon', SrTrashIcon)
         Vue.component('SrWarningCircleOutlineIcon', SrWarningCircleOutlineIcon)
+
+        Vue.component('SrHungaryFlag', SrHungaryFlag)
+        Vue.component('SrUntiedKingdomFlag', SrUnitedKingdomFlag)
+        Vue.component('SrGermanyFlag', SrGermanyFlag)
+        Vue.component('SrCroatiaFlag', SrCroatiaFlag)
+        Vue.component('SrRomaniaFlag', SrRomaniaFlag)
+        Vue.component('SrSerbiaFlag', SrSerbiaFlag)
+        Vue.component('SrSloveniaFlag', SrSloveniaFlag)
     }
 }
