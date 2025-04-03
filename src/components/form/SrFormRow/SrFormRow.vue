@@ -23,9 +23,6 @@
 </template>
 
 <script>
-
-import './SrFormRow.scss'
-
 export default {
     name: 'SrFormRow',
     props: {
