@@ -14,8 +14,6 @@
 </template>
 
 <script>
-import './SrTabs.scss'
-
 export default {
     name: 'SrTabs',
     props: {

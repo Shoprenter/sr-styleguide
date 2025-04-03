@@ -27,7 +27,6 @@
   </div>
 </template>
 <script>
-import './SrMultiCheckbox.scss'
 export default {
     name: 'SrMultiCheckbox',
     props: {

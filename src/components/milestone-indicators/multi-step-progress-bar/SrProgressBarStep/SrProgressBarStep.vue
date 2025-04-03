@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import './SrProgressBarStep.scss'
 export default {
     name: 'SrProgressBarStep',
     inheritAttrs: false,

@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import './SrMultiStepProgressBar.scss'
 export default {
     name: 'SrMultiStepProgressBar',
     inheritAttrs: false
