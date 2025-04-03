@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import './SrTab.scss'
 export default {
     name: 'SrTab',
     inheritAttrs: false

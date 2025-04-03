@@ -6,7 +6,6 @@
 </template>
 
 <script>
-import './SrLanguageTab.scss'
 import getLanguage from './adminLanguages'
 
 export default {

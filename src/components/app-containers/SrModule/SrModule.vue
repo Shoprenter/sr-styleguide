@@ -11,7 +11,6 @@
 </template>
 
 <script>
-import './SrModule.scss'
 export default {
     name: 'SrModule'
 }
