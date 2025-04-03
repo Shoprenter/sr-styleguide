@@ -4,7 +4,6 @@
   </v-btn>
 </template>
 <script>
-import './SrHelpButton.scss'
 export default {
     name: 'SrHelpButton',
     inheritAttrs: false,
