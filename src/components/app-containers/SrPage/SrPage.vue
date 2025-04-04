@@ -2,6 +2,14 @@
   <div id="sr-styleguide">
     <div class="new-style">
       <v-app class="sr-page">
+        <v-row>
+          <v-col cols="6">
+            <!--- breadcrumbs placeholder -->
+          </v-col>
+          <v-col cols ="6" class="text-right">
+            <sr-help-button/>
+          </v-col>
+        </v-row>
         <v-main>
           <slot />
         </v-main>

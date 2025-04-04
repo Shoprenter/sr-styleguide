@@ -5,5 +5,6 @@ export default {
     yes: 'Yes',
     no: 'No',
     clearAll: 'Clear all',
-    selectAll: 'Select all'
+    selectAll: 'Select all',
+    help: 'Help'
 }
