@@ -1,3 +1,27 @@
+@import "../../../../src/plugins/vuetify/preset/style/scss/mixins/breakpoints";
+
+.admin-container {
+  --container-padding: 0;
+  padding: 0 var(--container-padding);
+
+  @include media-breakpoint-up(sm) {
+    --container-padding: 20px;
+  }
+
+  @include media-breakpoint-up(md) {
+    --container-padding: 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    --container-padding: 40px;
+  }
+
+  @media screen and (min-width: $container-main-breakpoint) {
+    max-width: $container-main-width;
+    --container-padding: 0;
+  }
+}
+
 .vb > .vb-dragger {
   z-index: 5;
   width: 12px;
