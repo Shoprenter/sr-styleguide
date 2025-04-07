@@ -5,6 +5,8 @@
 ### Fixed
 - Changed the suboptimal ordering of some style rules in the stylesheet
 - Removed unused style rules to make the stylesheet's size smaller
+- Fixed SrCheckbox component to handle v-model correctly
+- Fixed SrRadioGroup component to handle v-model correctly
 
 ### Changed
 - Updated the SrMultiCheckbox demo example to clearly demonstrate that individual checkbox options can implement custom behaviors, such as forced selection, disabled state, or triggering custom events.
