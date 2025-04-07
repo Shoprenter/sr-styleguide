@@ -54,37 +54,30 @@
         <sr-checkbox disabled label="This is a disabled checkbox."/>
       </sr-style-guide-item-row>
     </div>
-    <div id="multi-checkbox-inputs" class="sg-block">
-      <h4 class="text-h4">Multi Checkbox</h4>
+    <div id="simple-multi-checkbox-inputs" class="sg-block">
+      <h4 class="text-h4">Simple Multi Checkbox</h4>
+      <p>
+        Use this component when you only need to list the available options without requiring any special logic or custom behavior.
+      </p>
       <v-row>
         <v-col>
-        <sr-multi-checkbox :loading="false">
-          <sr-array-checkbox
-              v-for="option in multiCheckboxOptions"
-              :model-value="selectedOptions"
-              :key="option.value"
-              :label="option.label"
-              @change:modelValue="selectedOptions = $event"
-              :checkbox-value="option.value">
-          </sr-array-checkbox>
-        </sr-multi-checkbox>
+          <sr-simple-multi-checkbox
+              :loading="false"
+              :multi-checkbox-options="multiCheckboxOptions"
+          v-model="selectedSimpleOptions">
+          </sr-simple-multi-checkbox>
         </v-col>
         <v-col>
-          Selected options debug: {{ selectedOptions }}
+          Selected options debug: {{ selectedSimpleOptions }}
         </v-col>
       </v-row>
       <v-row>
         <v-col cols="6">
-          <sr-code-block code='<sr-multi-checkbox :loading="false">
-   <sr-array-checkbox
-       v-for="option in multiCheckboxOptions"
-       :model-value="selectedOptions"
-       :key="option.value"
-       :label="option.label"
-       @change:modelValue="selectedOptions = $event"
-       :checkbox-value="option.value">
-   </sr-array-checkbox>
- </sr-multi-checkbox>'/>
+          <sr-code-block code='<sr-simple-multi-checkbox
+      :loading="false"
+      :multi-checkbox-options="multiCheckboxOptions"
+      v-model="selectedOptions">
+ </sr-simple-multi-checkbox>'/>
         </v-col>
         <v-col cols="6">
           <sr-code-block language="JavaScript" code="data () {
@@ -96,6 +89,68 @@
             {label: 'Option 4', value: 4},
             {label: 'Option 5', value: 5},
           ],
+          selectedOptions: [2, 3]
+      }
+}"/>
+        </v-col>
+      </v-row>
+    </div>
+    <div id="multi-checkbox-inputs" class="sg-block">
+      <h4 class="text-h4">Multi Checkbox</h4>
+      <p>
+        Use this component when the options require unique behavior—for example, if some options should not be selectable, must always be selected, or if selecting certain items should trigger additional events or logic.
+      </p>
+      <v-row>
+        <v-col>
+        <sr-multi-checkbox :loading="false">
+          <sr-array-checkbox
+              :model-value="selectedOptions"
+              label="Option 1 (Disabled)"
+              @change:modelValue="selectedOptions = $event"
+              disabled="disabled"
+              :checkbox-value="1"/>
+          <sr-array-checkbox
+              :model-value="selectedOptions"
+              label="Option 2 (Aways selected)"
+              @change:modelValue="selectedOptions = $event"
+              disabled="disabled"
+              :checkbox-value="2"/>
+          <sr-array-checkbox
+              :model-value="selectedOptions"
+              label="Option 3"
+              @change:modelValue="selectedOptions = $event"
+              :checkbox-value="3"/>
+        </sr-multi-checkbox>
+        </v-col>
+        <v-col>
+          Selected options debug: {{ selectedOptions }}
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="6">
+          <sr-code-block code='<sr-multi-checkbox :loading="false">
+    <sr-array-checkbox
+        :model-value="selectedOptions"
+        label="Option 1 (Disabled)"
+        @change:modelValue="selectedOptions = $event"
+        disabled="disabled"
+        :checkbox-value="1"/>
+    <sr-array-checkbox
+        :model-value="selectedOptions"
+        label="Option 2 (Aways selected)"
+        @change:modelValue="selectedOptions = $event"
+        disabled="disabled"
+        :checkbox-value="2"/>
+    <sr-array-checkbox
+        :model-value="selectedOptions"
+        label="Option 3"
+        @change:modelValue="selectedOptions = $event"
+        :checkbox-value="3"/>
+ </sr-multi-checkbox>'/>
+        </v-col>
+        <v-col cols="6">
+          <sr-code-block language="JavaScript" code="data () {
+      return {
           selectedOptions: [2, 3]
       }
 }"/>
@@ -154,6 +209,7 @@ export default {
                 { label: 'Option 4', value: 4 },
                 { label: 'Option 5', value: 5 }
             ],
+            selectedSimpleOptions: [2, 3],
             selectedOptions: [2, 3]
         }
     }
