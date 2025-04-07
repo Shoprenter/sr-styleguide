@@ -1,7 +1,7 @@
 <template>
   <v-checkbox
       :input-value="value"
-      @input="$emit('input', $event)"
+      @change="$emit('input', $event)"
       v-bind="$attrs"
       v-on="$listeners"
       hide-details
@@ -19,6 +19,7 @@ export default {
     },
     props: {
         value: {
+            type: [Boolean, Number],
             required: false
         }
     }

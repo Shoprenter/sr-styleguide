@@ -46,13 +46,15 @@
     </div>
     <div id="checkbox-inputs" class="sg-block">
       <h4 class="text-h4">Checkbox</h4>
-      <sr-style-guide-item-row class="mb-4" code='<sr-checkbox label="This is a checkbox." />'>
-        <sr-checkbox label="This is a checkbox."/>
+      <sr-style-guide-item-row class="mb-4" code='<sr-checkbox v-model="checkboxValue" label="This is a checkbox." />'>
+        <sr-checkbox label="This is a checkbox." v-model="checkboxValue"/>
       </sr-style-guide-item-row>
-
       <sr-style-guide-item-row code='<sr-checkbox disabled label="This is a disabled checkbox." />'>
         <sr-checkbox disabled label="This is a disabled checkbox."/>
       </sr-style-guide-item-row>
+      <div class="pt-5">
+        Debug checkboxValue: {{ checkboxValue }}
+      </div>
     </div>
     <div id="simple-multi-checkbox-inputs" class="sg-block">
       <h4 class="text-h4">Simple Multi Checkbox</h4>
@@ -204,7 +206,6 @@ export default {
             switchValueDense: false,
             radioGroupValue: '1',
             checkboxValue: false,
-            inputTest: 'asd',
             date: new Date().toISOString().substring(0, 10),
             multiCheckboxOptions: [
                 { label: 'Option 1', value: 1 },

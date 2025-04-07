@@ -17,7 +17,7 @@ describe('SrRadioGroup', () => {
         expect(wrapper.html()).toContain('Test Slot')
     })
 
-    it('passes attributes to v-radio-group', () => {
+    it('passes attributes', () => {
         const wrapper = mount(SrRadioGroup, {
             vuetify,
             attrs: { 'data-test': 'test-attribute' }
