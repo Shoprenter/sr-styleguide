@@ -169,17 +169,20 @@
     </div>
     <div id="radio-inputs" class="sg-block">
       <h4 class="text-h4">Radio</h4>
-      <sr-style-guide-item-row class="mb-4" code='     <sr-radio-group v-model="radioGroupValue">
-          <sr-radio value="1" label="Option 1"/>
-          <sr-radio value="2" label="Option 2"/>
-          <sr-radio disabled value="3" label="Option 3"/>
-        </sr-radio-group>'>
+      <sr-style-guide-item-row class="mb-4" code='<sr-radio-group v-model="radioGroupValue">
+    <sr-radio value="1" label="Option 1"/>
+    <sr-radio value="2" label="Option 2"/>
+    <sr-radio disabled value="3" label="Option 3"/>
+ </sr-radio-group>'>
         <sr-radio-group v-model="radioGroupValue">
           <sr-radio value="1" label="Option 1"/>
           <sr-radio value="2" label="Option 2"/>
           <sr-radio disabled value="3" label="Option 3"/>
         </sr-radio-group>
       </sr-style-guide-item-row>
+      <p>
+        Debug radioGroupValue: {{ radioGroupValue }}
+      </p>
     </div>
     <div id="date-picker-input" class="sg-block">
       <h4 class="text-h4">Date Picker</h4>
@@ -200,6 +203,7 @@ export default {
             switchValue: true,
             switchValueDense: false,
             radioGroupValue: '1',
+            checkboxValue: false,
             inputTest: 'asd',
             date: new Date().toISOString().substring(0, 10),
             multiCheckboxOptions: [
