@@ -2,9 +2,7 @@
     <div class="admin-page-header">
         <div class="admin-breadcrumb-container">
             <sr-breadcrumb/>
-            <v-btn v-if="helpUrl" :href="$route.meta.helpUrl" target="_blank" :ripple="false" class="admin-help-button link-secondary" text>
-                {{translate('help_text')}}<v-icon>$helpCircleOutline</v-icon>
-            </v-btn>
+            <sr-help-button />
         </div>
         <div class="admin-page-header-head">
             <slot name="header"></slot>
@@ -29,7 +27,8 @@
 </template>
 
 <script>
-import SrBreadcrumb from '../SrBreadcrumb/SrBreadcrumb.vue'
+import './SrPageHeader.scss'
+
 export default {
     name: 'SrPageHeader',
     props: {
@@ -37,9 +36,6 @@ export default {
             required: false,
             type: String
         }
-    },
-    components: {
-        SrBreadcrumb
     },
     computed: {
         helpUrl () {

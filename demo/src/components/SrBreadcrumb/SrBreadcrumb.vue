@@ -23,6 +23,8 @@
 </template>
 
 <script>
+import './SrBreadcrumb.scss'
+
 export default {
     name: 'SrBreadcrumb',
     computed: {

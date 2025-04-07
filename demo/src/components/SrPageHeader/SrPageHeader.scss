@@ -1,0 +1,104 @@
+@import "../../../../src/plugins/vuetify/preset/style/scss/mixins/breakpoints";
+
+.admin-breadcrumb-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-breakpoint-down(xs) {
+    display: none;
+  }
+}
+
+.admin-page-header {
+  @include media-breakpoint-down(xs) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .admin-page-header-title {
+    display: flex;
+    background: transparent;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--sr-black);
+
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (min-width: 520px) {
+    &.sticky-head-active {
+      position: fixed;
+      width: calc(100% - var(--header-height));
+      margin: 0;
+      top: 0;
+      display: flex;
+      left: var(--header-height);
+      z-index: 201 !important;
+      height: var(--header-height);
+      background-color: var(--sr-black);
+      padding: 0 var(--container-padding);
+      align-items: center;
+      color: #fff;
+
+      .admin-page-header-title {
+        margin: 0;
+        width: 100%;
+
+        h1 {
+          color: #fff;
+          font-size: 18px;
+        }
+      }
+
+      .admin-breadcrumb-container,
+      .admin-page-header-head,
+      .admin-page-header-foot {
+        display: none;
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    &.sticky-head-active {
+      width: calc(100% - var(--sidebar-width));
+      left: var(--sidebar-width);
+    }
+  }
+
+  @media screen and (min-width: $container-main-breakpoint) {
+    &.sticky-head-active {
+      padding: 0 20px;
+    }
+  }
+}
+
+.admin-page-header-content {
+  display: flex;
+  align-items: center;
+
+  @include media-breakpoint-down(sm) {
+    flex-wrap: wrap;
+
+    .v-toolbar__items {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .v-toolbar__content {
+      height: auto !important;
+    }
+  }
+}
