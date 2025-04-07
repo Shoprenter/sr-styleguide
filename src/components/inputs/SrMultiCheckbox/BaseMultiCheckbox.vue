@@ -28,16 +28,16 @@
 </template>
 
 <script>
-import { MultiCheckboxMixin } from './mixin/SrMultiCheckboxMixin';
+import { MultiCheckboxMixin } from './mixin/SrMultiCheckboxMixin'
 
 export default {
-  name: 'BaseMultiCheckbox',
-  mixins: [MultiCheckboxMixin],
-  props: {
-    loading: {
-      type: Boolean,
-      default: false
+    name: 'BaseMultiCheckbox',
+    mixins: [MultiCheckboxMixin],
+    props: {
+        loading: {
+            type: Boolean,
+            default: false
+        }
     }
-  }
-};
+}
 </script>

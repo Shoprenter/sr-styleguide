@@ -14,39 +14,39 @@
 </template>
 
 <script>
-import BaseMultiCheckbox from './BaseMultiCheckbox.vue';
+import BaseMultiCheckbox from './BaseMultiCheckbox.vue'
 
 export default {
-  name: 'SrSimpleMultiCheckbox',
-  components: {BaseMultiCheckbox},
-  model: {
-    prop: 'value',
-    event: 'input'
-  },
-  emits: ['input', 'select-all', 'unselect-all'],
-  props: {
-    loading: {
-      type: Boolean,
-      default: false
+    name: 'SrSimpleMultiCheckbox',
+    components: { BaseMultiCheckbox },
+    model: {
+        prop: 'value',
+        event: 'input'
     },
-    value: {
-      type: Array,
-      default: () => []
+    emits: ['input', 'select-all', 'unselect-all'],
+    props: {
+        loading: {
+            type: Boolean,
+            default: false
+        },
+        value: {
+            type: Array,
+            default: () => []
+        },
+        multiCheckboxOptions: {
+            type: Array,
+            default: () => []
+        }
     },
-    multiCheckboxOptions: {
-      type: Array,
-      default: () => []
+    computed: {
+        modelValue: {
+            get () {
+                return this.value
+            },
+            set (newVal) {
+                this.$emit('input', newVal)
+            }
+        }
     }
-  },
-  computed: {
-    modelValue: {
-      get() {
-        return this.value;
-      },
-      set(newVal) {
-        this.$emit('input', newVal);
-      }
-    }
-  }
-};
+}
 </script>
