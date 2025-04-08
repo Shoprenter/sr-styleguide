@@ -36,7 +36,7 @@
             Admin example slim content
           </sr-content>
         </sr-standard-layout>
-        <v-row class="pt-10">
+        <v-row>
         <sr-code-block code='<sr-standard-layout>
           <sr-heading :title="Page title">
         <sr-primary-button outlined>Cancel</sr-primary-button>
