@@ -1,6 +1,7 @@
 ## [new version] - release date
 ### Added
 - Added new SrSimpleMultiCheckbox component for cases when only a straightforward listing of selectable options is required.
+- Added SrStandardLayout component to provide a consistent layout structure for pages.
 
 ### Fixed
 - Changed the suboptimal ordering of some style rules in the stylesheet

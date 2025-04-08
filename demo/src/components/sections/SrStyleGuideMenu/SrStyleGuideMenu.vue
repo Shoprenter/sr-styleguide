@@ -52,7 +52,11 @@ export default {
             sections: [
                 {
                     text: 'Layouts',
-                    goTo: '#layouts'
+                    goTo: '#layouts',
+                    components: [
+                        { text: 'Slim Layout', goTo: '#slim-layout' },
+                        { text: 'Standard Layout', goTo: '#standard-layout' }
+                    ]
                 },
                 {
                     text: 'Components',
