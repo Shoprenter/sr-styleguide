@@ -1,0 +1,23 @@
+stages:
+  - code-quality
+  - test
+
+code-quality:
+  stage: code-quality
+  image: node:22-bullseye-slim
+  script:
+    - npm i
+    - npm run lint:all
+  allow_failure: false
+  tags:
+    - sr-elin-runner
+
+test:
+  image: node:22-bullseye-slim
+  stage: test
+  script:
+    - npm i
+    - npm run test
+  allow_failure: false
+  tags:
+    - sr-elin-runner
