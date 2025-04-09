@@ -1,19 +1,21 @@
 <template>
-  <v-breadcrumbs class="admin-breadcrumbs" :items="breadcrumbs" v-if="breadcrumbs.length">
-    <template #item="{item}">
-      <v-breadcrumbs-item
-          :href="item.href"
-          :to="item.to"
-          exact
-          :disabled="false"
-      >
-        {{ item.text }}
-      </v-breadcrumbs-item>
-    </template>
-    <template #divider>
-      <v-icon>mdi-chevron-right</v-icon>
-    </template>
-  </v-breadcrumbs>
+  <div class="sr-breadcrumbs">
+    <v-breadcrumbs class="admin-breadcrumbs" :items="breadcrumbs" v-if="breadcrumbs.length">
+      <template #item="{item}">
+        <v-breadcrumbs-item
+            :href="item.href"
+            :to="item.to"
+            exact
+            :disabled="false"
+        >
+          {{ item.text }}
+        </v-breadcrumbs-item>
+      </template>
+      <template #divider>
+        <v-icon>mdi-chevron-right</v-icon>
+      </template>
+    </v-breadcrumbs>
+  </div>
 </template>
 
 <script>

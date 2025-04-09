@@ -1,4 +1,9 @@
-.admin-breadcrumbs {
+.sr-breadcrumbs {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sr-breadcrumbs .admin-breadcrumbs {
   padding: 0;
 
   .v-breadcrumbs {
