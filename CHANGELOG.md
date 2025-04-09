@@ -1,4 +1,4 @@
-## [new version] - release date
+## [1.1.0] - 2025-04-09
 ### Added
 - Added new SrSimpleMultiCheckbox component for cases when only a straightforward listing of selectable options is required.
 - Added SrStandardLayout component to provide a consistent layout structure for pages.
@@ -11,6 +11,7 @@
 
 ### Changed
 - Updated the SrMultiCheckbox demo example to clearly demonstrate that individual checkbox options can implement custom behaviors, such as forced selection, disabled state, or triggering custom events.
+- Vuetify dependency got constrained to version 2.6.14 specifically. Previously it defaulted to the latest package of version 2.
 
 ## [1.0.0] - 2025-04-04
 ### Initial release
