@@ -2,7 +2,7 @@
   <div id="sr-styleguide">
     <div class="new-style">
       <v-app class="sr-page">
-        <v-row>
+        <v-row class="align-center">
           <v-col cols="6">
             <sr-breadcrumbs />
           </v-col>
