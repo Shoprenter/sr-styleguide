@@ -1,7 +1,13 @@
+## [new] - published date
+### Added
+- Added SrStandardLayout component
+
+### Fixed
+- Resolved an issue where global `html` tag styles were not being applied correctly.
+
 ## [1.1.0] - 2025-04-09
 ### Added
 - Added new SrSimpleMultiCheckbox component for cases when only a straightforward listing of selectable options is required.
-- Added SrStandardLayout component to provide a consistent layout structure for pages.
 
 ### Fixed
 - Changed the suboptimal ordering of some style rules in the stylesheet
