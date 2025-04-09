@@ -5,6 +5,8 @@
 
 ### Fixed
 - Resolved an issue where global `html` tag styles were not being applied correctly.
+- Demo page menu is now scrollable
+- Help button & breadcrumb container no longer takes up space when empty
 
 ## [1.1.0] - 2025-04-09
 ### Added
