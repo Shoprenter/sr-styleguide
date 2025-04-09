@@ -1,6 +1,7 @@
 ## [new] - published date
 ### Added
-- Added SrStandardLayout component
+- SrStandardLayout component
+- Breadcrumbs from route parameters to page container
 
 ### Fixed
 - Resolved an issue where global `html` tag styles were not being applied correctly.
