@@ -64,7 +64,7 @@ module.exports = (env, argv) => ({
                             postcssOptions: {
                                 plugins: [
                                     require('postcss-prefixwrap')('#sr-styleguide', {
-                                        ignoredSelectors: [':root']
+                                        ignoredSelectors: [':root', 'html']
                                     })
                                 ]
                             }
@@ -83,7 +83,7 @@ module.exports = (env, argv) => ({
                             postcssOptions: {
                                 plugins: [
                                     require('postcss-prefixwrap')('#sr-styleguide', {
-                                        ignoredSelectors: [':root']
+                                        ignoredSelectors: [':root', 'html']
                                     })
                                 ]
                             }
@@ -112,7 +112,7 @@ module.exports = (env, argv) => ({
                             postcssOptions: {
                                 plugins: [
                                     require('postcss-prefixwrap')('#sr-styleguide', {
-                                        ignoredSelectors: [':root']
+                                        ignoredSelectors: [':root', 'html']
                                     })
                                 ]
                             }
