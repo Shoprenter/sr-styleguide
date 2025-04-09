@@ -1,68 +1,23 @@
 <template>
-  <div class="sr-multi-checkbox">
-    <div class="checkbox-container" ref="checkboxWrapper">
-      <template v-if="loading">
-        <div class="preloader-container">
-          <v-progress-circular
-              class="text-center"
-              color="primary"
-              indeterminate
-              size="38"
-          />
-        </div>
-      </template>
-      <template v-else>
-        <slot/>
-      </template>
-    </div>
-    <div class="multi-checkbox-actions">
-      <sr-primary-button text data-test-id="selectAllCheckbox" @click="selectAllCheckboxes()">
-        {{ this.$vuetify.lang.t('$vuetify.selectAll') }}
-      </sr-primary-button>
-      <span class="multi-checkbox-separator">/</span>
-      <sr-primary-button text data-test-id="unSelectAllCheckbox" @click="unSelectAllCheckboxes()">
-        {{ this.$vuetify.lang.t('$vuetify.clearAll') }}
-      </sr-primary-button>
-    </div>
-  </div>
+  <base-multi-checkbox :loading="loading" @select-all="$emit('select-all')" @unselect-all="$emit('unselect-all')">
+    <template #checkboxes>
+      <slot/>
+    </template>
+  </base-multi-checkbox>
 </template>
+
 <script>
+import BaseMultiCheckbox from './BaseMultiCheckbox.vue'
+
 export default {
     name: 'SrMultiCheckbox',
+    components: { BaseMultiCheckbox },
     props: {
         loading: {
             type: Boolean,
             default: false
         }
     },
-    emits: ['select-all', 'unselect-all'],
-    methods: {
-        async selectAllCheckboxes () {
-            const wrapper = this.$refs.checkboxWrapper
-            const checkboxes = wrapper.querySelectorAll('input[type="checkbox"]')
-
-            for (const cb of checkboxes) {
-                if (cb.getAttribute('aria-checked') !== 'true') {
-                    cb.click()
-                    await this.$nextTick()
-                }
-            }
-
-            this.$emit('select-all')
-        },
-        async unSelectAllCheckboxes () {
-            const wrapper = this.$refs.checkboxWrapper
-            const checkboxes = wrapper.querySelectorAll('input[type="checkbox"]')
-
-            for (const cb of checkboxes) {
-                if (cb.getAttribute('aria-checked') === 'true') {
-                    cb.click()
-                    await this.$nextTick()
-                }
-            }
-
-            this.$emit('unselect-all')
-        }
-    }
+    emits: ['select-all', 'unselect-all']
 }
 </script>

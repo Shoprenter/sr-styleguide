@@ -1,5 +1,7 @@
 <template>
   <v-checkbox
+      :input-value="value"
+      @change="$emit('input', $event)"
       v-bind="$attrs"
       v-on="$listeners"
       hide-details
@@ -10,6 +12,16 @@
 <script>
 export default {
     name: 'SrCheckbox',
-    inheritAttrs: false
+    inheritAttrs: false,
+    model: {
+        prop: 'value',
+        event: 'input'
+    },
+    props: {
+        value: {
+            type: [Boolean, Number],
+            required: false
+        }
+    }
 }
 </script>

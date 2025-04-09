@@ -2,58 +2,6 @@
     margin: 5px 4px 5px 0;
 }
 
-.select-save {
-    position: relative;
-
-    .select-arrow {
-        position: absolute;
-        right: 20px;
-        top: 0;
-        width: 15px;
-        bottom: 0;
-        display: flex;
-        align-items: center;
-        pointer-events: none;
-        color: #546A79;
-
-        .v-icon {
-            margin: 0;
-            font-size: 14px;
-        }
-    }
-
-    &__loading-container {
-        min-width: 14px;
-    }
-    &__select {
-        border: 1px solid transparent;
-        background-color: transparent;
-        box-shadow: unset;
-        border-radius: 0;
-        appearance: none;
-        padding: 4px 25px 4px 10px;
-
-        &:hover {
-            border: 1px solid $input-hover-border-color;
-        }
-
-        &:focus {
-            border: 1px solid $input-focus-border-color;
-            background: white;
-            outline: 0;
-        }
-    }
-    &__option {
-        font-size: 13px;
-        padding: 3px;
-
-        &.active {
-            color: var(--sr-primary);
-            background-color: #f2f8e7;
-        }
-    }
-}
-
 .v-menu__content {
     max-width: 300px;
     box-shadow: 0 3px 10px rgba(162, 162, 162, 0.25);
@@ -81,12 +29,3 @@
     white-space: normal;
 }
 
-@include media-breakpoint-only(md) {
-    .admin-filter-box .v-select__selections input {
-        padding: 0;
-        height: 0;
-    }
-    .admin-filter-box .v-select__selections > span {
-        line-height: 14px;
-    }
-}
