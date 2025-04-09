@@ -1,4 +1,4 @@
-## [new version] - release date
+## [1.1.0] - 2025-04-09
 ### Added
 - Added new SrSimpleMultiCheckbox component for cases when only a straightforward listing of selectable options is required.
 
