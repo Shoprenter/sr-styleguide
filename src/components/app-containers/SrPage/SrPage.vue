@@ -2,14 +2,14 @@
   <div id="sr-styleguide">
     <div class="new-style">
       <v-app class="sr-page">
-        <v-row class="align-center">
-          <v-col cols="6">
+        <div>
+          <div class="breadcrumb-container">
             <sr-breadcrumbs />
-          </v-col>
-          <v-col cols ="6" class="text-right">
-            <sr-help-button/>
-          </v-col>
-        </v-row>
+          </div>
+          <div class="help-btn-container">
+            <sr-help-button />
+          </div>
+        </div>
         <v-main>
           <slot />
         </v-main>
