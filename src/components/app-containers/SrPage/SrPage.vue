@@ -4,7 +4,7 @@
       <v-app class="sr-page">
         <v-row>
           <v-col cols="6">
-            <!--- breadcrumbs placeholder -->
+            <sr-breadcrumbs />
           </v-col>
           <v-col cols ="6" class="text-right">
             <sr-help-button/>
