@@ -8,12 +8,6 @@ import DemoComponents from './src/components/DemoComponents'
 Vue.use(SrStyleguideComponents)
 Vue.use(DemoComponents)
 
-Vue.mixin({
-    methods: {
-        translate: (key, replacements) => key
-    }
-})
-
 const app = new Vue({
     vuetify: SrStyleguide,
     router,

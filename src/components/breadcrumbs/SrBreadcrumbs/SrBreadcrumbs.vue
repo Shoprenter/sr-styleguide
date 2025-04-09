@@ -22,10 +22,11 @@ export default {
     computed: {
         breadcrumbs () {
             try {
+                console.log(this.$route.meta.breadcrumbs)
                 const lastIndex = this.$route.meta.breadcrumbs.length - 1
                 return this.$route.meta.breadcrumbs.map((breadcrumb, index) => ({
                     ...breadcrumb,
-                    text: (this.translate(breadcrumb.text)).replace(/:(.*)/, (matches, p1) => {
+                    text: breadcrumb.text.replace(/:(.*)/, (matches, p1) => {
                         return this.$route.params[p1]
                     }),
                     disabled: false,
