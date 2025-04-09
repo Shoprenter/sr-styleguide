@@ -28,11 +28,11 @@
             <tbody>
             <tr class="filter-row">
               <td></td>
-              <td><sr-input-field :dense="true" type="text"></sr-input-field></td>
-              <td><sr-input-field :dense="true" type="text"></sr-input-field></td>
-              <td><sr-input-field :dense="true" type="text"></sr-input-field></td>
-              <td><sr-input-field :dense="true" type="text"></sr-input-field></td>
-              <td><sr-input-field :dense="true" type="text"></sr-input-field></td>
+              <td><sr-input-field :hide-details="true" :dense="true" type="text"></sr-input-field></td>
+              <td><sr-input-field :hide-details="true" type="text"></sr-input-field></td>
+              <td><sr-select :items="customerGroupOptions" placeholder="--- Kérlek válassz ---"/></td>
+              <td><sr-select :items="statusOptions"/></td>
+              <td><sr-date-picker v-model="date"/></td>
               <td><sr-primary-button>Filter</sr-primary-button></td>
             </tr>
             <tr v-for="(customer, index) in customers" :key="index">
@@ -62,6 +62,16 @@ export default {
   data() {
     return {
       currentPage: 1,
+      date: new Date().toISOString().substring(0, 10),
+      customerGroupOptions:[
+        { text: 'Retail', value: 1 },
+        { text: 'VIP', value: 2 },
+        { text: 'Wholesale', value: 3 }
+      ],
+      statusOptions: [
+        { text: 'Active', value: 1 },
+        { text: 'Inactive', value: 2 }
+      ],
       customers: [
         {
           name: 'John Doe',

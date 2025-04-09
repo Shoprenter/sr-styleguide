@@ -25,6 +25,7 @@
             border-bottom: 1px solid #ECEFF1;
             margin-bottom: 1px;
 
+
             &.selected:not(.v-data-table__expanded__content),
             &:hover:not(.v-data-table__expanded__content) {
                 background: var(--sr-bg-grey);
@@ -33,7 +34,6 @@
             }
 
             td {
-                border: 0 !important;
                 padding: $cell-padding !important;
             }
         }
