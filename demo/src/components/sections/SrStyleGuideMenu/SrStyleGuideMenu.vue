@@ -52,13 +52,13 @@ export default {
     data () {
         return {
             sections: [
-              {
-                text: 'Demo Pages',
-                goTo: '#demo-pages',
-                components: [
-                  { text: 'Listing Page', goTo: '#listing-page' }
-                ]
-              },
+                {
+                    text: 'Demo Pages',
+                    goTo: '#demo-pages',
+                    components: [
+                        { text: 'Listing Page', goTo: '#listing-page' }
+                    ]
+                },
                 {
                     text: 'Layouts',
                     goTo: '#layouts',

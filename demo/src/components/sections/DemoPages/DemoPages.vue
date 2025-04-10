@@ -27,13 +27,13 @@
             </thead>
             <tbody>
             <tr class="filter-row">
-              <td></td>
-              <td><sr-input-field :hide-details="true" :dense="true" type="text"></sr-input-field></td>
-              <td><sr-input-field :hide-details="true" type="text"></sr-input-field></td>
-              <td><sr-select :items="customerGroupOptions" placeholder="--- Kérlek válassz ---"/></td>
-              <td><sr-select :items="statusOptions"/></td>
-              <td><sr-date-picker v-model="date"/></td>
-              <td><sr-primary-button>Filter</sr-primary-button></td>
+              <sr-simple-table-filter-td></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td min-width="150px"><sr-input-field :hide-details="true" :dense="true" type="text"></sr-input-field></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td><sr-input-field :hide-details="true" type="text"></sr-input-field></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td min-width="160px"><sr-select :items="customerGroupOptions" placeholder="Please select"/></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td min-width="150px"><sr-select :items="statusOptions"/></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td min-width="140px"><sr-date-picker v-model="date"/></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td><sr-primary-button>Filter</sr-primary-button></sr-simple-table-filter-td>
             </tr>
             <tr v-for="(customer, index) in customers" :key="index">
               <td>
@@ -44,7 +44,7 @@
               <td>{{ customer.group }}</td>
               <td>{{ customer.status }}</td>
               <td>{{ customer.createdAt }}</td>
-              <td><sr-pencil-icon color="green"></sr-pencil-icon></td>
+              <td><sr-edit-icon color="var(--sr-primary)" @click="editCustomer"></sr-edit-icon></td>
             </tr>
             </tbody>
           </sr-simple-table>
@@ -58,110 +58,113 @@
 <script>
 
 export default {
-  name: 'DemoPages',
-  data() {
-    return {
-      currentPage: 1,
-      date: new Date().toISOString().substring(0, 10),
-      customerGroupOptions:[
-        { text: 'Retail', value: 1 },
-        { text: 'VIP', value: 2 },
-        { text: 'Wholesale', value: 3 }
-      ],
-      statusOptions: [
-        { text: 'Active', value: 1 },
-        { text: 'Inactive', value: 2 }
-      ],
-      customers: [
-        {
-          name: 'John Doe',
-          email: 'john.doe@example.com',
-          group: 'Retail',
-          status: 'Active',
-          createdAt: '2023-10-01',
-          selected: false
-        },
-        {
-          name: 'Jane Smith',
-          email: 'jane.smith@example.com',
-          group: 'Wholesale',
-          status: 'Inactive',
-          createdAt: '2023-10-02',
-          selected: false
-        },
-        {
-          name: 'Robert Johnson',
-          email: 'robert.johnson@example.com',
-          group: 'Retail',
-          status: 'Active',
-          createdAt: '2023-10-03',
-          selected: false
-        },
-        {
-          name: 'Emily Davis',
-          email: 'emily.davis@example.com',
-          group: 'VIP',
-          status: 'Active',
-          createdAt: '2023-10-04',
-          selected: false
-        },
-        {
-          name: 'Michael Brown',
-          email: 'michael.brown@example.com',
-          group: 'Retail',
-          status: 'Inactive',
-          createdAt: '2023-10-05',
-          selected: false
-        },
-        {
-          name: 'Linda Williams',
-          email: 'linda.williams@example.com',
-          group: 'Wholesale',
-          status: 'Active',
-          createdAt: '2023-10-06',
-          selected: false
-        },
-        {
-          name: 'William Jones',
-          email: 'william.jones@example.com',
-          group: 'VIP',
-          status: 'Active',
-          createdAt: '2023-10-07',
-          selected: false
-        },
-        {
-          name: 'Patricia Miller',
-          email: 'patricia.miller@example.com',
-          group: 'Retail',
-          status: 'Inactive',
-          createdAt: '2023-10-08',
-          selected: false
-        },
-        {
-          name: 'Charles Wilson',
-          email: 'charles.wilson@example.com',
-          group: 'Wholesale',
-          status: 'Active',
-          createdAt: '2023-10-09',
-          selected: false
-        },
-        {
-          name: 'Barbara Taylor',
-          email: 'barbara.taylor@example.com',
-          group: 'VIP',
-          status: 'Inactive',
-          createdAt: '2023-10-10',
-          selected: false
+    name: 'DemoPages',
+    data () {
+        return {
+            currentPage: 1,
+            date: new Date().toISOString().substring(0, 10),
+            customerGroupOptions: [
+                { text: 'Retail', value: 1 },
+                { text: 'VIP', value: 2 },
+                { text: 'Wholesale', value: 3 }
+            ],
+            statusOptions: [
+                { text: 'Active', value: 1 },
+                { text: 'Inactive', value: 2 }
+            ],
+            customers: [
+                {
+                    name: 'John Doe',
+                    email: 'john.doe@example.com',
+                    group: 'Retail',
+                    status: 'Active',
+                    createdAt: '2023-10-01',
+                    selected: false
+                },
+                {
+                    name: 'Jane Smith',
+                    email: 'jane.smith@example.com',
+                    group: 'Wholesale',
+                    status: 'Inactive',
+                    createdAt: '2023-10-02',
+                    selected: false
+                },
+                {
+                    name: 'Robert Johnson',
+                    email: 'robert.johnson@example.com',
+                    group: 'Retail',
+                    status: 'Active',
+                    createdAt: '2023-10-03',
+                    selected: false
+                },
+                {
+                    name: 'Emily Davis',
+                    email: 'emily.davis@example.com',
+                    group: 'VIP',
+                    status: 'Active',
+                    createdAt: '2023-10-04',
+                    selected: false
+                },
+                {
+                    name: 'Michael Brown',
+                    email: 'michael.brown@example.com',
+                    group: 'Retail',
+                    status: 'Inactive',
+                    createdAt: '2023-10-05',
+                    selected: false
+                },
+                {
+                    name: 'Linda Williams',
+                    email: 'linda.williams@example.com',
+                    group: 'Wholesale',
+                    status: 'Active',
+                    createdAt: '2023-10-06',
+                    selected: false
+                },
+                {
+                    name: 'William Jones',
+                    email: 'william.jones@example.com',
+                    group: 'VIP',
+                    status: 'Active',
+                    createdAt: '2023-10-07',
+                    selected: false
+                },
+                {
+                    name: 'Patricia Miller',
+                    email: 'patricia.miller@example.com',
+                    group: 'Retail',
+                    status: 'Inactive',
+                    createdAt: '2023-10-08',
+                    selected: false
+                },
+                {
+                    name: 'Charles Wilson',
+                    email: 'charles.wilson@example.com',
+                    group: 'Wholesale',
+                    status: 'Active',
+                    createdAt: '2023-10-09',
+                    selected: false
+                },
+                {
+                    name: 'Barbara Taylor',
+                    email: 'barbara.taylor@example.com',
+                    group: 'VIP',
+                    status: 'Inactive',
+                    createdAt: '2023-10-10',
+                    selected: false
+                }
+            ]
         }
-      ]
+    },
+    methods: {
+        editCustomer (customer) {
+            // Handle the edit action here
+            console.log('Edit customer:', customer)
+        }
     }
-  }
 }
 </script>
 
 <style>
-.filter-row td {
-  text-align: center;
-  vertical-align: middle;
-}
+
 </style>

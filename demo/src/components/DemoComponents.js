@@ -15,7 +15,7 @@ import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts
 import SrStyleGuideMilestoneIndicators
     from './sections/SrStyleGuideMilestoneIndicators/SrStyleGuideMilestoneIndicators.vue'
 import SrStyleGuideTabs from './sections/SrStyleGuideTabs/SrStyleGuideTabs.vue'
-import DemoPages from "./sections/DemoPages/DemoPages.vue";
+import DemoPages from './sections/DemoPages/DemoPages.vue'
 
 export default {
     install (Vue, options = {}) {
