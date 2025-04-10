@@ -2,6 +2,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const { selector: scope } = require('../src/components/app-containers/scope')
 
 module.exports = (env, argv) => ({
     mode: argv.mode || 'development', // <--- FONTOS: így CLI-ből állítható
@@ -63,7 +64,7 @@ module.exports = (env, argv) => ({
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    require('postcss-prefixwrap')('#sr-styleguide', {
+                                    require('postcss-prefixwrap')(scope, {
                                         ignoredSelectors: [':root', 'html']
                                     })
                                 ]
@@ -82,7 +83,7 @@ module.exports = (env, argv) => ({
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    require('postcss-prefixwrap')('#sr-styleguide', {
+                                    require('postcss-prefixwrap')(scope, {
                                         ignoredSelectors: [':root', 'html']
                                     })
                                 ]
@@ -111,7 +112,7 @@ module.exports = (env, argv) => ({
                         options: {
                             postcssOptions: {
                                 plugins: [
-                                    require('postcss-prefixwrap')('#sr-styleguide', {
+                                    require('postcss-prefixwrap')(scope, {
                                         ignoredSelectors: [':root', 'html']
                                     })
                                 ]
