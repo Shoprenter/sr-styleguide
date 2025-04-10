@@ -34,6 +34,7 @@ import SearchCloseIcon from './components/SearchCloseIcon.vue'
 import InvoiceStornoIcon from './components/InvoiceStornoIcon.vue'
 import InvoiceIcon from './components/InvoiceIcon.vue'
 import NextIcon from './components/NextIcon.vue'
+import EditIcon from './components/EditIcon.vue'
 
 export default {
     iconfont: 'mdi',
@@ -151,6 +152,9 @@ export default {
         },
         next: {
             component: NextIcon
+        },
+        editIcon: {
+            component: EditIcon
         }
     }
 }
