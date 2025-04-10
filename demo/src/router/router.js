@@ -21,7 +21,8 @@ const router = new Router({
                         text: 'SR Style Guide'
                     }
                 ],
-                title: 'SR Style Guide'
+                title: 'SR Style Guide',
+                helpUrl: 'https://www.npmjs.com/package/@shoprenter/sr-styleguide'
             }
         }
     ]
