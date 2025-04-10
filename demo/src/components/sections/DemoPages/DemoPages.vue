@@ -30,8 +30,8 @@
               <sr-simple-table-filter-td></sr-simple-table-filter-td>
               <sr-simple-table-filter-td min-width="150px"><sr-input-field :hide-details="true" :dense="true" type="text"></sr-input-field></sr-simple-table-filter-td>
               <sr-simple-table-filter-td><sr-input-field :hide-details="true" type="text"></sr-input-field></sr-simple-table-filter-td>
-              <sr-simple-table-filter-td min-width="160px"><sr-select :items="customerGroupOptions" placeholder="Please select"/></sr-simple-table-filter-td>
-              <sr-simple-table-filter-td min-width="150px"><sr-select :items="statusOptions"/></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td min-width="160px"><sr-select :items="customerGroupOptions"/></sr-simple-table-filter-td>
+              <sr-simple-table-filter-td min-width="160px"><sr-select :items="statusOptions"/></sr-simple-table-filter-td>
               <sr-simple-table-filter-td min-width="140px"><sr-date-picker v-model="date"/></sr-simple-table-filter-td>
               <sr-simple-table-filter-td><sr-primary-button>Filter</sr-primary-button></sr-simple-table-filter-td>
             </tr>

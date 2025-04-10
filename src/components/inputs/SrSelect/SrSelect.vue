@@ -24,7 +24,7 @@ export default {
         placeholder: {
             type: String,
             default: null
-        },
+        }
     }
 }
 </script>
