@@ -1,4 +1,3 @@
-import SrAdminApp from './SrAdminApp/SrAdminApp.vue'
 import SrPageLayout from './SrPageLayout/SrPageLayout.vue'
 import SrStyleGuideIcons from './sections/SrStyleGuideIcons/SrStyleGuideIcons.vue'
 import SrCodeBlock from './SrCodeBlock/SrCodeBlock.vue'
@@ -18,7 +17,6 @@ import SrStyleGuideTabs from './sections/SrStyleGuideTabs/SrStyleGuideTabs.vue'
 
 export default {
     install (Vue, options = {}) {
-        Vue.component('SrAdminApp', SrAdminApp)
         Vue.component('SrPageLayout', SrPageLayout)
         Vue.component('SrStyleGuideIcons', SrStyleGuideIcons)
         Vue.component('SrCodeBlock', SrCodeBlock)
