@@ -8,12 +8,6 @@ import DemoComponents from './src/components/DemoComponents'
 Vue.use(SrStyleguideComponents)
 Vue.use(DemoComponents)
 
-Vue.mixin({
-    methods: {
-        translate: (key, replacements) => key
-    }
-})
-
 const app = new Vue({
     vuetify: SrStyleguide,
     router,
@@ -24,7 +18,20 @@ app.$router.addRoutes([
     {
         path: '/',
         name: 'local-styleguide',
-        component: StyleGuide
+        component: StyleGuide,
+        meta: {
+            breadcrumbs: [
+                {
+                    to: '/sr-styleguide',
+                    text: 'Home'
+                },
+                {
+                    to: '/',
+                    text: 'SR Style Guide'
+                }
+            ],
+            title: 'SR Style Guide'
+        }
     }
 ])
 
