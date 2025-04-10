@@ -6,5 +6,6 @@ export default {
     no: 'No',
     clearAll: 'Clear all',
     selectAll: 'Select all',
-    help: 'Help'
+    help: 'Help',
+    pleaseSelect: 'Please select'
 }
