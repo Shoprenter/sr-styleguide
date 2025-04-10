@@ -45,6 +45,8 @@
 </template>
 
 <script>
+import './SrStyleGuideMenu.scss'
+
 export default {
     name: 'SrStyleGuideMenu',
     data () {

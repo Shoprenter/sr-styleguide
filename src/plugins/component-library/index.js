@@ -9,6 +9,7 @@ import SrAppContainers from './library/SrAppContainers'
 import SrAlerts from './library/SrAlerts'
 import SrMilestoneIndicators from './library/SrMilestoneIndicators'
 import SrTabs from './library/SrTabs'
+import SrBreadcrumbs from './library/SrBreadcrumbs'
 
 export default {
     install (Vue, options = {}) {
@@ -23,5 +24,6 @@ export default {
         Vue.use(SrAppContainers)
         Vue.use(SrMilestoneIndicators)
         Vue.use(SrTabs)
+        Vue.use(SrBreadcrumbs)
     }
 }
