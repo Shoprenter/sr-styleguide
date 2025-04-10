@@ -1,5 +1,5 @@
 <template>
-  <div v-bind:[attribute]="value">
+  <div id="sr-styleguide">
     <div class="new-style">
       <v-app class="sr-page">
         <div>
@@ -20,14 +20,6 @@
 
 <script>
 export default {
-    name: 'SrPage',
-    data () {
-        const { attribute, value } = require('../scope')
-
-        return {
-            attribute,
-            value
-        }
-    }
+    name: 'SrPage'
 }
 </script>

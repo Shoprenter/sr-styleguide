@@ -1,9 +1,9 @@
 <template>
-  <div v-bind:[attribute]="value">
+  <div id="sr-styleguide">
     <div class="new-style">
       <v-app class="sr-module">
         <v-main>
-          <slot/>
+          <slot />
         </v-main>
       </v-app>
     </div>
@@ -12,14 +12,6 @@
 
 <script>
 export default {
-    name: 'SrModule',
-    data () {
-        const { attribute, value } = require('../scope')
-
-        return {
-            attribute,
-            value
-        }
-    }
+    name: 'SrModule'
 }
 </script>
