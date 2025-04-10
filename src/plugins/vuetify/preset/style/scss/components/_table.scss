@@ -34,7 +34,7 @@
             }
 
             td {
-                border-bottom: thin solid rgba(0, 0, 0, .12);
+                border-bottom: thin solid rgba(0, 0, 0, .12) !important;
                 padding: $cell-padding !important;
             }
         }
