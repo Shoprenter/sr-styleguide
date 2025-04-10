@@ -37,10 +37,10 @@
       <h4 class="text-h4">Select</h4>
       <sr-style-guide-item-row
           align="start"
-          code="&lt;sr-select :items=&quot;[{text: 'Example 1', value: 1}, {text: 'Example 2', value: 2}]&quot; :placeholder='--- Kérlek válassz ---' /&gt;">
+          code="&lt;sr-select :items=&quot;[{text: 'Example 1', value: 1}, {text: 'Example 2', value: 2}]&quot; placeholder='--- Kérlek válassz ---' /&gt;">
         <sr-select
             :items="[{text: 'Example 1', value: 1}, {text: 'Example 2', value: 2}]"
-            :placeholder="'--- Kérlek válassz ---'"
+            placeholder="'--- Kérlek válassz ---'"
         />
       </sr-style-guide-item-row>
     </div>
