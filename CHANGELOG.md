@@ -5,6 +5,7 @@
 - Demo listing page
 - Language-aware default placeholder for SrSelect component
 - SrSimpleTableFilterTd component to simplify the creation of filterable table columns
+
 ### Fixed
 - Resolved an issue where global `html` tag styles were not being applied correctly.
 - Demo page menu is now scrollable
