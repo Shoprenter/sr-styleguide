@@ -56,7 +56,7 @@ export default {
                     text: 'Demo Pages',
                     goTo: '#demo-pages',
                     components: [
-                        { text: 'Listing Page', goTo: '#listing-page' }
+                        { text: 'List Page', goTo: '#list-page' }
                     ]
                 },
                 {

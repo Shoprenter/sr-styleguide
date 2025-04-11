@@ -1,12 +1,12 @@
 <template>
   <div>
-    <v-flex id="listing-page" class="sg-subsection">
+    <v-flex id="list-page" class="sg-subsection">
       <v-flex xs12>
-        <h4 class="text-h4">Listing Page</h4>
+        <h4 class="text-h4">List Page</h4>
       </v-flex>
       <sr-page>
         <sr-standard-layout>
-          <sr-heading title="Demo Listing Page">
+          <sr-heading title="Demo List Page">
             <sr-delete-button>Delete</sr-delete-button>
             <sr-primary-button outlined class="ml-3">Cancel</sr-primary-button>
             <sr-primary-button class="ml-3">New</sr-primary-button>
@@ -191,7 +191,7 @@ export default {
             demoListPageCode:
                 '<sr-page>\n' +
                 '  <sr-standard-layout>\n' +
-                '    <sr-heading title="Demo Listing Page">\n' +
+                '    <sr-heading title="Demo List Page">\n' +
                 '       <sr-delete-button>Delete</sr-delete-button>\n' +
                 '       <sr-primary-button outlined class="ml-3">Cancel</sr-primary-button>\n' +
                 '       <sr-primary-button class="ml-3">New</sr-primary-button>\n' +
