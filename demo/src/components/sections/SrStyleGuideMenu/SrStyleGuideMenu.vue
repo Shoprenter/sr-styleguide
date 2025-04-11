@@ -53,6 +53,13 @@ export default {
         return {
             sections: [
                 {
+                    text: 'Demo Pages',
+                    goTo: '#demo-pages',
+                    components: [
+                        { text: 'Listing Page', goTo: '#listing-page' }
+                    ]
+                },
+                {
                     text: 'Layouts',
                     goTo: '#layouts',
                     components: [

@@ -2,12 +2,21 @@
 ### Added
 - SrStandardLayout component
 - Breadcrumbs from route parameters to page container
+- Demo listing page
+- Language-aware default placeholder for SrSelect component
+- SrSimpleTableFilterTd component to simplify the creation of filterable table columns
 
 ### Fixed
 - Resolved an issue where global `html` tag styles were not being applied correctly.
 - Demo page menu is now scrollable
 - Help button & breadcrumb container no longer takes up space when empty
 - Style rule scope now includes package version
+- SrEditIcon component now contains the correct icon
+
+### Changed
+- Updated margins for the SrHeading component
+- Style adjustments to the SrSimpleTable component
+
 
 ## [1.1.0] - 2025-04-09
 ### Added

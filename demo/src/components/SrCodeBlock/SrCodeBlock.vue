@@ -1,6 +1,6 @@
 <template>
-  <div class="sr-code-block code-container">
-    <div class="code-block">
+  <div class="sr-code-block code-container" :style="computedWidth">
+    <div class="code-block" :style="computedWidth">
       <pre :class="`language-${language} ma-0`"><code ref="code">{{ code }}</code></pre>
     </div>
     <div class="flex">
@@ -32,6 +32,10 @@ export default {
         language: {
             type: String,
             default: 'html'
+        },
+        width: {
+            type: String,
+            default: null
         }
     },
     data () {
@@ -41,6 +45,11 @@ export default {
     },
     mounted () {
         this.highlight()
+    },
+    computed: {
+        computedWidth () {
+            return this.width ? 'width:' + this.width + ' !important;' : null
+        }
     },
     methods: {
         highlight () {

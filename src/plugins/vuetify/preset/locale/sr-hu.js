@@ -6,5 +6,6 @@ export default {
     no: 'Nem',
     clearAll: 'Mindet töröl',
     selectAll: 'Mindet választ',
-    help: 'Segítség'
+    help: 'Segítség',
+    pleaseSelect: 'Kérlek válassz'
 }

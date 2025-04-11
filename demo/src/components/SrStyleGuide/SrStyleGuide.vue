@@ -11,7 +11,13 @@
           <v-flex class="pb-5">
             <p>Vuetify version: 2.6.14</p>
           </v-flex>
-          <v-layout class="sg-section" id="layouts" column wrap>
+          <v-layout class="sg-section" id="demo-pages" column wrap>
+          <v-flex xs12>
+            <h1 class="sg-section-header">Demo Pages</h1>
+          </v-flex>
+          <demo-pages />
+        </v-layout>
+        <v-layout class="sg-section" id="layouts" column wrap>
             <v-flex xs12>
               <h1 class="sg-section-header">Layouts</h1>
             </v-flex>

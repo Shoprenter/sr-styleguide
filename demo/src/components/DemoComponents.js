@@ -14,6 +14,7 @@ import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts
 import SrStyleGuideMilestoneIndicators
     from './sections/SrStyleGuideMilestoneIndicators/SrStyleGuideMilestoneIndicators.vue'
 import SrStyleGuideTabs from './sections/SrStyleGuideTabs/SrStyleGuideTabs.vue'
+import DemoPages from './sections/DemoPages/DemoPages.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -32,5 +33,6 @@ export default {
         Vue.component('SrStyleGuideAlerts', SrStyleGuideAlerts)
         Vue.component('SrStyleGuideMilestoneIndicators', SrStyleGuideMilestoneIndicators)
         Vue.component('SrStyleGuideTabs', SrStyleGuideTabs)
+        Vue.component('DemoPages', DemoPages)
     }
 }
