@@ -64,7 +64,7 @@
     </sr-page>
     <v-row>
       <v-col cols="6">
-        <sr-code-block :code="demoListPageCode" width="100%"/>
+        <sr-code-block :code="demoListPageCode"/>
       </v-col>
       <v-col cols="6">
         <sr-code-block language="JavaScript" code="data () {

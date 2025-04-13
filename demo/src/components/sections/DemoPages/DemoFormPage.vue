@@ -86,10 +86,10 @@
     </sr-page>
     <v-row>
       <v-col cols="6">
-        <sr-code-block :code="demoFormPageCode" width="100%"/>
+        <sr-code-block :code="demoFormPageCode"/>
       </v-col>
       <v-col cols="6">
-        <sr-code-block :code="demoFormPageDataCode" width="100%" language="JavaScript"/>
+        <sr-code-block :code="demoFormPageDataCode" language="JavaScript"/>
       </v-col>
     </v-row>
   </v-flex>
