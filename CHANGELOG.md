@@ -2,9 +2,12 @@
 ### Added
 - SrStandardLayout component
 - Breadcrumbs from route parameters to page container
-- Demo listing page
+- Demo list page
 - Language-aware default placeholder for SrSelect component
 - SrSimpleTableFilterTd component to simplify the creation of filterable table columns
+- Demo form page
+- SrTextarea component
+- SrFormDivider component
 
 ### Fixed
 - Resolved an issue where global `html` tag styles were not being applied correctly.
@@ -12,6 +15,9 @@
 - Help button & breadcrumb container no longer takes up space when empty
 - Style rule scope now includes package version
 - SrEditIcon component now contains the correct icon
+- SrFormRow now has properly applied bottom margin
+- SrDatePicker is now clearable just like the other input components
+- SrSwitch is able to display hint and validation errors and consequentially has the same layout as the other input components
 
 ### Changed
 - Updated margins for the SrHeading component
