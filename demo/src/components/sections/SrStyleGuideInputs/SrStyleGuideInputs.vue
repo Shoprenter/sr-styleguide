@@ -33,6 +33,14 @@
         />
       </sr-style-guide-item-row>
     </div>
+    <div class="sg-block">
+      <h4 class="text-h4">Textarea</h4>
+      <sr-style-guide-item-row
+          align="start"
+          code='<sr-textarea hint="This is a hint" />'>
+        <sr-textarea hint="This is a hint" />
+      </sr-style-guide-item-row>
+    </div>
     <div id="select-inputs" class="sg-block">
       <h4 class="text-h4">Select</h4>
       <sr-style-guide-item-row

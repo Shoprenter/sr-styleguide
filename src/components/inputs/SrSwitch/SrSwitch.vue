@@ -3,7 +3,6 @@
       :input-value="value"
       :label="getLabel"
       :ripple="false"
-      hide-details
       inset
       v-bind="$attrs"
       v-on="$listeners"

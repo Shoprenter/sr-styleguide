@@ -1,7 +1,7 @@
 import SrIcons from './library/SrIcons'
 import SrButtons from './library/SrButtons'
 import SrInputs from './library/SrInputs'
-import SrFormRow from './library/SrFormRow'
+import SrForm from './library/SrForm'
 import SrLayouts from './library/SrLayouts'
 import SrTables from './library/SrTables'
 import SrPagination from './library/SrPagination'
@@ -16,7 +16,7 @@ export default {
         Vue.use(SrIcons)
         Vue.use(SrButtons)
         Vue.use(SrInputs)
-        Vue.use(SrFormRow)
+        Vue.use(SrForm)
         Vue.use(SrLayouts)
         Vue.use(SrTables)
         Vue.use(SrAlerts)

@@ -7,7 +7,6 @@
 
     <demo-form-page
         :customer-group-options="customerGroupOptions"
-        :status-options="statusOptions"
     />
   </div>
 </template>

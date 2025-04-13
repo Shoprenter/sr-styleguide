@@ -1,26 +1,26 @@
-.admin-form-row {
-  margin-bottom: 16px;
-}
+.sr-form-row {
+  margin-bottom: $sr-form-row-margin-bottom;
 
-.admin-form-row__label {
-  margin-bottom: 5px;
-  word-break: break-word;
-}
+  .admin-form-row__label {
+    margin-bottom: 5px;
+    word-break: break-word;
+  }
 
-.admin-form-row__element {
-  width: 100%;
-}
+  .admin-form-row__element {
+    width: 100%;
+  }
 
-.new-style .form-help,
-.new-style .help {
-  color: var(--sr-dark-grey);
-  font-size: 12px;
-  font-weight: 400;
-  display: block;
-  text-transform: none;
-  margin-top: 4px;
-}
+  .form-help,
+  .help {
+    color: var(--sr-dark-grey);
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    text-transform: none;
+    margin-top: 4px;
+  }
 
-.required-form-row {
-  color: var(--sr-error);
+  .required-form-row {
+    color: var(--sr-error);
+  }
 }

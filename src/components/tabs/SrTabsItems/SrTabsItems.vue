@@ -1,5 +1,5 @@
 <template>
-  <v-tabs-items v-bind="$attrs" v-on="$listeners">
+  <v-tabs-items v-bind="$attrs" v-on="$listeners" class="sr-tabs-items">
     <slot />
   </v-tabs-items>
 </template>
