@@ -1,7 +1,7 @@
 ## [new] - published date
 ### Added
 - SrStandardLayout component
-- Breadcrumbs from route parameters to page container
+- Breadcrumbs from route parameters to layout containers
 - Demo list page
 - Language-aware default placeholder for SrSelect component
 - SrSimpleTableFilterTd component to simplify the creation of filterable table columns

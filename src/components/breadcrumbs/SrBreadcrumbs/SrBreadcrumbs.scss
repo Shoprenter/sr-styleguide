@@ -1,5 +1,6 @@
 .admin-breadcrumbs {
   padding: 0;
+  padding-left: 0 !important;
 
   .v-breadcrumbs {
     &__item {
@@ -17,7 +18,7 @@
     }
 
     &__divider {
-      padding: 0 5px;
+      padding: 0 5px !important;
     }
   }
 
