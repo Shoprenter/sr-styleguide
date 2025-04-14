@@ -8,10 +8,11 @@
 - Demo form page
 - SrTextarea component
 - SrFormDivider component
+- Getting Started page
 
 ### Fixed
 - Resolved an issue where global `html` tag styles were not being applied correctly.
-- Demo page menu is now scrollable
+- Demo page menu is now scrollable and accord able
 - Help button & breadcrumb container no longer takes up space when empty
 - Style rule scope now includes package version
 - SrEditIcon component now contains the correct icon
