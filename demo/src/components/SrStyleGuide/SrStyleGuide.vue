@@ -100,10 +100,8 @@
 </template>
 <script>
 import './SrStyleGuide.scss'
-import DemoGettingStarted from '../sections/DemoGettingStarted/DemoGettingStarted.vue'
 
 export default {
-    name: 'StyleGuide',
-    components: { DemoGettingStarted }
+    name: 'StyleGuide'
 }
 </script>
