@@ -53,12 +53,20 @@ export default {
         return {
             sections: [
                 {
+                    text: 'Getting Started',
+                    goTo: '#getting-started'
+                },
+                {
                     text: 'Demo Pages',
                     goTo: '#demo-pages',
                     components: [
-                        { text: 'List Page', goTo: '#list-page' },
-                        { text: 'Form Page', goTo: '#form-page' }
+                        { text: 'Form Page', goTo: '#form-page' },
+                        { text: 'List Page', goTo: '#list-page' }
                     ]
+                },
+                {
+                    text: 'App Containers',
+                    goTo: '#app-containers'
                 },
                 {
                     text: 'Layouts',
@@ -73,37 +81,57 @@ export default {
                     goTo: '#components',
                     components: [
                         {
+                            text: 'Alerts',
+                            goTo: '#alerts'
+                        },
+                        {
                             text: 'Buttons',
                             goTo: '#buttons'
+                        },
+                        {
+                            text: 'Form Row',
+                            goTo: '#form-row'
+                        },
+                        {
+                            text: 'Icons',
+                            goTo: '#icons'
                         },
                         {
                             text: 'Inputs',
                             goTo: '#inputs',
                             subComponents: [
-                                { text: 'Input Fields', goTo: '#text-inputs' },
-                                { text: 'Select', goTo: '#select-inputs' },
                                 { text: 'Checkbox', goTo: '#checkbox-inputs' },
-                                { text: 'Simple Multi Checkbox', goTo: '#simple-multi-checkbox-inputs' },
+                                { text: 'Date Picker', goTo: '#date-picker-input' },
+                                { text: 'Number Input', goTo: '#number-input' },
                                 { text: 'Multi Checkbox', goTo: '#multi-checkbox-inputs' },
-                                { text: 'Switch', goTo: '#switch-inputs' },
                                 { text: 'Radio', goTo: '#radio-inputs' },
-                                { text: 'Date Picker', goTo: '#date-picker-input' }
+                                { text: 'Select', goTo: '#select-inputs' },
+                                { text: 'Simple Multi Checkbox', goTo: '#simple-multi-checkbox-inputs' },
+                                { text: 'Switch', goTo: '#switch-inputs' },
+                                { text: 'Text Area', goTo: '#text-area-input' },
+                                { text: 'Text Input', goTo: '#text-input' }
                             ]
                         },
-                        { text: 'Form Row', goTo: '#form-row' },
-                        { text: 'Tables', goTo: '#tables' },
-                        { text: 'Pagination', goTo: '#pagination' },
-                        { text: 'Alerts', goTo: '#alerts' },
-                        { text: 'Milestone Indicators', goTo: '#milestone-indicators' },
-                        { text: 'Tabs', goTo: '#tabs' },
-                        { text: 'Icons', goTo: '#icons' }
+                        {
+                            text: 'Milestone Indicators',
+                            goTo: '#milestone-indicators'
+                        },
+                        {
+                            text: 'Pagination',
+                            goTo: '#pagination'
+                        },
+                        {
+                            text: 'Tables',
+                            goTo: '#tables'
+                        },
+                        {
+                            text: 'Tabs',
+                            goTo: '#tabs'
+                        }
                     ]
-                },
-                {
-                    text: 'App Containers',
-                    goTo: '#app-containers'
                 }
             ]
+
         }
     }
 }
