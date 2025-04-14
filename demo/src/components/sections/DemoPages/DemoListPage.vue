@@ -7,8 +7,8 @@
       <sr-standard-layout>
         <sr-heading title="Demo List Page">
           <sr-delete-button>Delete</sr-delete-button>
-          <sr-primary-button outlined class="ml-3">Cancel</sr-primary-button>
-          <sr-primary-button class="ml-3">New</sr-primary-button>
+          <sr-primary-button outlined>Cancel</sr-primary-button>
+          <sr-primary-button>New</sr-primary-button>
         </sr-heading>
         <sr-simple-table>
           <thead>
@@ -188,8 +188,8 @@ export default {
               '  <sr-standard-layout>\n' +
               '    <sr-heading title="Demo List Page">\n' +
               '       <sr-delete-button>Delete</sr-delete-button>\n' +
-              '       <sr-primary-button outlined class="ml-3">Cancel</sr-primary-button>\n' +
-              '       <sr-primary-button class="ml-3">New</sr-primary-button>\n' +
+              '       <sr-primary-button outlined>Cancel</sr-primary-button>\n' +
+              '       <sr-primary-button>New</sr-primary-button>\n' +
               '    </sr-heading>\n' +
               '    <sr-simple-table>\n' +
               '    <thead>\n' +

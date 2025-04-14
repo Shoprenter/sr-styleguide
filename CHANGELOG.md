@@ -23,6 +23,7 @@
 ### Changed
 - Updated margins for the SrHeading component
 - Style adjustments to the SrSimpleTable component
+- SrHeading now adds space between the header buttons
 
 
 ## [1.1.0] - 2025-04-09
