@@ -15,6 +15,8 @@ import SrStyleGuideMilestoneIndicators
     from './sections/SrStyleGuideMilestoneIndicators/SrStyleGuideMilestoneIndicators.vue'
 import SrStyleGuideTabs from './sections/SrStyleGuideTabs/SrStyleGuideTabs.vue'
 import DemoPages from './sections/DemoPages/DemoPages.vue'
+import DemoListPage from './sections/DemoPages/DemoListPage.vue'
+import DemoFormPage from './sections/DemoPages/DemoFormPage.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -34,5 +36,7 @@ export default {
         Vue.component('SrStyleGuideMilestoneIndicators', SrStyleGuideMilestoneIndicators)
         Vue.component('SrStyleGuideTabs', SrStyleGuideTabs)
         Vue.component('DemoPages', DemoPages)
+        Vue.component('DemoListPage', DemoListPage)
+        Vue.component('DemoFormPage', DemoFormPage)
     }
 }

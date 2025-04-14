@@ -8,7 +8,8 @@
       <v-text-field
           :value="value"
           :placeholder="placeholder"
-          :clearable="clearable"
+          @change="$emit('input', $event)"
+          clearable
           dense hide-details outlined
           append-icon="mdi-chevron-down"
           readonly
@@ -19,7 +20,9 @@
     <v-date-picker
         :value="value"
         @input="selectDate"
+        clearable
         first-day-of-week="1"
+        :locale="this.$vuetify.lang.current"
     />
   </v-menu>
 </template>
