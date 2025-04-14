@@ -5,9 +5,9 @@
     </v-flex>
     <sr-page>
       <sr-standard-layout>
-        <sr-heading title="Kuponok">
-          <sr-primary-button outlined>Mégse</sr-primary-button>
-          <sr-primary-button>Mentés</sr-primary-button>
+        <sr-heading title="Coupon">
+          <sr-primary-button outlined>Cancel</sr-primary-button>
+          <sr-primary-button>Save</sr-primary-button>
         </sr-heading>
         <sr-content>
           <sr-tabs v-model="languageTab">
@@ -24,11 +24,11 @@
                 :value="'tab-' + index">
               <v-card flat>
                 <v-card-text>
-                  <sr-form-row label="Kupon neve" required>
+                  <sr-form-row label="Coupon name" required>
                     <sr-input-field type='text' v-model="coupon.name[lang]"/>
                   </sr-form-row>
 
-                  <sr-form-row label="Kupon leírása" required>
+                  <sr-form-row label="Coupon description" required>
                     <sr-textarea v-model="coupon.description[lang]"/>
                   </sr-form-row>
                 </v-card-text>
@@ -38,46 +38,49 @@
 
           <sr-form-divider/>
 
-          <sr-form-row label="Kupon kód" required>
-            <sr-input-field type="text" v-model="coupon.code" hint="A kód legalább 3, legfeljebb 32 karakter lehet!"/>
+          <sr-form-row
+              label="Coupon code"
+              required
+              help="The code the customer enters to get the discount">
+            <sr-input-field type="text" v-model="coupon.code" hint="The code must be at least 3 and at most 32 characters long!"/>
             <template v-slot:extra-content>
-              <sr-primary-button>Kuponkód generálás</sr-primary-button>
+              <sr-primary-button>Generate coupon code</sr-primary-button>
             </template>
           </sr-form-row>
 
-          <sr-form-row label="Kedvezmény típusa" required>
+          <sr-form-row label="Discount type" required help="Percentage or Fixed Amount">
             <sr-select :items="discountTypes" v-model="coupon.discountType"/>
           </sr-form-row>
 
           <sr-form-row
               v-if="coupon.discountType === 'F'"
-              label="Fix összeg">
+              label="Fixed Amount">
             <sr-input-field type="number" v-model="coupon.total"/>
           </sr-form-row>
 
           <sr-form-row
               v-if="coupon.discountType === 'P'"
-              label="Százalékos kedvezmény">
+              label="Percentage">
             <sr-input-field type="number" v-model="coupon.discount"/>
           </sr-form-row>
 
-          <sr-form-row label="Ingyenes szállítást biztosít">
+          <sr-form-row label="Free shipping">
             <sr-switch value="0" v-model="coupon.freeShipping"/>
           </sr-form-row>
 
-          <sr-form-row label="Vásárlói csoportok"
-                       help="Ezen vásárlói csoportokba tartozó felhasználók tudják majd beváltani a kupont. Amennyiben nincs vásárlói csoport kiválasztva, úgy minden vásárlói csoportra érvényes lesz.">
+          <sr-form-row label="Customer groups"
+                       help="Users in these customer groups will be able to redeem the coupon. If no customer group is selected, it will be available in each and every customer group.">
             <sr-simple-multi-checkbox
                 :multi-checkbox-options="customerGroupCheckboxItems"
                 v-model="coupon.customerGroups"
             />
           </sr-form-row>
 
-          <sr-form-row label="Kezdeti dátum">
+          <sr-form-row label="Date start">
             <sr-date-picker v-model="coupon.dateStart"/>
           </sr-form-row>
 
-          <sr-form-row label="Befejezés dátum">
+          <sr-form-row label="Date end">
             <sr-date-picker v-model="coupon.dateEnd"/>
           </sr-form-row>
 
@@ -104,8 +107,8 @@ export default {
             languageTab: 'tab-0',
             adminLanguages: ['hu', 'en'],
             discountTypes: [
-                { text: 'Százalékos kedvezmény', value: 'P' },
-                { text: 'Fix összeg', value: 'F' }
+                { text: 'Percentage', value: 'P' },
+                { text: 'Fixed Amount', value: 'F' }
             ],
             coupon: {
                 name: {},
@@ -234,9 +237,6 @@ export default {
 
             return this.customerGroupOptions
         }
-    },
-    created () {
-        this.$vuetify.lang.current = 'hu'
     }
 
 }
