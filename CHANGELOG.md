@@ -18,6 +18,7 @@
 - SrFormRow now has properly applied bottom margin
 - SrDatePicker is now clearable just like the other input components
 - SrSwitch is able to display hint and validation errors and consequentially has the same layout as the other input components
+- SrDatePicker now displays in localized language and format
 
 ### Changed
 - Updated margins for the SrHeading component

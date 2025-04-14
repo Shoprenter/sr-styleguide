@@ -22,6 +22,7 @@
         @input="selectDate"
         clearable
         first-day-of-week="1"
+        :locale="this.$vuetify.lang.current"
     />
   </v-menu>
 </template>

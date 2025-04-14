@@ -127,8 +127,8 @@ export default {
                 "            languageTab: 'tab-0',\n" +
                 "            adminLanguages: ['hu', 'en'],\n" +
                 '            discountTypes: [\n' +
-                "                { text: 'Százalékos kedvezmény', value: 'P' },\n" +
-                "                { text: 'Fix összeg', value: 'F' }\n" +
+                "                { text: 'Percentage', value: 'P' },\n" +
+                "                { text: 'Fixed Amount', value: 'F' }\n" +
                 '            ],\n' +
                 '            coupon: {\n' +
                 '                name: {},\n' +
@@ -144,87 +144,90 @@ export default {
                 '            }\n' +
                 '       }',
             demoFormPageCode:
-          '<sr-page>\n' +
-          '      <sr-standard-layout>\n' +
-          '        <sr-heading title="Kuponok">\n' +
-          '          <sr-primary-button outlined>Mégse</sr-primary-button>\n' +
-          '          <sr-primary-button>Mentés</sr-primary-button>\n' +
-          '        </sr-heading>\n' +
-          '        <sr-content>\n' +
-          '          <sr-tabs v-model="languageTab">\n' +
-          '            <sr-language-tab\n' +
-          '                v-for="(lang, index) in adminLanguages" :key="index"\n' +
-          '                :href="\'#tab-\' + index"\n' +
-          '                :lang="lang"\n' +
-          '            />\n' +
-          '          </sr-tabs>\n' +
-          '\n' +
-          '          <sr-tabs-items v-model="languageTab">\n' +
-          '            <sr-tab-item\n' +
-          '                v-for="(lang, index) in adminLanguages" :key="index"\n' +
-          '                :value="\'tab-\' + index">\n' +
-          '              <v-card flat>\n' +
-          '                <v-card-text>\n' +
-          '                  <sr-form-row label="Kupon neve" required>\n' +
-          '                    <sr-input-field type="text" v-model="coupon.name[lang]"/>\n' +
-          '                  </sr-form-row>\n' +
-          '\n' +
-          '                  <sr-form-row label="Kupon leírása" required>\n' +
-          '                    <sr-textarea v-model="coupon.description[lang]"/>\n' +
-          '                  </sr-form-row>\n' +
-          '                </v-card-text>\n' +
-          '              </v-card>\n' +
-          '            </sr-tab-item>\n' +
-          '          </sr-tabs-items>\n' +
-          '\n' +
-          '          <sr-form-divider/>\n' +
-          '\n' +
-          '          <sr-form-row label="Kupon kód" required>\n' +
-          '            <sr-input-field type="text" v-model="coupon.code" hint="A kód legalább 3, legfeljebb 32 karakter lehet!"/>\n' +
-          '            <template v-slot:extra-content>\n' +
-          '              <sr-primary-button>Kuponkód generálás</sr-primary-button>\n' +
-          '            </template>\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '          <sr-form-row label="Kedvezmény típusa" required>\n' +
-          '            <sr-select :items="discountTypes" v-model="coupon.discountType"/>\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '          <sr-form-row\n' +
-          '              v-if="coupon.discountType === \'F\'"\n' +
-          '              label="Fix összeg">\n' +
-          '            <sr-input-field type="number" v-model="coupon.total"/>\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '          <sr-form-row\n' +
-          '              v-if="coupon.discountType === \'P\'"\n' +
-          '              label="Százalékos kedvezmény">\n' +
-          '            <sr-input-field type="number" v-model="coupon.discount"/>\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '          <sr-form-row label="Ingyenes szállítást biztosít">\n' +
-          '            <sr-switch value="0" v-model="coupon.freeShipping"/>\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '          <sr-form-row label="Vásárlói csoportok"\n' +
-          '                       help="Ezen vásárlói csoportokba tartozó felhasználók tudják majd beváltani a kupont. Amennyiben nincs vásárlói csoport kiválasztva, úgy minden vásárlói csoportra érvényes lesz.">\n' +
-          '            <sr-simple-multi-checkbox\n' +
-          '                :multi-checkbox-options="customerGroupCheckboxItems"\n' +
-          '                v-model="coupon.customerGroups"\n' +
-          '            />\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '          <sr-form-row label="Kezdeti dátum">\n' +
-          '            <sr-date-picker v-model="coupon.dateStart" />\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '          <sr-form-row label="Befejezés dátum">\n' +
-          '            <sr-date-picker v-model="coupon.dateEnd" />\n' +
-          '          </sr-form-row>\n' +
-          '\n' +
-          '        </sr-content>\n' +
-          '      </sr-standard-layout>\n' +
-          '    </sr-page>\n'
+              '<sr-page>\n' +
+              '      <sr-standard-layout>\n' +
+              '        <sr-heading title="Coupon">\n' +
+              '          <sr-primary-button outlined>Cancel</sr-primary-button>\n' +
+              '          <sr-primary-button>Save</sr-primary-button>\n' +
+              '        </sr-heading>\n' +
+              '        <sr-content>\n' +
+              '          <sr-tabs v-model="languageTab">\n' +
+              '            <sr-language-tab\n' +
+              '                v-for="(lang, index) in adminLanguages" :key="index"\n' +
+              '                :href="\'#tab-\' + index"\n' +
+              '                :lang="lang"\n' +
+              '            />\n' +
+              '          </sr-tabs>\n' +
+              '\n' +
+              '          <sr-tabs-items v-model="languageTab">\n' +
+              '            <sr-tab-item\n' +
+              '                v-for="(lang, index) in adminLanguages" :key="index"\n' +
+              '                :value="\'tab-\' + index">\n' +
+              '              <v-card flat>\n' +
+              '                <v-card-text>\n' +
+              '                  <sr-form-row label="Coupon name" required>\n' +
+              '                    <sr-input-field type=\'text\' v-model="coupon.name[lang]"/>\n' +
+              '                  </sr-form-row>\n' +
+              '\n' +
+              '                  <sr-form-row label="Coupon description" required>\n' +
+              '                    <sr-textarea v-model="coupon.description[lang]"/>\n' +
+              '                  </sr-form-row>\n' +
+              '                </v-card-text>\n' +
+              '              </v-card>\n' +
+              '            </sr-tab-item>\n' +
+              '          </sr-tabs-items>\n' +
+              '\n' +
+              '          <sr-form-divider/>\n' +
+              '\n' +
+              '          <sr-form-row\n' +
+              '              label="Coupon code"\n' +
+              '              required\n' +
+              '              help="The code the customer enters to get the discount">\n' +
+              '            <sr-input-field type="text" v-model="coupon.code" hint="The code must be at least 3 and at most 32 characters long!"/>\n' +
+              '            <template v-slot:extra-content>\n' +
+              '              <sr-primary-button>Generate coupon code</sr-primary-button>\n' +
+              '            </template>\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '          <sr-form-row label="Discount type" required help="Percentage or Fixed Amount">\n' +
+              '            <sr-select :items="discountTypes" v-model="coupon.discountType"/>\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '          <sr-form-row\n' +
+              '              v-if="coupon.discountType === \'F\'"\n' +
+              '              label="Fixed Amount">\n' +
+              '            <sr-input-field type="number" v-model="coupon.total"/>\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '          <sr-form-row\n' +
+              '              v-if="coupon.discountType === \'P\'"\n' +
+              '              label="Percentage">\n' +
+              '            <sr-input-field type="number" v-model="coupon.discount"/>\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '          <sr-form-row label="Free shipping">\n' +
+              '            <sr-switch value="0" v-model="coupon.freeShipping"/>\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '          <sr-form-row label="Customer groups"\n' +
+              '                       help="Users in these customer groups will be able to redeem the coupon. If no customer group is selected, it will be available in each and every customer group.">\n' +
+              '            <sr-simple-multi-checkbox\n' +
+              '                :multi-checkbox-options="customerGroupCheckboxItems"\n' +
+              '                v-model="coupon.customerGroups"\n' +
+              '            />\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '          <sr-form-row label="Date start">\n' +
+              '            <sr-date-picker v-model="coupon.dateStart"/>\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '          <sr-form-row label="Date end">\n' +
+              '            <sr-date-picker v-model="coupon.dateEnd"/>\n' +
+              '          </sr-form-row>\n' +
+              '\n' +
+              '        </sr-content>\n' +
+              '      </sr-standard-layout>\n' +
+              '    </sr-page>\n'
 
         }
     },
