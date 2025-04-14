@@ -26,3 +26,22 @@
     font-weight: 500;
   }
 }
+
+.page-layout--base {
+  div:has(> .breadcrumb-container):has(> .help-btn-container) {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: $container-padding-x;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .breadcrumb-container {
+    flex: 1;
+  }
+
+  .help-btn-container {
+    flex: 1;
+    text-align: right;
+  }
+}

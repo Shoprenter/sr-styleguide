@@ -1,6 +1,6 @@
 <template>
     <!-- eslint-disable-next-line -->
-    <v-icon v-bind="$attrs" v-on="$listeners">$editIcon</v-icon>
+    <v-icon v-bind="$attrs" v-on="$listeners">$edit</v-icon>
 </template>
 
 <script>
