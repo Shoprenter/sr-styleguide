@@ -54,7 +54,17 @@ export default {
             sections: [
                 {
                     text: 'Getting Started',
-                    goTo: '#getting-started'
+                    goTo: '#getting-started',
+                    components: [
+                        { text: 'Introduction', goTo: '#introduction' },
+                        { text: 'Features', goTo: '#features' },
+                        { text: 'Requirements', goTo: '#requirements' },
+                        { text: 'Installation', goTo: '#installation' },
+                        { text: 'Usage', goTo: '#usage' },
+                        { text: 'Example', goTo: '#example' },
+                        { text: 'Changelog', goTo: '#changelog' },
+                        { text: 'Contribution', goTo: '#contribution' }
+                    ]
                 },
                 {
                     text: 'Demo Pages',
