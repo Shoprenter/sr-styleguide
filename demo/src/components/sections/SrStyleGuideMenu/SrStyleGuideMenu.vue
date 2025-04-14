@@ -1,46 +1,39 @@
 <template>
   <div class="admin-style-guide__menu">
-    <v-list flat>
-      <v-list-item-group>
-        <template>
-          <v-list-item v-for="section in sections" :key="section.text">
-            <div>
-              <v-list-item-content @click="$vuetify.goTo(section.goTo, { offset: 100 })">
-                {{ section.text }}
-              </v-list-item-content>
+    <v-expansion-panels v-model="activePanel" accordion>
+      <v-expansion-panel v-for="(section) in sections" :key="section.text">
+        <v-expansion-panel-header>
+          <span class="font-weight-bold">{{ section.text }}</span>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-list dense v-if="section.components">
+            <v-list-item v-for="component in section.components" :key="component.text">
+              <div>
+                <!-- A clickable osztály hozzáadása a második szintű elemhez -->
+                <v-list-item-content class="clickable-menu-item"
+                                     @click="$vuetify.goTo(component.goTo, { offset: 110 })">
+                  {{ component.text }}
+                </v-list-item-content>
 
-              <v-list dense v-if="section.components">
-                <template>
-                  <v-list-item v-for="component in section.components" :key="component.text">
-                    <div>
-                      <v-list-item-content @click="$vuetify.goTo(component.goTo, { offset: 110 })">
-                        {{ component.text }}
-                      </v-list-item-content>
-
-                      <!-- Harmadik szint -->
-                      <v-list dense v-if="component.subComponents">
-                        <v-list-item
-                            v-for="sub in component.subComponents"
-                            :key="sub.text"
-                            class="pl-4"
-                            @click="$vuetify.goTo(sub.goTo, { offset: 120 })"
-                        >
-                          <v-list-item-content>
-                            {{ sub.text }}
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
-
-                    </div>
+                <!-- Harmadik szint, alkategóriák -->
+                <v-list dense v-if="component.subComponents">
+                  <v-list-item
+                      v-for="sub in component.subComponents"
+                      :key="sub.text"
+                      class="pl-4"
+                  >
+                    <v-list-item-content class="clickable-menu-item"
+                                         @click="$vuetify.goTo(sub.goTo, { offset: 120 })">
+                      {{ sub.text }}
+                    </v-list-item-content>
                   </v-list-item>
-                </template>
-              </v-list>
-
-            </div>
-          </v-list-item>
-        </template>
-      </v-list-item-group>
-    </v-list>
+                </v-list>
+              </div>
+            </v-list-item>
+          </v-list>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
   </div>
 </template>
 
@@ -51,6 +44,7 @@ export default {
     name: 'SrStyleGuideMenu',
     data () {
         return {
+            activePanel: null,
             sections: [
                 {
                     text: 'Getting Started',
@@ -76,7 +70,11 @@ export default {
                 },
                 {
                     text: 'App Containers',
-                    goTo: '#app-containers'
+                    goTo: '#app-containers',
+                    components: [
+                        { text: 'Page', goTo: '#page-container' },
+                        { text: 'Module', goTo: '#module-container' }
+                    ]
                 },
                 {
                     text: 'Layouts',
@@ -90,22 +88,10 @@ export default {
                     text: 'Components',
                     goTo: '#components',
                     components: [
-                        {
-                            text: 'Alerts',
-                            goTo: '#alerts'
-                        },
-                        {
-                            text: 'Buttons',
-                            goTo: '#buttons'
-                        },
-                        {
-                            text: 'Form Row',
-                            goTo: '#form-row'
-                        },
-                        {
-                            text: 'Icons',
-                            goTo: '#icons'
-                        },
+                        { text: 'Alerts', goTo: '#alerts' },
+                        { text: 'Buttons', goTo: '#buttons' },
+                        { text: 'Form Row', goTo: '#form-row' },
+                        { text: 'Icons', goTo: '#icons' },
                         {
                             text: 'Inputs',
                             goTo: '#inputs',
@@ -122,26 +108,13 @@ export default {
                                 { text: 'Text Input', goTo: '#text-input' }
                             ]
                         },
-                        {
-                            text: 'Milestone Indicators',
-                            goTo: '#milestone-indicators'
-                        },
-                        {
-                            text: 'Pagination',
-                            goTo: '#pagination'
-                        },
-                        {
-                            text: 'Tables',
-                            goTo: '#tables'
-                        },
-                        {
-                            text: 'Tabs',
-                            goTo: '#tabs'
-                        }
+                        { text: 'Milestone Indicators', goTo: '#milestone-indicators' },
+                        { text: 'Pagination', goTo: '#pagination' },
+                        { text: 'Tables', goTo: '#tables' },
+                        { text: 'Tabs', goTo: '#tabs' }
                     ]
                 }
             ]
-
         }
     }
 }
