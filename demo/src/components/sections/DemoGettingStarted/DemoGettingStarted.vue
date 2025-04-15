@@ -4,18 +4,18 @@
     <v-flex xs12>
       <h2>Introduction</h2>
     </v-flex>
-    <p>A shared component and style library for Shoprenter admin applications.</p>
-    <p>This package provides a preconfigured Vuetify instance and a set of reusable Vuetify 2 components designed to ensure a consistent look and feel across all remote applications built for the Shoprenter admin interface.</p>
+    <p>This package is a UI component library for the Shoprenter admin interface.</p>
+    <p>It provides a pre-configured Vuetify 2 instance and reusable Vuetify-based components designed to ensure a consistent look and feel across the Shoprenter admin interface.</p>
   </v-flex>
   <v-flex id="features" class="sg-subsection">
     <v-flex xs12>
       <h2>Features</h2>
     </v-flex>
     <ul>
-      <li>Preconfigured Vuetify 2.6.14 setup</li>
+      <li>Pre-configured Vuetify 2.6.14 setup</li>
       <li>Vue 2 compatible</li>
       <li>Ready-to-use design components</li>
-      <li>Custom SCSS/CSS design system</li>
+      <li>Custom SCSS/CSS design</li>
       <li>Easy integration with remote applications</li>
       <li>Supports full-page apps and embeddable modules</li>
     </ul>
@@ -25,10 +25,10 @@
       <h2>Requirements</h2>
     </v-flex>
     <ul>
-      <li>Node.js 14.x (22.x for development)</li>
+      <li>Node.js 14.x (22.x for developing the styleguide itself)</li>
       <li>npm 10.x</li>
       <li>Vue 2.x</li>
-      <li>Vuetify 2.6.14 (bundled with the package)</li>
+      <li>Vuetify 2.6.14 (comes bundled with the package)</li>
     </ul>
   </v-flex>
   <v-flex id="installation" class="sg-subsection">
@@ -50,7 +50,7 @@
  import { SrStyleguideComponents } from '@shoprenter/sr-styleguide'
 
  Vue.use(SrStyleguideComponents)" />
-      <li>Initialize your Vue app with the preconfigured Vuetify instance</li>
+      <li>Initialize your Vue app with the pre-configured Vuetify instance</li>
       <sr-code-block class="pb-3" language="JavaScript" width="75%" code="import Vue from 'vue'
  import { SrStyleguide } from '@shoprenter/sr-styleguide'
  import App from './App.vue'

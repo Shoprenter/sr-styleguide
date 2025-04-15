@@ -1,15 +1,15 @@
 # @shoprenter/sr-styleguide
 
-A shared component and style library for Shoprenter admin applications.
+This package is a UI component library for the Shoprenter admin interface.
 
-This package provides a preconfigured Vuetify instance and a set of reusable Vuetify 2 components designed to ensure a consistent look and feel across all remote applications built for the Shoprenter admin interface.
+It provides a pre-configured Vuetify 2 instance and reusable Vuetify-based components designed to ensure a consistent look and feel across the Shoprenter admin interface.
 
 ## Features
 
-- Preconfigured Vuetify 2.6.14 setup
+- Pre-configured Vuetify 2.6.14 setup
 - Vue 2 compatible
 - Ready-to-use design components
-- Custom SCSS/CSS design system
+- Custom SCSS/CSS design
 - Easy integration with remote applications
 - Supports full-page apps and embeddable modules
 
@@ -17,10 +17,10 @@ This package provides a preconfigured Vuetify instance and a set of reusable Vue
 
 ### Requirements
 
-- **Node.js:** 14.x (22.x for development)
+- **Node.js:** 14.x (22.x for developing the styleguide itself)
 - **npm:** 10.x
 - **Vue:** 2.x
-- **Vuetify:** 2.6.14 (bundled with the package)
+- **Vuetify:** 2.6.14 (comes bundled with the package)
 
 ### Installation
 
@@ -43,7 +43,7 @@ import { SrStyleguideComponents } from '@shoprenter/sr-styleguide'
 Vue.use(SrStyleguideComponents)
 ```
 
-2. **Initialize your Vue app with the preconfigured Vuetify instance:**
+2. **Initialize your Vue app with the pre-configured Vuetify instance:**
 
 ```js
 import Vue from 'vue'
@@ -64,7 +64,7 @@ import '@shoprenter/sr-styleguide/dist/stylesheet/sr-styleguide.css'
 
 ### Example: App Integration
 
-When building an application that uses the styleguide, you can create a Vue instance like this:
+Here is a simple example of how to use the styleguide in your Vue application:
 
 ```js
 import Vue from 'vue'
@@ -85,11 +85,13 @@ export default function createApp() {
 
 ## Demo
 
+The latest version's component & style demos and documentation can be viewed here:
+
 https://styleguide.shoprenter.hu/
 
 OR
 
-You can find detailed documentation and component demos inside the package:
+You can find the detailed documentation and component demos for the given version inside the package itself:
 
 ```
 /dist/demo/index.html
