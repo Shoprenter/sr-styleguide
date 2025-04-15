@@ -17,6 +17,7 @@ import SrStyleGuideTabs from './sections/SrStyleGuideTabs/SrStyleGuideTabs.vue'
 import DemoPages from './sections/DemoPages/DemoPages.vue'
 import DemoListPage from './sections/DemoPages/DemoListPage.vue'
 import DemoFormPage from './sections/DemoPages/DemoFormPage.vue'
+import DemoGettingStarted from './sections/DemoGettingStarted/DemoGettingStarted.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -38,5 +39,6 @@ export default {
         Vue.component('DemoPages', DemoPages)
         Vue.component('DemoListPage', DemoListPage)
         Vue.component('DemoFormPage', DemoFormPage)
+        Vue.component('DemoGettingStarted', DemoGettingStarted)
     }
 }

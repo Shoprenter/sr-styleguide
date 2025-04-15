@@ -1,6 +1,6 @@
 <template>
   <v-flex id="sr-style-guide-app-containers">
-    <v-flex class="sg-subsection">
+    <v-flex id="page-container" class="sg-subsection">
       <v-flex xs12>
         <h2>Page</h2>
       </v-flex>
@@ -14,7 +14,7 @@
 '/>
     </div>
       </v-flex>
-    <v-flex class="sg-subsection">
+    <v-flex id= "module-container" class="sg-subsection">
       <v-flex xs12>
         <h2>Module</h2>
       </v-flex>
