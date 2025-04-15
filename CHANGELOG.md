@@ -19,6 +19,7 @@
 - SrDatePicker is now clearable just like the other input components
 - SrSwitch is able to display hint and validation errors and consequentially has the same layout as the other input components
 - SrDatePicker now displays in localized language and format
+- If an app-container component gets an id attribute, it applies properly and no longer breaks styling
 
 ### Changed
 - Updated margins for the SrHeading component
