@@ -13,6 +13,7 @@
 <script>
 export default {
     name: 'SrSwitch',
+    inheritAttrs: false,
     props: {
         value: {
             type: [Boolean, Number],
