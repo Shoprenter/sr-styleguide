@@ -46,12 +46,12 @@
     <p>To use the styleguide components and styles in your Vue application:</p>
     <ul>
       <li>Import the component library and register it:</li>
-      <sr-code-block class="pb-3" language="JavaScript" width="65%" code="import Vue from 'vue'
+      <sr-code-block class="pb-3" language="JavaScript" width="75%" code="import Vue from 'vue'
  import { SrStyleguideComponents } from '@shoprenter/sr-styleguide'
 
  Vue.use(SrStyleguideComponents)" />
       <li>Initialize your Vue app with the preconfigured Vuetify instance</li>
-      <sr-code-block class="pb-3" language="JavaScript" width="65%" code="import Vue from 'vue'
+      <sr-code-block class="pb-3" language="JavaScript" width="75%" code="import Vue from 'vue'
  import { SrStyleguide } from '@shoprenter/sr-styleguide'
  import App from './App.vue'
 
@@ -60,7 +60,7 @@
     render: h => h(App)
  }).$mount('#app')" />
       <li>Load the styleguide stylesheet</li>
-      <sr-code-block language="JavaScript" width="65%" code="import '@shoprenter/sr-styleguide/dist/stylesheet/sr-styleguide.css'" />
+      <sr-code-block language="JavaScript" width="75%" code="import '@shoprenter/sr-styleguide/dist/stylesheet/sr-styleguide.css'" />
     </ul>
 
   </v-flex>
@@ -69,7 +69,7 @@
       <h2>Example: App Integration</h2>
     </v-flex>
     <p>Here is a simple example of how to use the styleguide in your Vue application:</p>
-    <sr-code-block language="JavaScript" width="65%" code="import Vue from 'vue'
+    <sr-code-block language="JavaScript" width="75%" code="import Vue from 'vue'
  import { SrStyleguide, SrStyleguideComponents } from '@shoprenter/sr-styleguide'
  import App from './App.vue'
 
@@ -88,8 +88,7 @@
     <v-flex xs12>
       <h2>Changelog</h2>
     </v-flex>
-
-    See <a target="_blank" href="https://github.com/Shoprenter/sr-styleguide/blob/master/CHANGELOG.md">CHANGELOG.md</a> for the list of updates and changes.
+    You can find the changelog in the <a target="_blank" href="https://www.npmjs.com/package/@shoprenter/sr-styleguide#changelog">README</a> of our npm package.
   </v-flex>
   <v-flex id="contribution" class="sg-subsection">
     <v-flex xs12>
