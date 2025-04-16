@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import { SrStyleguide, SrStyleguideComponents } from '../src/index'
 import router from './src/router/router'
-import StyleGuide from './src/components/SrStyleGuide/SrStyleGuide.vue'
+import App from './src/components/DemoApp/DemoApp.vue'
 import DemoComponents from './src/components/DemoComponents'
 
 Vue.use(SrStyleguideComponents)
@@ -10,14 +10,14 @@ Vue.use(DemoComponents)
 const app = new Vue({
     vuetify: SrStyleguide,
     router,
-    render: h => h(StyleGuide)
+    render: h => h(App)
 })
 
 app.$router.addRoutes([
     {
         path: '/',
         name: 'local-styleguide',
-        component: StyleGuide,
+        component: App,
         meta: {
             breadcrumbs: [
                 {
