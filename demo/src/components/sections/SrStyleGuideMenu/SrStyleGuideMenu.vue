@@ -1,46 +1,39 @@
 <template>
   <div class="admin-style-guide__menu">
-    <v-list flat>
-      <v-list-item-group>
-        <template>
-          <v-list-item v-for="section in sections" :key="section.text">
-            <div>
-              <v-list-item-content @click="$vuetify.goTo(section.goTo, { offset: 100 })">
-                {{ section.text }}
-              </v-list-item-content>
+    <v-expansion-panels v-model="activePanel" accordion>
+      <v-expansion-panel v-for="(section) in sections" :key="section.text">
+        <v-expansion-panel-header>
+          <span class="font-weight-bold">{{ section.text }}</span>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <v-list dense v-if="section.components">
+            <v-list-item v-for="component in section.components" :key="component.text">
+              <div>
+                <!-- A clickable osztály hozzáadása a második szintű elemhez -->
+                <v-list-item-content class="clickable-menu-item"
+                                     @click="$vuetify.goTo(component.goTo, { offset: 110 })">
+                  {{ component.text }}
+                </v-list-item-content>
 
-              <v-list dense v-if="section.components">
-                <template>
-                  <v-list-item v-for="component in section.components" :key="component.text">
-                    <div>
-                      <v-list-item-content @click="$vuetify.goTo(component.goTo, { offset: 110 })">
-                        {{ component.text }}
-                      </v-list-item-content>
-
-                      <!-- Harmadik szint -->
-                      <v-list dense v-if="component.subComponents">
-                        <v-list-item
-                            v-for="sub in component.subComponents"
-                            :key="sub.text"
-                            class="pl-4"
-                            @click="$vuetify.goTo(sub.goTo, { offset: 120 })"
-                        >
-                          <v-list-item-content>
-                            {{ sub.text }}
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
-
-                    </div>
+                <!-- Harmadik szint, alkategóriák -->
+                <v-list dense v-if="component.subComponents">
+                  <v-list-item
+                      v-for="sub in component.subComponents"
+                      :key="sub.text"
+                      class="pl-4"
+                  >
+                    <v-list-item-content class="clickable-menu-item"
+                                         @click="$vuetify.goTo(sub.goTo, { offset: 120 })">
+                      {{ sub.text }}
+                    </v-list-item-content>
                   </v-list-item>
-                </template>
-              </v-list>
-
-            </div>
-          </v-list-item>
-        </template>
-      </v-list-item-group>
-    </v-list>
+                </v-list>
+              </div>
+            </v-list-item>
+          </v-list>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
   </div>
 </template>
 
@@ -51,13 +44,36 @@ export default {
     name: 'SrStyleGuideMenu',
     data () {
         return {
+            activePanel: null,
             sections: [
+                {
+                    text: 'Getting Started',
+                    goTo: '#getting-started',
+                    components: [
+                        { text: 'Introduction', goTo: '#introduction' },
+                        { text: 'Features', goTo: '#features' },
+                        { text: 'Requirements', goTo: '#requirements' },
+                        { text: 'Installation', goTo: '#installation' },
+                        { text: 'Usage', goTo: '#usage' },
+                        { text: 'Example', goTo: '#example' },
+                        { text: 'Changelog', goTo: '#changelog' },
+                        { text: 'Contribution', goTo: '#contribution' }
+                    ]
+                },
                 {
                     text: 'Demo Pages',
                     goTo: '#demo-pages',
                     components: [
-                        { text: 'List Page', goTo: '#list-page' },
-                        { text: 'Form Page', goTo: '#form-page' }
+                        { text: 'Form Page', goTo: '#form-page' },
+                        { text: 'List Page', goTo: '#list-page' }
+                    ]
+                },
+                {
+                    text: 'App Containers',
+                    goTo: '#app-containers',
+                    components: [
+                        { text: 'Page', goTo: '#page-container' },
+                        { text: 'Module', goTo: '#module-container' }
                     ]
                 },
                 {
@@ -72,36 +88,31 @@ export default {
                     text: 'Components',
                     goTo: '#components',
                     components: [
-                        {
-                            text: 'Buttons',
-                            goTo: '#buttons'
-                        },
+                        { text: 'Alerts', goTo: '#alerts' },
+                        { text: 'Buttons', goTo: '#buttons' },
+                        { text: 'Form Row', goTo: '#form-row' },
+                        { text: 'Icons', goTo: '#icons' },
                         {
                             text: 'Inputs',
                             goTo: '#inputs',
                             subComponents: [
-                                { text: 'Input Fields', goTo: '#text-inputs' },
-                                { text: 'Select', goTo: '#select-inputs' },
                                 { text: 'Checkbox', goTo: '#checkbox-inputs' },
-                                { text: 'Simple Multi Checkbox', goTo: '#simple-multi-checkbox-inputs' },
+                                { text: 'Date Picker', goTo: '#date-picker-input' },
+                                { text: 'Number Input', goTo: '#number-input' },
                                 { text: 'Multi Checkbox', goTo: '#multi-checkbox-inputs' },
-                                { text: 'Switch', goTo: '#switch-inputs' },
                                 { text: 'Radio', goTo: '#radio-inputs' },
-                                { text: 'Date Picker', goTo: '#date-picker-input' }
+                                { text: 'Select', goTo: '#select-inputs' },
+                                { text: 'Simple Multi Checkbox', goTo: '#simple-multi-checkbox-inputs' },
+                                { text: 'Switch', goTo: '#switch-inputs' },
+                                { text: 'Text Area', goTo: '#text-area-input' },
+                                { text: 'Text Input', goTo: '#text-input' }
                             ]
                         },
-                        { text: 'Form Row', goTo: '#form-row' },
-                        { text: 'Tables', goTo: '#tables' },
-                        { text: 'Pagination', goTo: '#pagination' },
-                        { text: 'Alerts', goTo: '#alerts' },
                         { text: 'Milestone Indicators', goTo: '#milestone-indicators' },
-                        { text: 'Tabs', goTo: '#tabs' },
-                        { text: 'Icons', goTo: '#icons' }
+                        { text: 'Pagination', goTo: '#pagination' },
+                        { text: 'Tables', goTo: '#tables' },
+                        { text: 'Tabs', goTo: '#tabs' }
                     ]
-                },
-                {
-                    text: 'App Containers',
-                    goTo: '#app-containers'
                 }
             ]
         }
