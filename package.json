@@ -44,7 +44,6 @@
     "sass": "^1.85.1",
     "sass-loader": "^16.0.5",
     "style-loader": "^4.0.0",
-    "tiny-emitter": "^2.1.0",
     "vue": "^2.6.11",
     "vue-jest": "^3.0.7",
     "vue-loader": "^15.11.1",

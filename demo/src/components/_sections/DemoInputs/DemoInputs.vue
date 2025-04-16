@@ -186,6 +186,7 @@
           align="start"
           code="<sr-input-field type='text' hint='This is a hint'/>">
         <sr-input-field
+            :max-width="100"
             hint="This is a hint"
             type="text"
         />

@@ -1,4 +1,3 @@
-import DemoPageLayout from './DemoPageLayout/DemoPageLayout.vue'
 import DemoIcons from './_sections/DemoIcons/DemoIcons.vue'
 import DemoCodeBlock from './DemoCodeBlock/DemoCodeBlock.vue'
 import DemoInputs from './_sections/DemoInputs/DemoInputs.vue'
@@ -21,7 +20,6 @@ import DemoGettingStarted from './_sections/DemoGettingStarted/DemoGettingStarte
 
 export default {
     install (Vue, options = {}) {
-        Vue.component('DemoPageLayout', DemoPageLayout)
         Vue.component('DemoIcons', DemoIcons)
         Vue.component('DemoCodeBlock', DemoCodeBlock)
         Vue.component('DemoInputs', DemoInputs)
