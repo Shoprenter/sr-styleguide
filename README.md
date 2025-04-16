@@ -104,7 +104,7 @@ Open this file in a browser to explore the available components and their usage.
 ### [new] - published date
 #### Added
 - SrStandardLayout component
-- Breadcrumbs from route parameters to page container
+- Breadcrumbs from route parameters to layout containers
 - Demo list page
 - Language-aware default placeholder for SrSelect component
 - SrSimpleTableFilterTd component to simplify the creation of filterable table columns
@@ -115,7 +115,7 @@ Open this file in a browser to explore the available components and their usage.
 
 #### Fixed
 - Resolved an issue where global `html` tag styles were not being applied correctly.
-- Demo page menu is now scrollable and accord able
+- Demo page menu is now scrollable and condensable
 - Help button & breadcrumb container no longer takes up space when empty
 - Style rule scope now includes package version
 - SrEditIcon component now contains the correct icon
@@ -123,6 +123,7 @@ Open this file in a browser to explore the available components and their usage.
 - SrDatePicker is now clearable just like the other input components
 - SrSwitch is able to display hint and validation errors and consequentially has the same layout as the other input components
 - SrDatePicker now displays in localized language and format
+- If an app-container component gets an id attribute, it applies properly and no longer breaks styling
 
 #### Changed
 - Updated margins for the SrHeading component
