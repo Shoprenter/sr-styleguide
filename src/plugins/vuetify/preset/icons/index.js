@@ -153,7 +153,7 @@ export default {
         next: {
             component: NextIcon
         },
-        editIcon: {
+        edit: {
             component: EditIcon
         }
     }
