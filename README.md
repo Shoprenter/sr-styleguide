@@ -101,7 +101,7 @@ Open this file in a browser to explore the available components and their usage.
 
 ## Changelog
 
-### [new] - published date
+### [1.2.0] - 2025-04-17
 #### Added
 - SrStandardLayout component
 - Breadcrumbs from route parameters to layout containers
