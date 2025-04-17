@@ -1,41 +1,39 @@
-import SrPageLayout from './SrPageLayout/SrPageLayout.vue'
-import SrStyleGuideIcons from './sections/SrStyleGuideIcons/SrStyleGuideIcons.vue'
-import SrCodeBlock from './SrCodeBlock/SrCodeBlock.vue'
-import SrStyleGuideInputs from './sections/SrStyleGuideInputs/SrStyleGuideInputs.vue'
-import SrStyleGuideMenu from './sections/SrStyleGuideMenu/SrStyleGuideMenu.vue'
-import SrStyleGuideButtons from './sections/StStyleGuideButtons/SrStyleGuideButtons.vue'
-import SrStyleGuideItemRow from './SrStyleGuideItemRow/SrStyleGuideItemRow.vue'
-import SrStyleGuideFormRow from './sections/SrStyleGuideFormRow/SrStyleGuideFormRow.vue'
-import SrStyleGuideLayouts from './sections/SrStyleGuideLayouts/SrStyleGuideLayouts.vue'
-import SrStyleGuideTables from './sections/SrStyleGuideTables/SrStyleGuideTables.vue'
-import SrStyleGuidePagination from './sections/SrStyleguidePagination/SrStyleGuidePagination.vue'
-import SrStyleGuideAppContainers from './sections/SrStyleGuideAppContainers/SrStyleGuideAppContainers.vue'
-import SrStyleGuideAlerts from './sections/SrStyleGuideAlerts/SrStyleGuideAlerts.vue'
-import SrStyleGuideMilestoneIndicators
-    from './sections/SrStyleGuideMilestoneIndicators/SrStyleGuideMilestoneIndicators.vue'
-import SrStyleGuideTabs from './sections/SrStyleGuideTabs/SrStyleGuideTabs.vue'
-import DemoPages from './sections/DemoPages/DemoPages.vue'
-import DemoListPage from './sections/DemoPages/DemoListPage.vue'
-import DemoFormPage from './sections/DemoPages/DemoFormPage.vue'
-import DemoGettingStarted from './sections/DemoGettingStarted/DemoGettingStarted.vue'
+import DemoIcons from './_sections/DemoIcons/DemoIcons.vue'
+import DemoCodeBlock from './DemoCodeBlock/DemoCodeBlock.vue'
+import DemoInputs from './_sections/DemoInputs/DemoInputs.vue'
+import DemoMenu from './DemoMenu/DemoMenu.vue'
+import DemoButtons from './_sections/DemoButtons/DemoButtons.vue'
+import DemoItemRow from './DemoItemRow/DemoItemRow.vue'
+import DemoFormRow from './_sections/DemoFormRow/DemoFormRow.vue'
+import DemoLayouts from './_sections/DemoLayouts/DemoLayouts.vue'
+import DemoTables from './_sections/DemoTables/DemoTables.vue'
+import DemoPagination from './_sections/DemoPagination/DemoPagination.vue'
+import DemoAppContainers from './_sections/DemoAppContainers/DemoAppContainers.vue'
+import DemoAlerts from './_sections/DemoAlerts/DemoAlerts.vue'
+import DemoMilestoneIndicators
+    from './_sections/DemoMilestoneIndicators/DemoMilestoneIndicators.vue'
+import DemoTabs from './_sections/DemoTabs/DemoTabs.vue'
+import DemoPages from './_sections/DemoPages/DemoPages.vue'
+import DemoListPage from './_sections/DemoPages/DemoListPage.vue'
+import DemoFormPage from './_sections/DemoPages/DemoFormPage.vue'
+import DemoGettingStarted from './_sections/DemoGettingStarted/DemoGettingStarted.vue'
 
 export default {
     install (Vue, options = {}) {
-        Vue.component('SrPageLayout', SrPageLayout)
-        Vue.component('SrStyleGuideIcons', SrStyleGuideIcons)
-        Vue.component('SrCodeBlock', SrCodeBlock)
-        Vue.component('SrStyleGuideInputs', SrStyleGuideInputs)
-        Vue.component('SrStyleGuideMenu', SrStyleGuideMenu)
-        Vue.component('SrStyleGuideButtons', SrStyleGuideButtons)
-        Vue.component('SrStyleGuideItemRow', SrStyleGuideItemRow)
-        Vue.component('SrStyleGuideFormRow', SrStyleGuideFormRow)
-        Vue.component('SrStyleGuideLayouts', SrStyleGuideLayouts)
-        Vue.component('SrStyleGuideTables', SrStyleGuideTables)
-        Vue.component('SrStyleGuidePagination', SrStyleGuidePagination)
-        Vue.component('SrStyleGuideAppContainers', SrStyleGuideAppContainers)
-        Vue.component('SrStyleGuideAlerts', SrStyleGuideAlerts)
-        Vue.component('SrStyleGuideMilestoneIndicators', SrStyleGuideMilestoneIndicators)
-        Vue.component('SrStyleGuideTabs', SrStyleGuideTabs)
+        Vue.component('DemoIcons', DemoIcons)
+        Vue.component('DemoCodeBlock', DemoCodeBlock)
+        Vue.component('DemoInputs', DemoInputs)
+        Vue.component('DemoMenu', DemoMenu)
+        Vue.component('DemoButtons', DemoButtons)
+        Vue.component('DemoItemRow', DemoItemRow)
+        Vue.component('DemoFormRow', DemoFormRow)
+        Vue.component('DemoLayouts', DemoLayouts)
+        Vue.component('DemoTables', DemoTables)
+        Vue.component('DemoPagination', DemoPagination)
+        Vue.component('DemoAppContainers', DemoAppContainers)
+        Vue.component('DemoAlerts', DemoAlerts)
+        Vue.component('DemoMilestoneIndicators', DemoMilestoneIndicators)
+        Vue.component('DemoTabs', DemoTabs)
         Vue.component('DemoPages', DemoPages)
         Vue.component('DemoListPage', DemoListPage)
         Vue.component('DemoFormPage', DemoFormPage)
