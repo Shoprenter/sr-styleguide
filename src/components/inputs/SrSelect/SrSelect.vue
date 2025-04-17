@@ -2,6 +2,7 @@
   <v-select
       v-bind="$attrs"
       v-on="$listeners"
+      :placeholder="placeholder || $vuetify.lang.t('$vuetify.pleaseSelect')"
       menu-props="offset-y"
       clearable
       dense hide-details outlined
@@ -18,6 +19,12 @@
 <script>
 export default {
     name: 'SrSelect',
-    inheritAttrs: false
+    inheritAttrs: false,
+    props: {
+        placeholder: {
+            type: String,
+            default: null
+        }
+    }
 }
 </script>

@@ -8,6 +8,7 @@ import SrRadioGroup from '../../../components/inputs/SrRadio/SrRadioGroup.vue'
 import SrDatePicker from '../../../components/inputs/SrDatePicker/SrDatePicker.vue'
 import SrMultiCheckbox from '../../../components/inputs/SrMultiCheckbox/SrMultiCheckbox.vue'
 import SrSimpleMultiCheckbox from '../../../components/inputs/SrMultiCheckbox/SrSimpleMultiCheckbox.vue'
+import SrTextarea from '../../../components/inputs/SrTextarea/SrTextarea.vue'
 
 export default {
     install (Vue, options = {}) {
@@ -21,5 +22,6 @@ export default {
         Vue.component('SrRadio', SrRadio)
         Vue.component('SrRadioGroup', SrRadioGroup)
         Vue.component('SrDatePicker', SrDatePicker)
+        Vue.component('SrTextarea', SrTextarea)
     }
 }

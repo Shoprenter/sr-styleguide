@@ -1,0 +1,17 @@
+@import "../../../../../src/plugins/vuetify/preset/style/scss/mixins/breakpoints";
+
+#sr-style-guide-layouts .page-layout--slim, #sr-style-guide-layouts #slim-layout .sr-code-block {
+  margin: 0 auto 48px auto;
+  padding: 0 30px;
+  @include media-breakpoint-up(sm) {
+    max-width: $container-slim-width-sm;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: $container-slim-width;
+  }
+}
+
+#sr-style-guide-layouts #standard-layout .sr-code-block {
+  margin: 0 auto 70px auto;
+  padding: 0 30px;
+}

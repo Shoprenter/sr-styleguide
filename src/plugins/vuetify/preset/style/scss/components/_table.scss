@@ -25,6 +25,7 @@
             border-bottom: 1px solid #ECEFF1;
             margin-bottom: 1px;
 
+
             &.selected:not(.v-data-table__expanded__content),
             &:hover:not(.v-data-table__expanded__content) {
                 background: var(--sr-bg-grey);
@@ -33,7 +34,7 @@
             }
 
             td {
-                border: 0 !important;
+                border-bottom: thin solid rgba(0, 0, 0, .12) !important;
                 padding: $cell-padding !important;
             }
         }
@@ -51,4 +52,9 @@
     .v-data-footer {
         border-top: 0;
     }
+}
+
+.sr-simple-table-filter-td {
+    text-align: center;
+    vertical-align: middle;
 }

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import StyleGuide from '../components/SrStyleGuide/SrStyleGuide.vue'
+import App from '../components/DemoApp/DemoApp.vue'
 
 Vue.use(Router)
 
@@ -9,7 +9,21 @@ const router = new Router({
         {
             path: '/sr-styleguide',
             name: 'styleguide',
-            component: StyleGuide
+            component: App,
+            meta: {
+                breadcrumbs: [
+                    {
+                        to: '/sr-styleguide',
+                        text: 'Home'
+                    },
+                    {
+                        to: '/',
+                        text: 'SR Style Guide'
+                    }
+                ],
+                title: 'SR Style Guide',
+                helpUrl: 'https://www.npmjs.com/package/@shoprenter/sr-styleguide'
+            }
         }
     ]
 })

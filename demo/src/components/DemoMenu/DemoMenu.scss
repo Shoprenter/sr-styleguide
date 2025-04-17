@@ -1,0 +1,16 @@
+.admin-style-guide__menu {
+  position: sticky;
+  top: 60px;
+  height: 100vh;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.clickable-menu-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clickable-menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.04); /* Finom vizuális visszajelzés */
+}

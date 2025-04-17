@@ -1,25 +1,28 @@
 <template>
-  <div id="sr-styleguide">
-    <div class="new-style">
-      <v-app class="sr-page">
-        <v-row>
-          <v-col cols="6">
-            <!--- breadcrumbs placeholder -->
-          </v-col>
-          <v-col cols ="6" class="text-right">
-            <sr-help-button/>
-          </v-col>
-        </v-row>
-        <v-main>
-          <slot />
-        </v-main>
-      </v-app>
+  <div v-bind="$attrs">
+    <div v-bind:[attribute]="value">
+      <div class="new-style">
+        <v-app class="sr-page">
+          <v-main>
+            <slot />
+          </v-main>
+        </v-app>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'SrPage'
+    name: 'SrPage',
+    inheritAttrs: false,
+    data () {
+        const { attribute, value } = require('../scope')
+
+        return {
+            attribute,
+            value
+        }
+    }
 }
 </script>
